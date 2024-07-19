@@ -32,12 +32,12 @@ export class ScriptService {
       else {
         //load script
         let script = document.createElement('script');
-        //script.type = 'text/javascript';
+        script.type = 'text/javascript';
         //script.async = true;
         script.src = this.scripts[name].src;
         if (script.readyState) {  //IE
           script.onreadystatechange = () => {
-            if (script.readyState === "loaded" || script.readyState === "complete") {
+            if (script.readyState === "LOADED" || script.readyState === "complete") {
               script.onreadystatechange = null;
               this.scripts[name].loaded = true;
               resolve({ script: name, loaded: true, status: 'Loaded' });
@@ -51,7 +51,7 @@ export class ScriptService {
         }
         script.onerror = (error: any) => resolve({ script: name, loaded: false, status: 'Loaded' });
  
-        document.getElementsByTagName('head', 'header', 'body')[0].appendChild(script);
+        document.getElementsByTagName('head')[0].appendChild(script);
       }
     });
   }
