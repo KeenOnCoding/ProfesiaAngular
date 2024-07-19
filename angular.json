@@ -32,7 +32,55 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              //{
+              //  "input": "wp-polyfill-inert.min.js",
+              //  "inject": false,
+              //  "bundleName": "wp-polyfill-inert.min.js"
+              //},
+              //{
+              //  "input": "regenerator-runtime.min.js",
+              //  "inject": false,
+              //  "bundleName": "regenerator-runtime.min.js"
+              //},
+              //{
+              //  "input": "wp-polyfill.min.js",
+              //  "inject": false,
+              //  "bundleName": "wp-polyfill.min.js"
+              //},
+              //{
+              //  "input": "jquery.min.js",
+              //  "inject": false,
+              //  "bundleName": "jquery.min.js"
+              //},
+              //{
+              //  "input": "aos.js",
+              //  "inject": false,
+              //  "bundleName": "aos.js"
+              //},
+              //{
+              //  "input": "global.js",
+              //  "inject": false,
+              //  "bundleName": "global.js"
+              //},
+              //{
+              //  "input": "owl.carousel.min.js",
+              //  "inject": false,
+              //  "bundleName": "owl.carousel.min.js"
+              //},
+              //{
+              //  "input": "jquery.mobile.custom.min.js",
+              //  "inject": false,
+              //  "bundleName": "jquery.mobile.custom.min.js"
+              //},
+              //{
+              //  "input": "home.js",
+              //  "inject": false,
+              //  "bundleName": "home.jss"
+              //}
+          
+
+            ]
           },
           "configurations": {
             "production": {
