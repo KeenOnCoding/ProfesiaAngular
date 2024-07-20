@@ -33,6 +33,9 @@
               "src/styles.scss"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/aos/dist/aos.js",
+              "node_modules/owl.carousel/dist/owl.carousel.js"
               //{
               //  "input": "wp-polyfill-inert.min.js",
               //  "inject": false,
@@ -78,7 +81,7 @@
               //  "inject": false,
               //  "bundleName": "home.jss"
               //}
-          
+
 
             ]
           },
@@ -143,7 +146,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/aos/dist/aos.js",
+              "node_modules/owl.carousel/dist/owl.carousel.js"
+            ]
           }
         }
       }
