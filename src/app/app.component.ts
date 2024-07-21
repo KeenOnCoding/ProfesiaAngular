@@ -108,10 +108,10 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     $('.scroll-to').on('click', function (e: JQuery.ClickEvent) {
       e.preventDefault();
-
-      //$('html, body').animate({
-      //  scrollTop: $($(this).attr('href')).offset().top - 60*
-      //}, 500, 'linear');
+   
+      $('html, body').animate({
+      //scrollTop: $($(this).attr('href')).offset().top - 60
+      }, 500, 'linear');
     });
     $('.modal .close').click(function () {
       $('.modal').removeClass('show');
@@ -243,7 +243,7 @@ export class AppComponent implements OnInit {
            action = 'prev';
          });
 
-         $('.carousel-pillars-nav').on('click', 'li', function (e) {
+         $('.carousel-pillars-nav').on('click', 'li', () =>  {
            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
          });
        
