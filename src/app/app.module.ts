@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { ScriptService } from './services/script.service';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
