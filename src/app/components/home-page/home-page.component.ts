@@ -103,7 +103,7 @@ export class HomePageComponent implements OnInit {
       e.preventDefault();
 
       $('html, body').animate({
-        //scrollTop: $($(this).attr('href')).offset().top - 60
+        scrollTop: $($(this).attr('href')).offset().top - 60
       }, 500, 'linear');
     });
     $('.modal .close').click(function () {
