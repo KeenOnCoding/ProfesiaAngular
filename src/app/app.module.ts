@@ -7,13 +7,15 @@ import { ScriptService } from './services/script.service';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DevopsComponent } from './components/pages/devops/devops.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DevopsComponent
   ],
   exports: [
     HeaderComponent,
