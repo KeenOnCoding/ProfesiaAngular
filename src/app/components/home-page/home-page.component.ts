@@ -126,7 +126,7 @@ export class HomePageComponent implements OnInit {
     });
     $(document).ready(() => {
       const owl: JQuery = $('.carousel-trust');
-      const options: OwlCarouselOptions = {
+      const options: any = {
         margin: 10,
         nav: false,
         loop: true,
@@ -158,7 +158,7 @@ export class HomePageComponent implements OnInit {
     });
     $(document).ready(() => {
       const owl: JQuery = $('.fadeOutTop');
-      const options: OwlCarouselOptions2 = {
+      const options: any = {
         items: 1,
         animateOut: 'fadeOut',
         loop: true,
@@ -171,20 +171,19 @@ export class HomePageComponent implements OnInit {
       (owl as any).owlCarousel(options);
     });
 
-    const widthWindow: number = $(document).width() || 0;
+    var widthWindow = $(document).width();
     if (widthWindow > 991) {
-      let action: boolean | string = false;
-      let clicked: boolean = false;
-
-      const Owl = {
-        init: function (): void {
-          this.carousel();
+      let action = false,
+        clicked = false;
+      let Owl = {
+        init: function () {
+          Owl.carousel();
         },
-        carousel: function (): void {
-          let owl: JQuery<HTMLElement>;
+        carousel: function () {
+          let owl;
           $(document).ready(function () {
-            const owl: JQuery = $('.fadeOut');
-            const options: OwlCarouselOptions3 = {
+
+            owl = (<any>$('.fadeOut')).owlCarousel({
               items: 1,
               autoplay: true,
               autoplayTimeout: 7000,
@@ -214,42 +213,38 @@ export class HomePageComponent implements OnInit {
                   margin: 20,
                 },
                 991: {
+
                 },
                 1000: {
                   margin: 10
                 }
               },
               navText: ['prev', 'next'],
-            };
-            (owl as any).owlCarousel(options);
-          });
-
-          $('.owl-next').on('click', function () {
-            action = 'next';
-          });
-
-          $('.owl-prev').on('click', function () {
-            action = 'prev';
-          });
-
-          $('.carousel-pillars-nav').on('click', 'li', () => {
-            owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+            });
+            $('.owl-next').on('click', function () {
+              (<any>action) = 'next';
+            });
+            $('.owl-prev').on('click', function () {
+              (<any>action) = 'prev';
+            });
+            $('.carousel-pillars-nav').on('click', 'li', function (e) {
+              owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+            });
           });
         }
       };
-
       $(document).ready(function () {
         Owl.init();
       });
     } else {
-      let maxHeight: number = 0;
-      $('.text-pillars').each(function () {
-        const currentHeight: number = $(this).height() || 0;
+      var maxHeight = 0;
+      $('#pillars .carousel-pillars .item').each(function () {
+        var currentHeight = $(this).height();
         if (currentHeight > maxHeight) {
           maxHeight = currentHeight;
         }
       });
-      $('.text-pillars').height(maxHeight);
+      $('#pillars .carousel-pillars .item').height(maxHeight);
     }
 
     (window as any)._linkedin_data_partner_ids = (window as any)._linkedin_data_partner_ids || [];
@@ -573,6 +568,7 @@ export class HomePageComponent implements OnInit {
     this.fileSelectedFooter(fileInput);
   }
 }
+/*
 interface OwlCarouselOptions {
   margin: number;
   nav: boolean;
@@ -615,3 +611,4 @@ interface OwlCarouselOptions3 {
   navText: string[],
   responsive: any
 }
+*/
