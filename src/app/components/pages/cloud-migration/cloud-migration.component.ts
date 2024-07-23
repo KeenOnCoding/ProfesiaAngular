@@ -1,108 +1,21 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import * as  jQuery from 'jquery';
 import * as AOS from 'aos';
+
 @Component({
-  selector: 'app-devops',
-  templateUrl: './devops.component.html',
-  styleUrls: ['./devops.component.scss']
+  selector: 'app-cloud-migration',
+  templateUrl: './cloud-migration.component.html',
+  styleUrls: ['./cloud-migration.component.scss']
 })
-export class DevopsComponent implements OnInit {
-  constructor() {
-    //small
+export class CloudMigrationComponent implements OnInit {
 
-    /*
-    const animationDataSuccess: lottie.AnimationConfigWithPath = {
-      container: animationContainerSuccess,
-      renderer: 'svg',
-      loop: false,
-      autoplay: false,
-      path: '/wp-content/themes/profisea-theme/animation/success.json',
-    };
-    const animSuccess = lottie.loadAnimation(animationDataSuccess);*/
-
-    //modal
-
-    /*
-   const animationDataSuccess2: lottie.AnimationConfigWithPath = {
-     container: animationContainerSuccess2,
-     renderer: 'svg',
-     loop: false,
-     autoplay: false,
-     path: '/wp-content/themes/profisea-theme/animation/success.json',
-   };
-   const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);*/
-
-    /*
-    document.addEventListener('wpcf7mailsent', function (event) {
-      if ('231' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
-        animSuccess.play();
-        setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
-        }, 3000);
-        document.getElementById('file-info-footer').innerText = 'File is not chosen';
-        document.querySelector('.deletefile').classList.remove('show');
-      }
-      if ('233' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
-        animSuccess.play();
-        setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
-        }, 3000);
-        document.getElementById('file-info-careers').innerText = 'File is not chosen';
-        document.querySelector('.deletefile').classList.remove('show');
-      }
-      if ('232' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
-        animSuccess.play();
-        setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
-        }, 3000);
-        document.getElementById('file-info-footer').innerText = 'File is not chosen';
-        document.querySelector('.deletefile').classList.remove('show');
-      }
-      if ('230' == event.detail.contactFormId) {
-        document.querySelector('.modal .success-message').classList.add('show');
-        animSuccess2.play();
-        setTimeout(function () {
-          document.querySelector('.modal .success-message').classList.remove('show');
-          document.querySelector('.modal').classList.remove('show');
-          document.querySelector('body').classList.remove('overflow-hidden');
-        }, 5000);
-        document.getElementById('file-delete-popup').innerText = 'File is not chosen';
-        document.querySelector('.deletefile').classList.remove('show');
-      }
-      if ('10036' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
-        animSuccess.play();
-        setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
-        }, 3000);
-      }
-      if ('10107' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
-        animSuccess.play();
-        setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
-        }, 3000);
-      }
-      if ('10195' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
-        animSuccess.play();
-        setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
-        }, 3000);
-      }
-    }, false);
-    */
-  }
 
   ngOnInit(): void {
     $('.scroll-to').on('click', function (e: JQuery.ClickEvent) {
       e.preventDefault();
 
       $('html, body').animate({
-        //scrollTop: $($(this).attr('href')).offset().top - 60
+        scrollTop: $($(this).attr('href')).offset().top - 60
       }, 500, 'linear');
     });
     $('.modal .close').click(function () {
@@ -125,7 +38,7 @@ export class DevopsComponent implements OnInit {
     });
     $(document).ready(() => {
       const owl: JQuery = $('.carousel-trust');
-      const options: OwlCarouselOptions = {
+      const options: any = {
         margin: 10,
         nav: false,
         loop: true,
@@ -157,7 +70,7 @@ export class DevopsComponent implements OnInit {
     });
     $(document).ready(() => {
       const owl: JQuery = $('.fadeOutTop');
-      const options: OwlCarouselOptions2 = {
+      const options: any = {
         items: 1,
         animateOut: 'fadeOut',
         loop: true,
@@ -445,55 +358,7 @@ export class DevopsComponent implements OnInit {
   };
 
   _linkedin_partner_id = "5140609";
-  animHomeWave = null;
-  animCTAWave = null;
-
-  animationData = {
-    // container: animationContainer,
-    renderer: "svg",
-    loop: false,
-    autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/uniskai-img-main.json",
-  };
-  animationDataUnisave = {
-    // container: animationContainerUnisave,
-    renderer: "svg",
-    loop: false,
-    autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/unisave-img-main.json",
-  };
-  animationDataCTAWave = {
-    //container: animationContainerCTAWave,
-    //renderer: 'svg',
-    //loop: true,
-    //autoplay: true,
-    //path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
-  };
-  animationDataHomeWave = {
-    //container: animationContainerHomeWave,
-    //renderer: 'svg',
-    //loop: true,
-    //autoplay: true,
-    //path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
-  };
-
-  animationContainer: HTMLDivElement | null = document.getElementById("animation-uniskai") as HTMLDivElement;
-  animationContainerUnisave: HTMLDivElement | null = document.getElementById("animation-unisave") as HTMLDivElement;
-  animationContainerHomeWave: HTMLDivElement | null = document.getElementById('homeWave') as HTMLDivElement;
-  animationContainerSuccess2: HTMLElement | null = document.getElementById('animation-success-big');
-  animationContainerSuccess: HTMLElement | null = document.getElementById('animation-success');
-  animationContainerCTAWave: HTMLDivElement | null = document.getElementById('ctaWave') as HTMLDivElement;
-
-  //observer = new IntersectionObserver(this.playAnimationWhenVisible, this.options);
-  //observer.observe(animationContainer);
-  //observerUnisave = new IntersectionObserver(this.playAnimationWhenVisibleUnisave, this.options);
-  //observerUnisave.observe(animationContainerUnisave);
-
-  //observer = new IntersectionObserver(this.playAnimationWhenVisible, this.options);
-  //observer.observe(animationContainer);
-
-  //observerUnisave = new IntersectionObserver(this.playAnimationWhenVisibleUnisave, this.options);
-  //observerUnisave.observe(animationContainerUnisave);
+  
 
   fileSelected(input: HTMLInputElement): void {
     const fileInfo: HTMLElement = document.getElementById("file-info-modal") as HTMLElement;
@@ -566,46 +431,4 @@ export class DevopsComponent implements OnInit {
     fileInput.value = '';
     this.fileSelectedFooter(fileInput);
   }
-}
-interface OwlCarouselOptions {
-  margin: number;
-  nav: boolean;
-  loop: boolean;
-  autoplay: boolean;
-  autoplayTimeout: number;
-  autoplaySpeed: number;
-  autoplayHoverPause: boolean;
-  slideTransition: string;
-  responsive: {
-    [key: number]: {
-      items: number;
-    };
-  };
-}
-interface OwlCarouselOptions2 {
-  items: number;
-  animateOut: string;
-  loop: boolean;
-  autoplay: true;
-  autoplayTimeout: number;
-  autoplaySpeed: number;
-  slideTransition: string;
-  margin: number;
-}
-interface OwlCarouselOptions3 {
-  items: number,
-  autoplay: boolean,
-  autoplayTimeout: number,
-  autoplaySpeed: number,
-  center: boolean,
-  autoplayHoverPause: boolean,
-  dots: boolean,
-  loop: boolean,
-  margin: number,
-  smartSpeed: number,
-  animateOut: string,
-  animateIn: string,
-  dotsContainer: string,
-  navText: string[],
-  responsive: any
 }
