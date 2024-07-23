@@ -1,0 +1,796 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/global.css?ver=1.46">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/service-devsecops.css?ver=1.22">
+<link rel="icon" href="https://www.profisea.com/wp-content/uploads/2023/11/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.profisea.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.3' type='text/css' media='all' />
+
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+  img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+  /*! This file is auto-generated */
+  .wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em
+  }
+
+  .wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none
+  }
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+  body {
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+  }
+
+  :where(.is-layout-flex) {
+    gap: 0.5em;
+  }
+
+  :where(.is-layout-grid) {
+    gap: 0.5em;
+  }
+
+  body .is-layout-flow > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+  }
+
+  body .is-layout-flow > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+  }
+
+  body .is-layout-flow > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+  }
+
+  body .is-layout-constrained > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+  }
+
+  body .is-layout-constrained > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: var(--wp--style--global--content-size);
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > .alignwide {
+    max-width: var(--wp--style--global--wide-size);
+  }
+
+  body .is-layout-flex {
+    display: flex;
+  }
+
+  body .is-layout-flex {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+    body .is-layout-flex > * {
+      margin: 0;
+    }
+
+  body .is-layout-grid {
+    display: grid;
+  }
+
+    body .is-layout-grid > * {
+      margin: 0;
+    }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  .has-black-color {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-color {
+    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-color {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-color {
+    color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-color {
+    color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-color {
+    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-color {
+    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-color {
+    color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-color {
+    color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-color {
+    color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-color {
+    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-color {
+    color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-background-color {
+    background-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-background-color {
+    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-background-color {
+    background-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-background-color {
+    background-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-background-color {
+    background-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-background-color {
+    background-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-background-color {
+    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-background-color {
+    background-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-border-color {
+    border-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-border-color {
+    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-border-color {
+    border-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-border-color {
+    border-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-border-color {
+    border-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-border-color {
+    border-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-border-color {
+    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-border-color {
+    border-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+    background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+  }
+
+  .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+    background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+  }
+
+  .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+  }
+
+  .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+    background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+  }
+
+  .has-cool-to-warm-spectrum-gradient-background {
+    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+  }
+
+  .has-blush-light-purple-gradient-background {
+    background: var(--wp--preset--gradient--blush-light-purple) !important;
+  }
+
+  .has-blush-bordeaux-gradient-background {
+    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+  }
+
+  .has-luminous-dusk-gradient-background {
+    background: var(--wp--preset--gradient--luminous-dusk) !important;
+  }
+
+  .has-pale-ocean-gradient-background {
+    background: var(--wp--preset--gradient--pale-ocean) !important;
+  }
+
+  .has-electric-grass-gradient-background {
+    background: var(--wp--preset--gradient--electric-grass) !important;
+  }
+
+  .has-midnight-gradient-background {
+    background: var(--wp--preset--gradient--midnight) !important;
+  }
+
+  .has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+  }
+
+  .has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+  }
+
+  .has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+
+  .wp-block-navigation a:where(:not(.wp-element-button)) {
+    color: inherit;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  .wp-block-pullquote {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+</style>
+
+<style id="cky-style-inline">
+  [data-cky-tag] {
+    visibility: hidden;
+  }
+</style>
+
+<style type="text/css" id="wp-custom-css">
+  .grecaptcha-badge {
+    display: none !important
+  }
+</style>
+<style>
+  .quot-message-devsecops {
+    border-radius: 24px;
+    padding: 24px 40px;
+    position: relative;
+    width: calc(100% - 4px);
+    /* height: calc(100% - 4px); */
+    margin: 0 auto 14px;
+    background: #292D3F;
+  }
+
+    .quot-message-devsecops::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      background: linear-gradient(230deg, #1B5CD2, #369DFC);
+      z-index: -1;
+      border-radius: 24px;
+    }
+
+</style>
+
+
+
+<section class="title-page">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-delay="100">DevSecOps as a Service</h1>
+    <div class="title-page-content" data-aos="fade-up" data-aos-delay="200">
+      <p>Don't compromise on security, reliability, and compliance - let Profisea's DevSecOps services team seamlessly integrate them into your software development lifecycle (SDLC).</p>
+    </div>
+    <div class="we-support" data-aos="fade-up" data-aos-delay="200">
+      <p>We support:</p>
+      <img width="64" height="64" src="https://www.profisea.com/wp-content/uploads/2023/12/about-page-aws-min.png" alt=" AWS Logo" title="We Support AWS ">
+      <img width="64" height="64" src="https://www.profisea.com/wp-content/uploads/2023/12/about-page-icon-2-min.png" alt=" Microsoft Azure" title="We Support Microsoft Azure">
+      <img width="64" height="64" src="https://www.profisea.com/wp-content/uploads/2023/12/about-page-icon-3-min.png" alt=" GCP" title="We Support GCP">
+    </div>
+  </div>
+</section>
+<section class="section why-devsecops">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="200">Why Profisea’s DevSecOps</h2>
+    <p data-aos="fade-up" data-aos-delay="200">At Profisea, we guarantee professional benefits that encompass a secure software development lifecycle with huge cost reductions, and more. Here are some of the benefits of using our DevSecOps as a Service:</p>
+    <div class="items-why-devsecops">
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>All security aspects of your delivery pipeline are supervised</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Recovery is accelerated should a security incident occur</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Security, reliability, and compliance are incorporated into the SDLC</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Software delivery speed is increased by addressing potential errors as early as possible</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Automated testing technologies are incorporated into each software delivery stage</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Your company gains a competitive advantage and prevents reputation loss accidents</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Drastically reduce expenses by minimizing vulnerabilities in products, thereby averting security incidents</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 12L11.25 14L15 10" stroke="#2ED47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Enhanced team collaboration that allows each specialist to play a role in keeping applications secure and compliant</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section security border-round-top bg-dark">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="200">DevSecOps: Security as a Shared Responsibility</h2>
+    <p data-aos="fade-up" data-aos-delay="200">At Profisea we believe that security is a shared responsibility throughout the entire IT lifecycle. Our DevSecOps services combine development, security, and operations, ensuring that security is a part of the software development lifecycle from planning to release.</p>
+
+    <div class="quot-message-devsecops">
+      <p>According to the GitLab 2022 Global DevSecOps Survey, over 53% of DevSecOps engineers report that their teams have ‘shifted left’, moving security practices to an earlier stage of the development process:</p>
+    </div>
+
+    <div class="compare">
+      <div class="col-compare increasing">
+        <p class="title" data-aos="fade-up" data-aos-delay="200">Security scanning is increasing...</p>
+        <p data-aos="fade-up" data-aos-delay="200">Across the board, devs report greater usage of scanning...</p>
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">53%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="53%"></div>
+            </div>
+            <p>run Static application security testing (SAST) scans (a dramatic year-on-year jump from less than 40%)</p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">55%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="55%"></div>
+            </div>
+            <p>employ dynamic application security testing (DAST) scans (up 11 points from last year)</p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">~60%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="60%"></div>
+            </div>
+            <p>scan containers today (up 10% from 2021)</p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">56%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="56%"></div>
+            </div>
+            <p>perform dependency scans</p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">61%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="61%"></div>
+            </div>
+            <p>ensure license compliance checks</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-compare lags">
+        <p class="title" data-aos="fade-up" data-aos-delay="200">..but easy access to data is lagging behind</p>
+        <p data-aos="fade-up" data-aos-delay="200">The majority of dev teams still aren't getting scan data in their workflows.</p>
+
+
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">30%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="30%"></div>
+            </div>
+            <p>have SAST lite scanners in a web IDE</p>
+          </div>
+        </div>
+
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">29%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="29%"></div>
+            </div>
+            <p>pull scan results into a web pipeline report for devs</p>
+          </div>
+        </div>
+
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">29%</div>
+          <div class="data">
+            <div class="progress-line">
+              <div class="progress-bar" data-width="29%"></div>
+            </div>
+            <p>make DAST, container and dependency scans easily available to devs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="security-text" data-aos="fade-up" data-aos-delay="200">
+      <p>Profisea&#8217;s DevSecOps experts consistently embed security solutions into existing CI/CD pipelines, incorporating continuous feedback loops and insights throughout the SDLC, from planning and design to coding, building, testing, and release.</p>
+      <p>With our DevSecOps as a Service, your development team will produce safe systems quickly and with the highest reliability.</p>
+    </div>
+  </div>
+</section>
+<section class="section bg-dark seamleas">
+  <div class="container">
+    <div class="image" data-aos="fade-up" data-aos-delay="200">
+      <img width="237" height="237" src="https://www.profisea.com/wp-content/uploads/2023/12/devsecops-image-workflow.png" alt="Profisea’s DevSecOps: Seamless &amp; Secure Workflow Image" title="Profisea’s DevSecOps: Seamless &amp; Secure Workflow">
+    </div>
+    <div class="text" data-aos="fade-up" data-aos-delay="200">
+      <h2>Profisea’s DevSecOps: Seamless &amp; Secure Workflow</h2>
+
+      <img width="237" height="237" class="seamleas-image-mobile" src="https://www.profisea.com/wp-content/uploads/2023/12/devsecops-image-workflow.png" alt="Profisea’s DevSecOps: Seamless &amp; Secure Workflow Image Mobile" title="Profisea’s DevSecOps: Seamless &amp; Secure Workflow">
+
+      <p>Our experts leverage the best DevSecOps practices and technologies to unify software development processes into one seamless and secure workflow. We identify all vulnerabilities in your SDLC, and our experienced professionals provide top DevSecOps automation to unify software development processes into one seamless flow, smoothly integrating security and compliance into each step.</p>
+      <p>With Profisea, you can be sure that your product 100% meets your safety and security safeguards since security requirements, metrics and testing top our list of concerns. We also assist you to successfully implementing a DevSecOps culture within your company to encourage a security-first mindset among your teams.</p>
+    </div>
+  </div>
+</section>
+<section class="section stack border-round-top">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="100">Technology Stack</h2>
+    <p data-aos="fade-up" data-aos-delay="150">Unleash the Power of DevOps Tools with Profisea</p>
+    <a href="https://www.profisea.com/technology-stack/" class="btn-theme btn-blue" data-aos="fade-up" data-aos-delay="150">See All Tools</a>
+  </div>
+</section>
+<section class="section advantages">
+  <div class="container">
+    <div class="advantages-text">
+      <p>At Profisea, we leverage a robust and cutting-edge technology stack to deliver exceptional DevSecOps managed services and solutions. Our technology stack includes:</p>
+    </div>
+    <div class="dflex advantages-items">
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <h3>CI/CD Tools</h3>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1483 16.9023L25.8088 17.0686C25.0649 17.4332 24.1663 17.1256 23.8018 16.3817C23.4373 15.6378 23.7448 14.7392 24.4887 14.3747L28.0183 12.6452C28.7443 12.2895 29.6216 12.5731 30.002 13.2866L31.7416 16.5502C32.1313 17.2812 31.8546 18.1898 31.1235 18.5795C30.3925 18.9692 29.4839 18.6924 29.0942 17.9614L29.0253 17.832C28.8732 18.6879 28.7937 19.5696 28.7937 20.4707C28.7937 21.6798 28.9369 22.8552 29.2073 23.981C28.1709 23.3422 27.0621 22.8095 25.896 22.3983C25.8284 21.765 25.7937 21.1219 25.7937 20.4707C25.7937 19.2499 25.9157 18.0565 26.1483 16.9023ZM35.2055 43.5295C35.2055 42.1711 35.0248 40.8553 34.6861 39.6046C35.7401 40.3174 36.8768 40.917 38.0789 41.3862C38.1625 42.0891 38.2055 42.8043 38.2055 43.5295C38.2055 45.245 37.9647 46.9068 37.5141 48.4817C37.2862 49.2782 36.4558 49.7391 35.6594 49.5112C34.8629 49.2834 34.402 48.453 34.6299 47.6565C35.0044 46.3473 35.2055 44.9632 35.2055 43.5295ZM31.124 9.8053C31.7061 10.3947 32.6559 10.4007 33.2453 9.81855C35.9506 7.14684 39.6637 5.50012 43.7643 5.50012C52.0324 5.50012 58.7349 12.2027 58.7349 20.4707C58.7349 24.0697 57.4665 27.3699 55.3502 29.9524L55.3385 29.6921C55.3012 28.8645 54.6001 28.2239 53.7725 28.2611C52.9449 28.2984 52.3042 28.9995 52.3415 29.8271L52.5079 33.5217C52.5443 34.3293 53.2143 34.9629 54.0227 34.9541L57.953 34.9113C58.7813 34.9022 59.4456 34.2234 59.4365 33.395C59.4275 32.5666 58.7487 31.9024 57.9203 31.9114L57.6205 31.9147C60.1896 28.8072 61.7349 24.8181 61.7349 20.4707C61.7349 10.5458 53.6892 2.50012 43.7643 2.50012C38.843 2.50012 34.3812 4.48035 31.1373 7.68402C30.5478 8.26613 30.5419 9.21586 31.124 9.8053ZM12.9188 27.9189C12.5321 28.629 12.7779 29.5178 13.4744 29.9284L16.6602 31.8066C17.3739 32.2273 18.2935 31.9898 18.7142 31.2762C19.1349 30.5625 18.8974 29.6429 18.1838 29.2222L17.9016 29.0559C18.8091 28.8841 19.7462 28.7941 20.7053 28.7941C24.8946 28.7941 28.6797 30.5128 31.3987 33.2875C31.4566 33.3467 31.5183 33.4 31.583 33.4475C31.7052 33.5603 31.8291 33.6714 31.9544 33.7808C35.1118 36.5356 39.2448 38.2058 43.7641 38.2058C45.4797 38.2058 47.1415 37.965 48.7163 37.5144C49.5128 37.2866 49.9737 36.4562 49.7459 35.6597C49.518 34.8632 48.6876 34.4023 47.8911 34.6302C46.5819 35.0047 45.1978 35.2058 43.7641 35.2058C39.9972 35.2058 36.5585 33.8165 33.9268 31.5203C33.7709 31.3843 33.6179 31.2451 33.4679 31.1029C33.4405 31.0769 33.4123 31.0522 33.3836 31.0287C30.1354 27.7953 25.6528 25.7941 20.7053 25.7941C19.5482 25.7941 18.4156 25.9036 17.3177 26.1132L17.433 25.9015C17.8291 25.1739 17.5604 24.2629 16.8328 23.8668C16.1052 23.4707 15.1943 23.7394 14.7982 24.467L12.9188 27.9189ZM10.0395 31.1244C10.629 31.7065 10.6349 32.6562 10.0528 33.2457C7.3811 35.951 5.73437 39.664 5.73437 43.7647C5.73437 52.0327 12.4369 58.7353 20.705 58.7353C24.2957 58.7353 27.589 57.4727 30.1689 55.3651L29.9625 55.3639C29.1341 55.3594 28.4662 54.6842 28.4708 53.8558C28.4753 53.0274 29.1505 52.3595 29.9789 52.364L33.6772 52.3842C34.4856 52.3886 35.1452 53.033 35.1683 53.8411L35.281 57.77C35.3047 58.5981 34.6527 59.2886 33.8246 59.3124C32.9965 59.3361 32.306 58.6841 32.2822 57.856L32.2725 57.5177C29.1475 60.1485 25.1102 61.7353 20.705 61.7353C10.7801 61.7353 2.73438 53.6896 2.73438 43.7647C2.73438 38.8433 4.7146 34.3816 7.91827 31.1376C8.50039 30.5482 9.45012 30.5423 10.0395 31.1244Z" fill="url(#paint0_linear_279_9480)" />
+            <defs>
+              <linearGradient id="paint0_linear_279_9480" x1="32.2347" y1="2.50012" x2="32.2347" y2="61.7353" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>We utilize popular continuous integration and continuous deployment tools such as Jenkins, GitLab, and CircleCI to automate software delivery pipelines and ensure efficient and reliable deployments.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <h3>Container Management</h3>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 7.5C10.4101 7.5 7.5 10.4101 7.5 14V50C7.5 53.5899 10.4101 56.5 14 56.5H50C53.5899 56.5 56.5 53.5899 56.5 50V32C56.5 31.1716 57.1716 30.5 58 30.5C58.8284 30.5 59.5 31.1716 59.5 32V50C59.5 55.2467 55.2467 59.5 50 59.5H14C8.75329 59.5 4.5 55.2467 4.5 50V14C4.5 8.75329 8.7533 4.5 14 4.5H32C32.8284 4.5 33.5 5.17157 33.5 6C33.5 6.82843 32.8284 7.5 32 7.5H14ZM14.5 19C14.5 16.5147 16.5147 14.5 19 14.5H29C31.4853 14.5 33.5 16.5147 33.5 19V29C33.5 29.6935 33.3431 30.3504 33.0629 30.9371C33.6496 30.6569 34.3065 30.5 35 30.5H45C47.4853 30.5 49.5 32.5147 49.5 35V45C49.5 47.4853 47.4853 49.5 45 49.5H35C33.8475 49.5 32.7961 49.0667 32 48.3542C31.2039 49.0667 30.1525 49.5 29 49.5H19C16.5147 49.5 14.5 47.4853 14.5 45V35C14.5 33.8475 14.9333 32.7961 15.6458 32C14.9333 31.2039 14.5 30.1525 14.5 29V19ZM30.5 45V35C30.5 34.1716 29.8284 33.5 29 33.5H19C18.1716 33.5 17.5 34.1716 17.5 35V45C17.5 45.8284 18.1716 46.5 19 46.5H29C29.8284 46.5 30.5 45.8284 30.5 45ZM33.5 35V45C33.5 45.8284 34.1716 46.5 35 46.5H45C45.8284 46.5 46.5 45.8284 46.5 45V35C46.5 34.1716 45.8284 33.5 45 33.5H35C34.1716 33.5 33.5 34.1716 33.5 35ZM29 30.5H19C18.1716 30.5 17.5 29.8284 17.5 29V19C17.5 18.1716 18.1716 17.5 19 17.5H29C29.8284 17.5 30.5 18.1716 30.5 19V29C30.5 29.8284 29.8284 30.5 29 30.5ZM45 4.5C42.5147 4.5 40.5 6.51472 40.5 9V19C40.5 21.4853 42.5147 23.5 45 23.5H55C57.4853 23.5 59.5 21.4853 59.5 19V9C59.5 6.51472 57.4853 4.5 55 4.5H45ZM43.5 9C43.5 8.17157 44.1716 7.5 45 7.5H55C55.8284 7.5 56.5 8.17157 56.5 9V19C56.5 19.8284 55.8284 20.5 55 20.5H45C44.1716 20.5 43.5 19.8284 43.5 19V9Z" fill="url(#paint0_linear_279_9511)" />
+            <defs>
+              <linearGradient id="paint0_linear_279_9511" x1="32" y1="4.5" x2="32" y2="59.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>We employ containerization technologies like Docker and Kubernetes to package applications and their dependencies, ensuring consistent and secure deployments across different environments.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <h3>Infrastructure  as Code (IaC)</h3>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M37.0816 11.2L25.2227 54.4M15.058 19.84L3.19922 31.936L15.058 44.032M48.9404 19.84L60.7992 31.936L48.9404 44.032" stroke="url(#paint0_linear_279_9518)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="paint0_linear_279_9518" x1="31.9992" y1="11.2" x2="31.9992" y2="54.4" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>We embrace IaC methodologies by using tools such as Terraform and AWS CloudFormation to provision and manage infrastructure resources in a programmatic and reproducible manner, reducing manual errors and ensuring consistency.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <h3>Security Testing Tools</h3>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9461 3.84353C25.4242 3.7452 24.8867 3.7697 24.3759 3.91502C21.9865 4.56896 19.688 5.51838 17.5335 6.74131L17.5335 6.74128L17.5248 6.7463C17.0714 7.00768 16.6821 7.36683 16.385 7.79762C16.0879 8.22841 15.8905 8.72001 15.8073 9.23665L15.8033 9.26304L15.0115 14.8059L14.8067 15.0107L9.26383 15.8025L9.23745 15.8065C8.7208 15.8897 8.2292 16.0871 7.79841 16.3842C7.36762 16.6813 7.00847 17.0706 6.7471 17.524L6.74707 17.524L6.7421 17.5327C5.51917 19.6872 4.56975 21.9857 3.91581 24.3751C3.77049 24.8859 3.74599 25.4234 3.84433 25.9454C3.94296 26.4689 4.16244 26.9621 4.48525 27.3858L7.85274 31.8607V32.1169L4.48399 36.6161C4.16186 37.0394 3.94283 37.532 3.84433 38.0549C3.74599 38.5768 3.77049 39.1144 3.91582 39.6251C4.56976 42.0145 5.51918 44.3131 6.7421 46.4675L6.74207 46.4675L6.7471 46.4762C7.00848 46.9296 7.36763 47.319 7.79841 47.6161C8.2292 47.9132 8.7208 48.1105 9.23745 48.1937L9.26383 48.1977L14.8067 48.9896L15.0115 49.1943L15.8033 54.7372L15.8073 54.7636C15.8905 55.2802 16.0879 55.7718 16.385 56.2026C16.682 56.6334 17.0714 56.9925 17.5248 57.2539L17.5248 57.2539L17.5335 57.2589C19.6878 58.4817 21.9862 59.4311 24.3754 60.0851C24.6718 60.1697 24.9785 60.2132 25.2867 60.2146C26.0449 60.2225 26.7839 59.9766 27.3861 59.5161L31.8588 56.1729H32.143L36.6175 59.5175C37.0407 59.8393 37.5331 60.0582 38.0557 60.1567C38.5775 60.255 39.115 60.2305 39.6257 60.0853C42.0152 59.4313 44.3138 58.4819 46.4683 57.2589L46.4683 57.2589L46.477 57.2539C46.9304 56.9925 47.3198 56.6334 47.6168 56.2026C47.9139 55.7718 48.1113 55.2802 48.1945 54.7636L48.1986 54.7363L48.9895 49.1777L49.0899 49.0793L49.1222 49.0474L49.1821 48.9882L54.7371 48.1978L54.7644 48.1937C55.281 48.1105 55.7726 47.9131 56.2034 47.6161C56.6342 47.319 56.9933 46.9296 57.2547 46.4762L57.2547 46.4762L57.2597 46.4675C58.4827 44.313 59.4321 42.0144 60.086 39.6249C60.2313 39.1142 60.2558 38.5767 60.1575 38.0549C60.0588 37.5313 59.8394 37.0381 59.5165 36.6144L59.5124 36.609L56.1595 32.1534C56.1594 32.0564 56.1584 31.9616 56.1571 31.8726L59.5178 27.3841C59.8399 26.9608 60.059 26.4682 60.1575 25.9454C60.2558 25.4235 60.2313 24.886 60.0861 24.3754C59.4321 21.9858 58.4827 19.6872 57.2597 17.5327L57.2597 17.5327L57.2547 17.524C56.9933 17.0706 56.6342 16.6812 56.2034 16.3842C55.7726 16.0871 55.281 15.8897 54.7644 15.8065L54.738 15.8025L49.1951 15.0107L48.9903 14.8059L48.1985 9.26304L48.1945 9.23665C48.1113 8.72 47.9139 8.2284 47.6168 7.79762C47.3198 7.36683 46.9304 7.00768 46.477 6.7463L46.477 6.74628L46.4683 6.74131C44.3139 5.51839 42.0153 4.56897 39.6259 3.91503C39.1152 3.7697 38.5776 3.7452 38.0557 3.84353C37.533 3.942 37.0406 4.16091 36.6174 4.48284L32.143 7.82731H31.8588L27.3843 4.48274C26.9611 4.16087 26.4687 3.94199 25.9461 3.84353ZM25.1956 6.80088C25.259 6.7826 25.3258 6.77944 25.3907 6.79166C25.4556 6.80388 25.5167 6.83114 25.5691 6.87126L25.5825 6.8814L30.4621 10.5288C30.7214 10.7226 31.0364 10.8273 31.3601 10.8273H32.6417C32.9654 10.8273 33.2804 10.7226 33.5397 10.5288L38.4193 6.8814L38.4327 6.87126C38.4851 6.83115 38.5462 6.80389 38.6111 6.79166C38.676 6.77944 38.7428 6.7826 38.8062 6.80088L38.8262 6.80648C40.9756 7.39405 43.0434 8.24749 44.9815 9.347C45.0473 9.38552 45.1039 9.43802 45.1472 9.50082C45.1895 9.56208 45.2181 9.63165 45.2312 9.70483L46.0912 15.7252C46.1371 16.0465 46.286 16.3442 46.5155 16.5737L47.4273 17.4855C47.6568 17.715 47.9545 17.8639 48.2758 17.9098L54.2962 18.7699C54.3694 18.7829 54.4389 18.8115 54.5002 18.8538C54.563 18.8971 54.6155 18.9536 54.654 19.0194C55.7535 20.9576 56.607 23.0254 57.1945 25.1748L57.2001 25.1948C57.2184 25.2582 57.2216 25.325 57.2093 25.3899C57.1971 25.4548 57.1699 25.5159 57.1297 25.5683L57.1203 25.5807L53.4483 30.485C53.2541 30.7444 53.1491 31.0599 53.1491 31.384C53.1491 31.5535 53.1523 31.7029 53.1553 31.8434C53.1606 32.0883 53.1653 32.3063 53.1514 32.5577C53.1317 32.911 53.2377 33.26 53.4505 33.5428L57.1225 38.4224L57.1225 38.4224L57.1297 38.4319C57.1699 38.4843 57.1971 38.5454 57.2093 38.6103C57.2216 38.6752 57.2184 38.742 57.2001 38.8054L57.1945 38.8254C56.607 40.9748 55.7535 43.0426 54.654 44.9808C54.6155 45.0466 54.563 45.1031 54.5002 45.1464C54.439 45.1886 54.3695 45.2172 54.2964 45.2303L48.252 46.0903C47.9062 46.1395 47.5884 46.3079 47.3534 46.5663C47.2179 46.7154 47.066 46.863 46.8833 47.0406L46.8832 47.0407L46.8832 47.0407L46.8831 47.0408L46.883 47.0408L46.8829 47.0409L46.8829 47.041C46.7727 47.1481 46.6512 47.2661 46.5155 47.4019C46.2858 47.6316 46.1368 47.9296 46.0911 48.2512L45.2311 54.2956C45.218 54.3687 45.1894 54.4382 45.1472 54.4994C45.1039 54.5622 45.0473 54.6147 44.9816 54.6532C43.0434 55.7527 40.9756 56.6062 38.8262 57.1937L38.8062 57.1993C38.7428 57.2176 38.676 57.2208 38.6111 57.2085C38.5462 57.1963 38.4851 57.1691 38.4327 57.129L38.4193 57.1188L33.5397 53.4715C33.2804 53.2776 32.9654 53.1729 32.6417 53.1729H31.3601C31.0364 53.1729 30.7214 53.2776 30.4621 53.4715L25.5825 57.1188L25.565 57.1321C25.4941 57.1868 25.4067 57.2159 25.3172 57.2147L25.3005 57.2146C25.2655 57.2145 25.2309 57.2096 25.1974 57.1999L25.1756 57.1937C23.0261 56.6062 20.9584 55.7527 19.0202 54.6532C18.9544 54.6147 18.8979 54.5622 18.8546 54.4994C18.8123 54.4381 18.7837 54.3686 18.7706 54.2954L17.9106 48.275C17.8647 47.9538 17.7158 47.656 17.4863 47.4265L16.5745 46.5147C16.345 46.2852 16.0473 46.1363 15.726 46.0904L9.70562 45.2304C9.63244 45.2173 9.56287 45.1887 9.50161 45.1464C9.43881 45.1031 9.38631 45.0465 9.3478 44.9807C8.24828 43.0426 7.39485 40.9748 6.80727 38.8254L6.80168 38.8054C6.78339 38.742 6.78023 38.6752 6.79246 38.6103C6.80468 38.5454 6.83194 38.4843 6.87205 38.4319L6.88146 38.4195L10.5535 33.5153C10.7477 33.2558 10.8527 32.9404 10.8527 32.6162V31.3594C10.8527 31.034 10.7469 30.7174 10.5513 30.4574L6.87928 25.5778L6.87932 25.5778L6.87205 25.5683C6.83194 25.5159 6.80468 25.4548 6.79246 25.3899C6.78023 25.325 6.78339 25.2582 6.80168 25.1948L6.80727 25.1748C7.39485 23.0254 8.24829 20.9576 9.34782 19.0194C9.38633 18.9536 9.43883 18.8971 9.50161 18.8538C9.56287 18.8116 9.63244 18.7829 9.70563 18.7699L15.726 17.9098C16.0473 17.8639 16.345 17.715 16.5745 17.4855L17.4863 16.5737C17.7158 16.3442 17.8647 16.0465 17.9106 15.7252L18.7706 9.70484C18.7837 9.63165 18.8123 9.56208 18.8546 9.50082C18.8979 9.43803 18.9544 9.38554 19.0202 9.34702C20.9584 8.2475 23.0262 7.39406 25.1756 6.80648L25.1956 6.80088ZM32.0017 23.7083C29.7626 23.7083 27.3715 25.5151 27.3715 28.1V29.035C27.1327 29.1767 26.9228 29.3484 26.7485 29.5297C26.3013 29.9948 25.9408 30.6735 25.9408 31.448V35.788C25.9408 36.5761 26.2625 37.282 26.7247 37.7893C27.1775 38.2865 27.8614 38.6917 28.6632 38.6917H35.2209C36.0252 38.6917 36.7269 38.3364 37.2154 37.8551C37.6976 37.38 38.0625 36.6912 38.0625 35.912V31.572C38.0625 30.7839 37.7408 30.078 37.2786 29.5707C37.0976 29.3719 36.8795 29.1878 36.6318 29.0384V28.1C36.6318 25.5151 34.2407 23.7083 32.0017 23.7083ZM34.0484 28.1V28.6683H29.9549V28.1C29.9549 27.2129 30.9022 26.2917 32.0017 26.2917C33.1011 26.2917 34.0484 27.2129 34.0484 28.1ZM28.5241 35.788V31.4569C28.5252 31.4527 28.5278 31.4438 28.5338 31.4304C28.548 31.3988 28.5737 31.3586 28.6106 31.3203C28.6456 31.2839 28.6782 31.2621 28.6983 31.2517H35.3C35.3156 31.2611 35.3407 31.2794 35.3689 31.3103C35.4433 31.392 35.4792 31.4921 35.4792 31.572V35.9016C35.4782 35.905 35.4761 35.9109 35.4723 35.9192C35.4607 35.9446 35.438 35.9797 35.4023 36.0149C35.3245 36.0916 35.2512 36.1083 35.2209 36.1083H28.7033C28.6877 36.0989 28.6626 36.0806 28.6344 36.0497C28.56 35.968 28.5241 35.8679 28.5241 35.788ZM18.5865 21.7036C20.3939 19.3487 22.7893 17.5111 25.532 16.3754C28.2747 15.2397 31.268 14.846 34.211 15.2338C35.8608 15.4512 37.4622 15.9098 38.9659 16.5893L38.7202 15.6826C38.5035 14.883 38.976 14.0591 39.7756 13.8424C40.5752 13.6258 41.3991 14.0983 41.6158 14.8979L42.812 19.3123C42.9584 19.7658 42.8869 20.2812 42.5748 20.6878C42.3514 20.9788 42.0423 21.1653 41.7102 21.2389L37.3233 22.4892C36.5266 22.7163 35.6966 22.2545 35.4696 21.4578C35.2425 20.6611 35.7043 19.8312 36.501 19.6041L37.6357 19.2807C36.4263 18.7451 35.1416 18.3823 33.8191 18.2081C31.3981 17.8891 28.9358 18.2129 26.6797 19.1472C24.4236 20.0814 22.4531 21.593 20.9664 23.5301C19.4796 25.4673 18.5289 27.7616 18.2099 30.1826C18.1017 31.0039 17.3482 31.582 16.5268 31.4738C15.7055 31.3656 15.1274 30.612 15.2356 29.7907C15.6234 26.8476 16.7791 24.0585 18.5865 21.7036ZM38.47 47.6244C41.2127 46.4887 43.6081 44.651 45.4155 42.2962C47.2228 39.9413 48.3785 37.1521 48.7663 34.2091C48.8745 33.3877 48.2965 32.6342 47.4751 32.526C46.6538 32.4177 45.9002 32.9958 45.792 33.8171C45.473 36.2381 44.5224 38.5325 43.0356 40.4696C41.5488 42.4067 39.5784 43.9184 37.3222 44.8526C35.0661 45.7868 32.6038 46.1107 30.1828 45.7917C28.8604 45.6174 27.5757 45.2547 26.3664 44.7191L27.501 44.3957C28.2977 44.1686 28.7595 43.3387 28.5324 42.542C28.3053 41.7453 27.4754 41.2835 26.6787 41.5106L22.2928 42.7606C21.9602 42.8341 21.6507 43.0206 21.4272 43.3119C21.2545 43.5368 21.1555 43.795 21.1263 44.0576C21.1055 44.2405 21.1183 44.4303 21.1694 44.6187L22.3842 49.1019C22.6009 49.9015 23.4248 50.374 24.2244 50.1573C25.024 49.9406 25.4965 49.1168 25.2798 48.3172L25.0338 47.4094C26.5381 48.0895 28.1403 48.5485 29.7909 48.766C32.734 49.1538 35.7273 48.7601 38.47 47.6244Z" fill="url(#paint0_linear_279_9797)" />
+            <defs>
+              <linearGradient id="paint0_linear_279_9797" x1="32.0009" y1="3.78436" x2="32.0009" y2="60.2159" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>We leverage a range of security testing tools, including static application security testing (SAST), dynamic application security testing (DAST), and interactive application security testing (IAST), to identify vulnerabilities and security weaknesses in your applications.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <h3>Monitoring &amp; Incident Response</h3>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M42.7907 7.60409C42.5649 7.00796 41.987 6.61963 41.3498 6.63583C40.7125 6.65204 40.1551 7.06923 39.9599 7.67607L31.2629 34.7159L27.0574 26.7939C26.7971 26.3037 26.2875 25.9972 25.7325 25.9972H13.991C13.1626 25.9972 12.491 26.6688 12.491 27.4972C12.491 28.3257 13.1626 28.9972 13.991 28.9972H24.8305L30.2785 39.2596C30.5612 39.7921 31.1353 40.1036 31.7359 40.0504C32.3364 39.9971 32.8467 39.5895 33.0313 39.0155L41.5033 12.6754L44.7884 21.3495C45.0092 21.9326 45.5677 22.3183 46.1912 22.3183H60.2453C61.0737 22.3183 61.7453 21.6467 61.7453 20.8183C61.7453 19.9898 61.0737 19.3183 60.2453 19.3183H47.2271L42.7907 7.60409ZM3.83398 31.5828C3.83398 19.8601 13.3367 10.3574 25.0593 10.3574C27.7959 10.3574 30.4149 10.876 32.821 11.8217C33.592 12.1248 33.9713 12.9955 33.6683 13.7665C33.3652 14.5375 32.4945 14.9168 31.7235 14.6138C29.6614 13.8033 27.4142 13.3574 25.0593 13.3574C14.9936 13.3574 6.83398 21.517 6.83398 31.5828C6.83398 41.6485 14.9936 49.8081 25.0593 49.8081C35.1251 49.8081 43.2847 41.6485 43.2847 31.5828C43.2847 30.4912 43.1889 29.4233 43.0056 28.3867C42.8614 27.5709 43.4058 26.7927 44.2216 26.6484C45.0374 26.5042 45.8156 27.0486 45.9598 27.8644C46.1734 29.0727 46.2847 30.3154 46.2847 31.5828C46.2847 36.9042 44.3264 41.7683 41.0912 45.4936L50.1465 54.5489C50.7323 55.1347 50.7323 56.0844 50.1465 56.6702C49.5608 57.256 48.611 57.256 48.0252 56.6702L38.9699 47.6149C35.2446 50.8499 30.3807 52.8081 25.0593 52.8081C13.3367 52.8081 3.83398 43.3054 3.83398 31.5828Z" fill="url(#paint0_linear_279_9712)" />
+            <defs>
+              <linearGradient id="paint0_linear_279_9712" x1="32.7896" y1="6.63535" x2="32.7896" y2="57.1095" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>We implement robust security monitoring and incident response solutions, utilizing tools such as SIEM (Security Information and Event Management) platforms and intrusion detection systems (IDS), to detect and respond to security incidents promptly.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <h3>Cloud Security</h3>
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.526 3.92891C32.1865 3.80157 31.8122 3.80157 31.4727 3.92891L10.1393 11.9289C9.55388 12.1485 9.16602 12.7081 9.16602 13.3334V29.5997V29.6001C9.16423 36.6752 11.2779 43.1271 15.4847 48.9141C19.6979 54.7098 25.0884 58.4734 31.6331 60.1213C31.8734 60.1818 32.125 60.1819 32.3653 60.1214C38.9085 58.4753 44.2981 54.7124 48.5113 48.9167C52.7182 43.1297 54.8327 36.6769 54.8327 29.6001V13.3334C54.8327 12.7081 54.4448 12.1485 53.8594 11.9289L32.526 3.92891ZM12.166 29.6001V14.3729L31.9993 6.93541L51.8327 14.3729V29.6001C51.8327 36.0344 49.9241 41.8713 46.0847 47.1527C42.3325 52.3143 37.6446 55.6096 31.9995 57.1171C26.3524 55.6079 21.6635 52.3116 17.9113 47.1501C14.072 41.8687 12.1643 36.0328 12.166 29.6005L12.166 29.6001ZM31.9992 19.3C28.5375 19.3 24.8992 22.1021 24.8992 26V27.9677C24.4218 28.194 24.0036 28.5113 23.668 28.8603C23.0102 29.5444 22.4992 30.5246 22.4992 31.616V38.896C22.4992 40.0352 22.9652 41.0629 23.6403 41.8041C24.3047 42.5335 25.2834 43.1 26.3992 43.1H37.3992C38.5487 43.1 39.5635 42.5915 40.277 41.8885C40.9831 41.1928 41.4992 40.2009 41.4992 39.104V31.824C41.4992 30.6848 41.0333 29.6571 40.3581 28.9159C40.0144 28.5386 39.5866 28.2049 39.0992 27.9706V26C39.0992 22.1021 35.4609 19.3 31.9992 19.3ZM36.0992 26V27.62H27.8992V26C27.8992 24.0739 29.8609 22.3 31.9992 22.3C34.1375 22.3 36.0992 24.0739 36.0992 26ZM25.4992 31.616C25.4992 31.4594 25.5882 31.1916 25.8305 30.9397C26.0763 30.684 26.3082 30.62 26.3992 30.62H37.5992C37.6834 30.62 37.9047 30.6775 38.1403 30.9361C38.3652 31.1829 38.4992 31.5072 38.4992 31.824V39.104C38.4992 39.2551 38.4154 39.5112 38.1715 39.7515C37.9349 39.9846 37.6498 40.1 37.3992 40.1H26.3992C26.315 40.1 26.0938 40.0426 25.8581 39.7839C25.6333 39.5371 25.4992 39.2128 25.4992 38.896V31.616Z" fill="url(#paint0_linear_279_9781)" />
+            <defs>
+              <linearGradient id="paint0_linear_279_9781" x1="31.9993" y1="3.8334" x2="31.9993" y2="60.1667" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>Our expertise in the cloud security frameworks and services provided by major cloud providers such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP), ensure secure and compliant cloud environments for your applications.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="cta-white">
+  <h2 data-aos="fade-up" data-aos-delay="200">Let's Get Started</h2>
+  <p data-aos="fade-up" data-aos-delay="250">If you’re ready to succeed, we are ready to help!</p>
+
+  <div class="btn-lets-get-started" data-aos="fade-up" data-aos-delay="200">
+    <div data-aos="fade-up" data-aos-delay="250">
+      <a href="#modalForm" class="btn-theme btn-blue link-modal" data-aos="fade-up" data-aos-delay="300">Discuss your project</a>
+    </div>
+  </div>
+
+  <div class="lines-cta-white" data-aos="fade-up" data-aos-delay="400" id="ctaWave">
+
+  </div>
+</section>
+
+<div class="section bg-dark-footer border-round-top our-cases">
+  <div class="container">
+    <h2 class="white" data-aos="fade-up" data-aos-delay="200">Our Case Studies</h2>
+
+    <div class="dflex wrapper-cases">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/12/playstream-logo-white.png" alt="Client 1 Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Profisea">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Profisea">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/playstream-redefining-live-streaming-engagement-through-aws-cloud-migration-with-profisea/">Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Profisea</a></h3>
+        <p>Playstream is an innovative Israeli company that aims to enrich the interaction between viewers and streamers, creating a more captivating and enjoyable live-streaming experience.</p>
+        <a href="https://www.profisea.com/case-studies/playstream-redefining-live-streaming-engagement-through-aws-cloud-migration-with-profisea/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/10/StructShare-logo-white.png" alt="Client 1 Boosting Cloud Efficiency: How StructShare Partnership with Profisea Results in Best-in-Class AWS Cloud Infrastructure">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Boosting Cloud Efficiency: How StructShare Partnership with Profisea Results in Best-in-Class AWS Cloud Infrastructure">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/boosting-cloud-efficiency-how-structshare-partnership-with-profisea-results-in-best-in-class-aws-cloud-infrastructure/">Boosting Cloud Efficiency: How StructShare Partnership with Profisea Results in Best-in-Class AWS Cloud Infrastructure</a></h3>
+        <p>By utilizing AWS services improved application and database workload scalability and reliability for StructShare going forward. </p>
+        <a href="https://www.profisea.com/case-studies/boosting-cloud-efficiency-how-structshare-partnership-with-profisea-results-in-best-in-class-aws-cloud-infrastructure/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/05/INX-logo-color-1.png" alt="Client 1 Scalable, Resilient, and Secure: INX&#8217;s Cloud Journey with AWS and Profisea">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Scalable, Resilient, and Secure: INX&#8217;s Cloud Journey with AWS and Profisea">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/scalable-resilient-and-secure-inxs-cloud-journey-with-aws-and-profisea/">Scalable, Resilient, and Secure: INX&#8217;s Cloud Journey with AWS and Profisea</a></h3>
+        <p>In collaboration with Profisea, INX witnessed a notable reduction in time to market and maintained the stability of their trading environment, with an impressive uptime of 99.99%. </p>
+        <a href="https://www.profisea.com/case-studies/scalable-resilient-and-secure-inxs-cloud-journey-with-aws-and-profisea/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+    </div>
+  </div>
+</div>

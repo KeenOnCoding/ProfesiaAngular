@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DevopsComponent } from './components/pages/devops/devops.component';
 import { CloudMigrationComponent } from './components/pages/cloud-migration/cloud-migration.component';
+import { WellArchitectedComponent } from './components/pages/well-architected/well-architected.component';
+import { DevsecopsComponent } from './components/pages/devsecops/devsecops.component';
+import { FinopsComponent } from './components/pages/finops/finops.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { CloudMigrationComponent } from './components/pages/cloud-migration/clou
     HeaderComponent,
     FooterComponent,
     DevopsComponent,
-    CloudMigrationComponent
+    CloudMigrationComponent,
+    WellArchitectedComponent,
+    DevsecopsComponent,
+    FinopsComponent
   ],
   exports: [
     HeaderComponent,
