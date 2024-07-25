@@ -8,6 +8,10 @@ import { FinopsComponent } from './components/pages/finops/finops.component';
 import { DevsecopsComponent } from './components/pages/devsecops/devsecops.component';
 import { CaseStudiesComponent } from './components/pages/case-studies/case-studies.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
+import { AwsPartnershipComponent } from './components/pages/aws-partnership/aws-partnership.component';
+import { TechnologyStackComponent } from './components/pages/technology-stack/technology-stack.component';
+import { CareersComponent } from './components/pages/careers/careers.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 const routes: Routes = [
   {
@@ -42,6 +46,22 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'aws-partnership',
+    component: AwsPartnershipComponent
+  },
+  {
+    path: 'technology-stack',
+    component: TechnologyStackComponent
+  },
+  {
+    path: 'careers',
+    component: CareersComponent
   },
 ];
 
