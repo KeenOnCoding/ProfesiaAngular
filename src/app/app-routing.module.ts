@@ -7,6 +7,7 @@ import { WellArchitectedComponent } from './components/pages/well-architected/we
 import { FinopsComponent } from './components/pages/finops/finops.component';
 import { DevsecopsComponent } from './components/pages/devsecops/devsecops.component';
 import { CaseStudiesComponent } from './components/pages/case-studies/case-studies.component';
+import { BlogComponent } from './components/pages/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'case-studies',
     component: CaseStudiesComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
   },
 ];
 

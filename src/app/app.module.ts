@@ -13,6 +13,7 @@ import { WellArchitectedComponent } from './components/pages/well-architected/we
 import { DevsecopsComponent } from './components/pages/devsecops/devsecops.component';
 import { FinopsComponent } from './components/pages/finops/finops.component';
 import { CaseStudiesComponent } from './components/pages/case-studies/case-studies.component';
+import { BlogComponent } from './components/pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CaseStudiesComponent } from './components/pages/case-studies/case-studi
     WellArchitectedComponent,
     DevsecopsComponent,
     FinopsComponent,
-    CaseStudiesComponent
+    CaseStudiesComponent,
+    BlogComponent
   ],
   exports: [
     HeaderComponent,
