@@ -1,1 +1,652 @@
-<p>aws-partnership works!</p>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+  img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+  /*! This file is auto-generated */
+  .wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em
+  }
+
+  .wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none
+  }
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+  body {
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+  }
+
+  :where(.is-layout-flex) {
+    gap: 0.5em;
+  }
+
+  :where(.is-layout-grid) {
+    gap: 0.5em;
+  }
+
+  body .is-layout-flow > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+  }
+
+  body .is-layout-flow > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+  }
+
+  body .is-layout-flow > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+  }
+
+  body .is-layout-constrained > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+  }
+
+  body .is-layout-constrained > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: var(--wp--style--global--content-size);
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > .alignwide {
+    max-width: var(--wp--style--global--wide-size);
+  }
+
+  body .is-layout-flex {
+    display: flex;
+  }
+
+  body .is-layout-flex {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+    body .is-layout-flex > * {
+      margin: 0;
+    }
+
+  body .is-layout-grid {
+    display: grid;
+  }
+
+    body .is-layout-grid > * {
+      margin: 0;
+    }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  .has-black-color {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-color {
+    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-color {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-color {
+    color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-color {
+    color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-color {
+    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-color {
+    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-color {
+    color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-color {
+    color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-color {
+    color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-color {
+    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-color {
+    color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-background-color {
+    background-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-background-color {
+    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-background-color {
+    background-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-background-color {
+    background-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-background-color {
+    background-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-background-color {
+    background-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-background-color {
+    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-background-color {
+    background-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-border-color {
+    border-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-border-color {
+    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-border-color {
+    border-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-border-color {
+    border-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-border-color {
+    border-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-border-color {
+    border-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-border-color {
+    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-border-color {
+    border-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+    background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+  }
+
+  .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+    background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+  }
+
+  .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+  }
+
+  .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+    background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+  }
+
+  .has-cool-to-warm-spectrum-gradient-background {
+    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+  }
+
+  .has-blush-light-purple-gradient-background {
+    background: var(--wp--preset--gradient--blush-light-purple) !important;
+  }
+
+  .has-blush-bordeaux-gradient-background {
+    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+  }
+
+  .has-luminous-dusk-gradient-background {
+    background: var(--wp--preset--gradient--luminous-dusk) !important;
+  }
+
+  .has-pale-ocean-gradient-background {
+    background: var(--wp--preset--gradient--pale-ocean) !important;
+  }
+
+  .has-electric-grass-gradient-background {
+    background: var(--wp--preset--gradient--electric-grass) !important;
+  }
+
+  .has-midnight-gradient-background {
+    background: var(--wp--preset--gradient--midnight) !important;
+  }
+
+  .has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+  }
+
+  .has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+  }
+
+  .has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+
+  .wp-block-navigation a:where(:not(.wp-element-button)) {
+    color: inherit;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  .wp-block-pullquote {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+</style>
+<style id="cky-style-inline">
+  [data-cky-tag] {
+    visibility: hidden;
+  }
+</style>
+<link rel="icon" href="https://www.profisea.com/wp-content/uploads/2023/11/cropped-favicon-32x32.png" sizes="32x32" />
+<style type="text/css" id="wp-custom-css">
+  .grecaptcha-badge {
+    display: none !important
+  }
+</style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/global.css?ver=1.46">
+
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/tpl-aws-partnership.css?ver=1.10">
+
+<section class="title-page">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-delay="100">A Trusted AWS Partner</h1>
+  </div>
+</section>
+
+<section class="section reliable">
+  <div class="container">
+    <div class="image" data-aos="fade-up" data-aos-delay="100">
+      <img width="443" height="308" src="https://www.profisea.com/wp-content/uploads/2023/12/image-well-architected.jpeg" alt="We Are a Reliable Amazon Web Services Partner" title="We Are a Reliable Amazon Web Services Partner Image">
+    </div>
+    <div class="text" data-aos="fade-up" data-aos-delay="200">
+      <h2>We Are a Reliable Amazon Web Services Partner</h2>
+      <p>Our team of DevOps and cloud experts can help your enterprise or tech company develop new cloud solutions, migrate existing systems, and apply best practices to streamline workflows. From cloud strategy development to maintenance, we offer a full range of services that include technical assessment, infrastructure setup, security, AWS Well-Architected reviews, and more.</p>
+    </div>
+    <div class="image-mobile" data-aos="fade-up" data-aos-delay="200">
+      <img width="" height="" src="https://www.profisea.com/wp-content/uploads/2023/12/aws-partnership-image-mobile.jpeg" alt="We Are a Reliable Amazon Web Services Partner - Image Mobile" title="Image We Are a Reliable Amazon Web Services Partner">
+    </div>
+  </div>
+</section>
+
+<section class="section border-round-top why-aws">
+  <div class="container">
+    <h2>Why AWS?</h2>
+    <div class="items-benefits">
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>Scalability</p>
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4329 7.32615C27.4343 8.15457 26.7639 8.8273 25.9355 8.82873C21.7197 8.83601 18.65 8.89447 16.2934 9.2761C13.9807 9.65062 12.5207 10.3128 11.4178 11.4157L11.4172 11.4163C10.1211 12.7108 9.38987 14.9945 9.06484 18.2976C8.98371 19.1221 8.2496 19.7246 7.42515 19.6435C6.60071 19.5624 5.99813 18.8283 6.07925 18.0038C6.41566 14.5851 7.21537 11.3734 9.29651 9.29433L27.4329 7.32615ZM25.9303 5.82874C26.7587 5.82731 27.4314 6.49772 27.4329 7.32615L9.29716 9.29368C10.9993 7.59189 13.1359 6.74834 15.8138 6.31468C18.4483 5.88806 21.7639 5.83593 25.9303 5.82874ZM7.32886 26.4999C8.15729 26.4999 8.82886 27.1715 8.82886 27.9999C8.82886 32.9135 8.83205 36.448 9.19401 39.1391C9.55016 41.787 10.2287 43.393 11.4178 44.5821C12.6057 45.77 14.211 46.4481 16.8591 46.8041C19.5503 47.1658 23.0854 47.169 28 47.169C32.9146 47.169 36.4497 47.1658 39.1412 46.8041C41.7895 46.4481 43.3955 45.7699 44.5846 44.5817C45.687 43.4791 46.3487 42.0193 46.723 39.7064C47.1044 37.3493 47.1628 34.279 47.1711 30.062C47.1728 29.2336 47.8457 28.5633 48.6741 28.565C49.5025 28.5666 50.1728 29.2395 50.1711 30.0679C50.1629 34.2351 50.1108 37.5512 49.6845 40.1856C49.251 42.864 48.4079 45.001 46.7055 46.7034L46.7052 46.7038C44.8659 48.5418 42.5217 49.3767 39.5408 49.7773C36.6264 50.169 32.8898 50.169 28.1152 50.169H28.1151H28.115H28H27.885H27.8848H27.8848C23.1102 50.169 19.3736 50.169 16.4595 49.7773C13.4789 49.3767 11.1349 48.5417 9.29652 46.7034C7.4573 44.8642 6.62171 42.5198 6.22079 39.539C5.82881 36.6248 5.82883 32.8886 5.82886 28.1149V27.9999C5.82886 27.1715 6.50043 26.4999 7.32886 26.4999ZM36.1245 7.32874C36.1245 8.15716 36.7961 8.82874 37.6245 8.82874H45.0498L29.5 24.3786V19.7314C29.5 18.903 28.8284 18.2314 28 18.2314C27.1716 18.2314 26.5 18.903 26.5 19.7314V27.9999C26.5 28.8283 27.1716 29.4999 28 29.4999H36.2685C37.0969 29.4999 37.7685 28.8283 37.7685 27.9999C37.7685 27.1714 37.0969 26.4999 36.2685 26.4999H31.6213L47.1712 10.9501V18.3754C47.1712 19.2038 47.8427 19.8754 48.6712 19.8754C49.4996 19.8754 50.1712 19.2038 50.1712 18.3754V7.32874C50.1712 6.50031 49.4996 5.82874 48.6712 5.82874H37.6245C36.7961 5.82874 36.1245 6.50031 36.1245 7.32874Z" fill="url(#paint0_linear_270_6422)" />
+            <defs>
+              <linearGradient id="paint0_linear_270_6422" x1="28" y1="5.82874" x2="28" y2="50.169" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>To meet changing demand for their services, companies now favor cloud-based infrastructure to avoid investment in additional equipment.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>Reduced costs</p>
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 28.0002C7.5 16.9226 16.4802 7.94238 27.5578 7.94238C36.4636 7.94238 44.0138 13.7465 46.632 21.7784C47.3064 21.4303 48.0602 21.2438 48.8332 21.2438C49.1021 21.2438 49.3686 21.2663 49.6302 21.3104C46.7632 11.8383 37.9658 4.94238 27.5578 4.94238C14.8233 4.94238 4.5 15.2657 4.5 28.0002C4.5 40.7347 14.8233 51.058 27.5578 51.058C32.4051 51.058 36.903 49.5623 40.6152 47.0072C39.882 46.2632 39.4154 45.3046 39.2771 44.2801C35.9804 46.6574 31.9327 48.058 27.5578 48.058C16.4802 48.058 7.5 39.0779 7.5 28.0002ZM52.8627 41.973C52.6756 42.0505 52.5057 42.1641 52.3625 42.3072L50.373 44.2998V26.4592C50.373 26.0508 50.2108 25.6591 49.922 25.3703C49.6332 25.0815 49.2416 24.9193 48.8332 24.9193C48.4248 24.9193 48.0331 25.0815 47.7443 25.3703C47.4556 25.6591 47.2933 26.0508 47.2933 26.4592V44.2998L45.3038 42.3072C45.0147 42.0181 44.6225 41.8557 44.2136 41.8557C43.8047 41.8557 43.4126 42.0181 43.1234 42.3072C42.8343 42.5964 42.6718 42.9885 42.6718 43.3974C42.6718 43.8064 42.8343 44.1985 43.1234 44.4877L47.743 49.1072C47.886 49.2506 48.0559 49.3644 48.243 49.442C48.4301 49.5196 48.6306 49.5596 48.8332 49.5596C49.0357 49.5596 49.2363 49.5196 49.4233 49.442C49.6104 49.3644 49.7803 49.2506 49.9234 49.1072L54.5429 44.4877C54.6861 44.3445 54.7996 44.1745 54.8771 43.9875C54.9546 43.8004 54.9945 43.5999 54.9945 43.3974C54.9945 43.195 54.9546 42.9945 54.8771 42.8074C54.7996 42.6204 54.6861 42.4504 54.5429 42.3072C54.3997 42.1641 54.2298 42.0505 54.0427 41.973C53.8557 41.8955 53.6552 41.8557 53.4527 41.8557C53.2502 41.8557 53.0497 41.8955 52.8627 41.973ZM28.7375 42.5552C29.2897 42.5552 29.7374 42.1075 29.7374 41.5552V38.6722C33.9789 38.2241 36.5178 35.9242 36.5178 32.4892C36.5178 28.7555 33.5906 26.6049 29.1699 26.2166L27.3479 26.0374C24.9583 25.8283 23.8532 24.5141 23.8532 22.9608C23.8532 21.1388 25.4064 19.7947 28.0648 19.7947C30.4932 19.7947 31.8115 21.0898 32.1903 22.6568C32.32 23.1936 32.7539 23.6478 33.3062 23.6478H34.562C35.1143 23.6478 35.5694 23.1983 35.507 22.6496C35.1447 19.4627 33.01 17.4483 29.618 16.9869V15C29.618 14.4477 29.1703 14 28.618 14H27.6012C27.0489 14 26.6012 14.4477 26.6012 15V16.9869C22.8675 17.4051 20.5675 19.5259 20.5675 22.9608C20.5675 26.7244 23.1064 28.7257 27.0492 29.0841L28.8712 29.2334C31.7387 29.5023 33.2023 30.7269 33.2023 32.4892C33.2023 34.3112 31.5595 35.8346 28.2738 35.8346C25.1726 35.8346 23.7612 34.3715 23.372 32.7632C23.2421 32.2264 22.8081 31.7723 22.2558 31.7723H21C20.4477 31.7723 19.9926 32.222 20.0553 32.7708C20.4317 36.0617 22.7212 38.207 26.7206 38.6423V41.5552C26.7206 42.1075 27.1684 42.5552 27.7206 42.5552H28.7375Z" fill="url(#paint0_linear_269_6377)" />
+            <defs>
+              <linearGradient id="paint0_linear_269_6377" x1="29.7472" y1="4.94238" x2="29.7472" y2="51.058" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>Cloud infrastructure enables businesses to transit their IT spend from capital costs to operating expenditures, saving heavy outlays.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>Market agility &amp; speed</p>
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.0607 5.72729C29.6465 5.1415 29.6465 4.19175 29.0607 3.60597C28.4749 3.02018 27.5251 3.02018 26.9393 3.60597L21.106 9.4393C20.5202 10.0251 20.5202 10.9748 21.106 11.5606L26.9393 17.394C27.5251 17.9797 28.4749 17.9797 29.0607 17.394C29.6465 16.8082 29.6465 15.8584 29.0607 15.2726L25.3084 11.5204C28.5581 11.6848 31.6965 12.8376 34.2924 14.8466C37.3683 17.227 39.4718 20.6464 40.2096 24.4653C40.9473 28.2841 40.2687 32.2409 38.3007 35.5958C36.3327 38.9506 33.21 41.4737 29.5167 42.6932C27.8883 43.2309 26.1982 43.4989 24.5106 43.5H24.4898C22.3566 43.4986 20.2279 43.0707 18.2335 42.2218C14.6548 40.6985 11.7535 37.9237 10.0721 34.4164C8.39082 30.9091 8.04463 26.9095 9.09831 23.1655C10.152 19.4215 12.5334 16.1895 15.7972 14.0739C16.4923 13.6233 16.6906 12.6945 16.24 11.9993C15.7894 11.3041 14.8605 11.1059 14.1654 11.5565C10.2896 14.0687 7.46174 17.9068 6.21049 22.3528C4.95925 26.7988 5.37035 31.5484 7.36692 35.7133C8.90276 38.9171 11.2959 41.6061 14.253 43.5L3 43.5C2.17157 43.5 1.5 44.1716 1.5 45C1.5 45.8284 2.17157 46.5 3 46.5L24.4883 46.5H24.5121H25C25.0666 46.5 25.1322 46.4957 25.1965 46.4872C26.9723 46.4221 28.7436 46.1078 30.4573 45.5419C34.8431 44.0937 38.5513 41.0976 40.8883 37.1137C43.2253 33.1299 44.0311 28.4312 43.1551 23.8963C42.2791 19.3614 39.7812 15.3009 36.1285 12.4741C33.2463 10.2435 29.8008 8.9017 26.2108 8.57713L29.0607 5.72729ZM44.4394 37.4393C45.0251 36.8536 45.9749 36.8536 46.5607 37.4393L52.394 43.2727C52.6753 43.554 52.8333 43.9355 52.8333 44.3333C52.8333 44.7312 52.6753 45.1127 52.394 45.394L46.5607 51.2273C45.9749 51.8131 45.0251 51.8131 44.4394 51.2273C43.8536 50.6415 43.8536 49.6918 44.4394 49.106L47.712 45.8333H40.8333C40.0049 45.8333 39.3333 45.1618 39.3333 44.3333C39.3333 43.5049 40.0049 42.8333 40.8333 42.8333H47.712L44.4394 39.5607C43.8536 38.9749 43.8536 38.0251 44.4394 37.4393Z" fill="url(#paint0_linear_270_6456)" />
+            <defs>
+              <linearGradient id="paint0_linear_270_6456" x1="27.1667" y1="3.16663" x2="27.1667" y2="51.6667" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>Profisea, as an AWS cloud partner, enables businesses to adapt quickly to their customers’ needs and offer new services.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>Business continuity &amp; disaster recovery</p>
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 5.16663C27.1716 5.16663 26.5 5.8382 26.5 6.66663C26.5 7.49505 27.1716 8.16663 28 8.16663C33.2601 8.16663 38.3048 10.2562 42.0243 13.9757C45.7437 17.6951 47.8333 22.7398 47.8333 28C47.8333 34.125 44.6806 39.9917 40.1667 43.7442V36C40.1667 35.1716 39.4951 34.5 38.6667 34.5C37.8382 34.5 37.1667 35.1716 37.1667 36V46.643C37.1644 46.7799 37.1808 46.918 37.2169 47.0531C37.2687 47.2481 37.3588 47.4274 37.4787 47.5826C37.7737 47.9662 38.227 48.1728 38.688 48.1667H49.3333C50.1618 48.1667 50.8333 47.4951 50.8333 46.6667C50.8333 45.8383 50.1618 45.1667 49.3333 45.1667H43.0884C47.6887 40.8853 50.8333 34.6258 50.8333 28C50.8333 21.9442 48.4277 16.1364 44.1456 11.8544C39.8635 7.57227 34.0558 5.16663 28 5.16663ZM18.5665 8.47916C18.6616 8.6162 18.7345 8.76985 18.7798 8.93488C18.8185 9.07494 18.8359 9.21797 18.8333 9.35963V20C18.8333 20.8285 18.1618 21.5 17.3333 21.5C16.5049 21.5 15.8333 20.8285 15.8333 20V12.1384C11.1442 15.7823 8.16666 21.5738 8.16666 28C8.16666 33.2601 10.2562 38.3048 13.9757 42.0242C17.6952 45.7437 22.7399 47.8333 28 47.8333C28.8284 47.8333 29.5 48.5049 29.5 49.3333C29.5 50.1617 28.8284 50.8333 28 50.8333C21.9442 50.8333 16.1365 48.4276 11.8544 44.1456C7.5723 39.8635 5.16666 34.0557 5.16666 28C5.16666 21.2354 8.04899 15.0563 12.7234 10.8334H6.66666C5.83823 10.8334 5.16666 10.1618 5.16666 9.33337C5.16666 8.50495 5.83823 7.83337 6.66666 7.83337H17.3001C17.3754 7.83177 17.4506 7.83587 17.5248 7.84548C17.9346 7.89854 18.3181 8.11966 18.5665 8.47916Z" fill="url(#paint0_linear_270_6488)" />
+            <defs>
+              <linearGradient id="paint0_linear_270_6488" x1="28" y1="5.16663" x2="28" y2="50.8333" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5EDCFB" />
+                <stop offset="1" stop-color="#30A8FF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p>AWS and its partners provide sophisticated solutions to guarantee that key systems and data remain accessible in case of interruptions or outages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark for-business">
+  <div class="container">
+    <div class="text" data-aos="fade-up" data-aos-delay="200">
+      <h2>Amazon Web Services for Business: Resources to Innovate</h2>
+      <p>Amazon Web Services (AWS) is the most popular cloud platform, offering a complete range of services, extensive infrastructure, and competitive pricing models for different business workloads, including computing, storage, database, analytics, AI, machine learning, and more.</p>
+      <p>Profisea, as an AWS Advanced Tier Services Partner, assists startups, SMBs, and large enterprises increase productivity, lower cloud costs, and shorten time to market.</p>
+      <p>To truly leverage AWS solutions for enhancing user experience and accomplishing your business objectives, draw on Profisea. Our certified DevOps engineers will make the most of the largest and deepest stack of AWS cloud services and offer a set of processors and accelerators built to suit specific performance and price requirements.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark we-provide">
+  <div class="container">
+    <h2>The AWS Consulting Services We Provide</h2>
+    <div class="wrapper-we-provide">
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">Are you looking to migrate to the cloud?</p>
+        <p>Profisea, as an AWS Advanced Tier Services Partner, has got you covered every step of your journey to and through the cloud! Our team of certified cloud engineers provide a wide range of services, from cloud readiness assessments to infrastructure setup, architecture redesign, migration, maintenance, etc.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">Are you eager to make the most of cloud infrastructure?</p>
+        <p>Our cloud-native architects will help you assess and develop serverless architecture with AWS Lambda, Amazon API Gateway, Amazon S3, and Amazon DynamoDB. And if you need a scaling platform, we'll help you design a microservices architecture offering greater control, security, and cost-efficiency.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">Do you need to streamline your software delivery and deployment?</p>
+        <p>Our DevOps experts can help you set up fully automated deployment cycles (CI/CD), automate IT infrastructure management using infrastructure-as-code (IaC), and build efficient monitoring and alerting solutions to prevent disruptions.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">Are you looking to optimize your cloud costs and improve performance?</p>
+        <p>An AWS DevOps Services Competency Partner, Profisea will analyze your current cloud infrastructure and technology to identify opportunities for more efficient and cost-effective use of cloud infrastructure and managed AWS services. You can trust Profisea to help you take your cloud journey to the next level!</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">Are you ready to skyrocket your AI startup?</p>
+        <p>With Profisea as your Amazon Web Services consulting partner, you'll increase productivity, reduce expenses, and dramatically cut time to market. Our comprehensive AI and ML services stack will be designed and implemented to meet your specific performance and price needs, enabling you to improve user experience and achieve business objectives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark">
+  <div class="wrapper-counter">
+
+    <div class="lines-counter">
+      <svg width="1440" height="102" viewBox="0 0 1440 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-43.1981 100.166C877.5 -160.5 935 274.999 1520.5 1.49943" stroke="#FF9900" stroke-width="2" />
+      </svg>
+      <svg width="1440" height="214" viewBox="0 0 1440 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-2.5 18.5004C502.5 -86.0003 389.5 346.5 1462 169.499" stroke="#B34DBF" stroke-width="2" />
+      </svg>
+    </div>
+
+    <div class="dflex container">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num">Up to <span class="counter-n" data-num="66">0</span>%</p>
+        <p class="title">Savings in infrastructure costs</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num">Up to <span class="counter-n" data-num="77">0</span>%</p>
+        <p class="title">Reduction in required licenses</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num"> <span class="counter-n" data-num="43">0</span>%</p>
+        <p class="title">Less time to bring new features to the market</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num"> <span class="counter-n" data-num="29">0</span>%</p>
+        <p class="title">Increase in staff focus on innovation</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num"> <span class="counter-n" data-num="45">0</span>%</p>
+        <p class="title">Fewer security-related incidents</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark value">
+  <div class="container">
+    <div class="text" data-aos="fade-up" data-aos-delay="200">
+      <h2>Increase the Value of your AWS Cloud Migration</h2>
+      <p>Profisea helps businesses plan, design and implement efficient, secure, and reliable cloud infrastructure regardless of the size or complexity of the project at hand.</p>
+      <p>Profisea’s certified DevOps engineers deeply understand the complexity of cloud migration, particularly for those companies in heavily-regulated areas such as finance and healthcare. Leveraging the best automation tools and technologies, Profisea streamlines cloud migration, eliminates human error, and provides complex support for our customers’ cloud environments.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section lets-get-started">
+  <h2 data-aos="fade-up" data-aos-delay="200">Let's <span>Get Started</span></h2>
+  <p data-aos="fade-up" data-aos-delay="300">If you’re ready to succeed, we are ready to help!</p>
+
+  <div class="btn-lets-get-started" data-aos="fade-up" data-aos-delay="200">
+    <div>
+      <a href="#modalForm" class="btn-theme btn-blue link-modal">
+        Discuss your project
+      </a>
+    </div>
+  </div>
+</div>
+
+<section class="section solutions">
+  <h2>The AWS Solutions &amp; Technologies We Work with</h2>
+  <div class="container">
+    <div class="image" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://www.profisea.com/wp-content/uploads/2023/12/image-solutions-aws-partnership.jpeg" alt="The AWS Solutions &amp; Technologies We Work with Image Profisea" title="Image The AWS Solutions &amp; Technologies We Work with">
+    </div>
+    <div class="text" data-aos="fade-up" data-aos-delay="200">
+      <p>We tailor the right combination of AWS services to accelerate your business success.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section bg-dark-footer border-round-top our-cases">
+  <div class="container">
+    <h2 class="white" data-aos="fade-up" data-aos-delay="200">Our Case Studies</h2>
+
+    <div class="dflex wrapper-cases">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/12/playstream-logo-white.png" alt="Client 1 Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Profisea">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Profisea">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/playstream-redefining-live-streaming-engagement-through-aws-cloud-migration-with-profisea/">Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Profisea</a></h3>
+        <p>Playstream is an innovative Israeli company that aims to enrich the interaction between viewers and streamers, creating a more captivating and enjoyable live-streaming experience.</p>
+        <a href="https://www.profisea.com/case-studies/playstream-redefining-live-streaming-engagement-through-aws-cloud-migration-with-profisea/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/10/StructShare-logo-white.png" alt="Client 1 Boosting Cloud Efficiency: How StructShare Partnership with Profisea Results in Best-in-Class AWS Cloud Infrastructure">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Boosting Cloud Efficiency: How StructShare Partnership with Profisea Results in Best-in-Class AWS Cloud Infrastructure">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/boosting-cloud-efficiency-how-structshare-partnership-with-profisea-results-in-best-in-class-aws-cloud-infrastructure/">Boosting Cloud Efficiency: How StructShare Partnership with Profisea Results in Best-in-Class AWS Cloud Infrastructure</a></h3>
+        <p>By utilizing AWS services improved application and database workload scalability and reliability for StructShare going forward. </p>
+        <a href="https://www.profisea.com/case-studies/boosting-cloud-efficiency-how-structshare-partnership-with-profisea-results-in-best-in-class-aws-cloud-infrastructure/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/05/INX-logo-color-1.png" alt="Client 1 Scalable, Resilient, and Secure: INX&#8217;s Cloud Journey with AWS and Profisea">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Scalable, Resilient, and Secure: INX&#8217;s Cloud Journey with AWS and Profisea">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/scalable-resilient-and-secure-inxs-cloud-journey-with-aws-and-profisea/">Scalable, Resilient, and Secure: INX&#8217;s Cloud Journey with AWS and Profisea</a></h3>
+        <p>In collaboration with Profisea, INX witnessed a notable reduction in time to market and maintained the stability of their trading environment, with an impressive uptime of 99.99%. </p>
+        <a href="https://www.profisea.com/case-studies/scalable-resilient-and-secure-inxs-cloud-journey-with-aws-and-profisea/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+    </div>
+  </div>
+</div>
