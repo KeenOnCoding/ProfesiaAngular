@@ -12,6 +12,7 @@ import { CloudMigrationComponent } from './components/pages/cloud-migration/clou
 import { WellArchitectedComponent } from './components/pages/well-architected/well-architected.component';
 import { DevsecopsComponent } from './components/pages/devsecops/devsecops.component';
 import { FinopsComponent } from './components/pages/finops/finops.component';
+import { CaseStudiesComponent } from './components/pages/case-studies/case-studies.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FinopsComponent } from './components/pages/finops/finops.component';
     CloudMigrationComponent,
     WellArchitectedComponent,
     DevsecopsComponent,
-    FinopsComponent
+    FinopsComponent,
+    CaseStudiesComponent
   ],
   exports: [
     HeaderComponent,
