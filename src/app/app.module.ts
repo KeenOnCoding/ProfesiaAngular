@@ -18,6 +18,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { AwsPartnershipComponent } from './components/pages/aws-partnership/aws-partnership.component';
 import { TechnologyStackComponent } from './components/pages/technology-stack/technology-stack.component';
 import { CareersComponent } from './components/pages/careers/careers.component';
+import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CareersComponent } from './components/pages/careers/careers.component';
     AboutComponent,
     AwsPartnershipComponent,
     TechnologyStackComponent,
-    CareersComponent
+    CareersComponent,
+    PageNotFoundComponent
   ],
   exports: [
     HeaderComponent,

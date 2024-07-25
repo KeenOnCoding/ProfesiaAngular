@@ -12,6 +12,7 @@ import { AwsPartnershipComponent } from './components/pages/aws-partnership/aws-
 import { TechnologyStackComponent } from './components/pages/technology-stack/technology-stack.component';
 import { CareersComponent } from './components/pages/careers/careers.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path: 'careers',
     component: CareersComponent
+  },
+  {
+    path: '**', pathMatch: 'full',
+    component: PageNotFoundComponent
   },
 ];
 
