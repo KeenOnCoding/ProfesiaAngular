@@ -13,6 +13,7 @@ import { TechnologyStackComponent } from './components/pages/technology-stack/te
 import { CareersComponent } from './components/pages/careers/careers.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
+import { FinfineComponent } from './components/pages/finfine/finfine.component';
 
 const routes: Routes = [
   {
@@ -63,6 +64,10 @@ const routes: Routes = [
   {
     path: 'careers',
     component: CareersComponent
+  },
+  {
+    path: 'finfine',
+    component: FinfineComponent
   },
   {
     path: '**', pathMatch: 'full',
