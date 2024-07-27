@@ -1,41 +1,87 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as  jQuery from 'jquery';
 import * as AOS from 'aos';
-
+import lottie, { AnimationConfigWithPath }  from "lottie-web";
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+
+  animationContainer: HTMLDivElement | null = document.getElementById("animation-uniskai") as HTMLDivElement;
+  animationContainerUnisave: HTMLDivElement | null = document.getElementById("animation-unisave") as HTMLDivElement;
+  animationContainerHomeWave: HTMLDivElement | null = document.getElementById('homeWave') as HTMLDivElement;
+  animationContainerSuccess2: HTMLElement | null = document.getElementById('animation-success-big');
+  animationContainerSuccess: HTMLElement | null = document.getElementById('animation-success');
+  animationContainerCTAWave: HTMLDivElement | null = document.getElementById('ctaWave') as HTMLDivElement;
+
+  options = {
+    threshold: 0.5,
+  };
+
+  _linkedin_partner_id = "5140609";
+  animHomeWave = null;
+  animCTAWave = null;
+
+  animationData = {
+    container: this.animationContainer,
+    renderer: "svg",
+    loop: false,
+    autoplay: false,
+    path: "/wp-content/themes/profisea-theme/animation/uniskai-img-main.json",
+  };
+  animationDataUnisave = {
+    container: this.animationContainerUnisave,
+    renderer: "svg",
+    loop: false,
+    autoplay: false,
+    path: "/wp-content/themes/profisea-theme/animation/unisave-img-main.json",
+  };
+  animationDataCTAWave = {
+    container: this.animationContainerCTAWave,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
+  };
+  animationDataHomeWave = {
+    container: this.animationContainerHomeWave,
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
+  };
+
+
   constructor() {
     //small
 
-    /*
-    const animationDataSuccess: lottie.AnimationConfigWithPath = {
-      container: animationContainerSuccess,
+    
+    const animationDataSuccess: AnimationConfigWithPath = {
+      container: this.animationContainerSuccess,
       renderer: 'svg',
       loop: false,
       autoplay: false,
       path: '/wp-content/themes/profisea-theme/animation/success.json',
     };
-    const animSuccess = lottie.loadAnimation(animationDataSuccess);*/
+    const animSuccess = lottie.loadAnimation(animationDataSuccess);
 
     //modal
 
-    /*
-   const animationDataSuccess2: lottie.AnimationConfigWithPath = {
-     container: animationContainerSuccess2,
+    
+   const animationDataSuccess2: AnimationConfigWithPath = {
+     container: this.animationContainerSuccess2,
      renderer: 'svg',
      loop: false,
      autoplay: false,
      path: '/wp-content/themes/profisea-theme/animation/success.json',
    };
-   const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);*/
+   const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);
 
-    /*
+    
     document.addEventListener('wpcf7mailsent', function (event) {
-      if ('231' == event.detail.contactFormId) {
+      if ('231' == this.getValue(event) ){
         document.querySelector('.modal-small').classList.add('show');
         animSuccess.play();
         setTimeout(function () {
@@ -44,7 +90,7 @@ export class HomePageComponent implements OnInit {
         document.getElementById('file-info-footer').innerText = 'File is not chosen';
         document.querySelector('.deletefile').classList.remove('show');
       }
-      if ('233' == event.detail.contactFormId) {
+      if ('233' == this.getValue(event)) {
         document.querySelector('.modal-small').classList.add('show');
         animSuccess.play();
         setTimeout(function () {
@@ -53,7 +99,7 @@ export class HomePageComponent implements OnInit {
         document.getElementById('file-info-careers').innerText = 'File is not chosen';
         document.querySelector('.deletefile').classList.remove('show');
       }
-      if ('232' == event.detail.contactFormId) {
+      if ('232' == this.getValue(event)) {
         document.querySelector('.modal-small').classList.add('show');
         animSuccess.play();
         setTimeout(function () {
@@ -62,7 +108,7 @@ export class HomePageComponent implements OnInit {
         document.getElementById('file-info-footer').innerText = 'File is not chosen';
         document.querySelector('.deletefile').classList.remove('show');
       }
-      if ('230' == event.detail.contactFormId) {
+      if ('230' == this.getValue(event)) {
         document.querySelector('.modal .success-message').classList.add('show');
         animSuccess2.play();
         setTimeout(function () {
@@ -73,29 +119,31 @@ export class HomePageComponent implements OnInit {
         document.getElementById('file-delete-popup').innerText = 'File is not chosen';
         document.querySelector('.deletefile').classList.remove('show');
       }
-      if ('10036' == event.detail.contactFormId) {
+      if ('10036' == this.getValue(event)) {
         document.querySelector('.modal-small').classList.add('show');
         animSuccess.play();
         setTimeout(function () {
           document.querySelector('.modal-small').classList.remove('show');
         }, 3000);
       }
-      if ('10107' == event.detail.contactFormId) {
+      if ('10107' == this.getValue(event)) {
         document.querySelector('.modal-small').classList.add('show');
         animSuccess.play();
         setTimeout(function () {
           document.querySelector('.modal-small').classList.remove('show');
         }, 3000);
       }
-      if ('10195' == event.detail.contactFormId) {
-        document.querySelector('.modal-small').classList.add('show');
+      if ('10195' == this.getValue(event)) {
+        document.querySelector('.modal-small')
+          .classList.add('show');
         animSuccess.play();
         setTimeout(function () {
-          document.querySelector('.modal-small').classList.remove('show');
+          document.querySelector('.modal-small')
+            .classList.remove('show');
         }, 3000);
       }
     }, false);
-    */
+    
   }
 
   ngOnInit(): void {
@@ -441,49 +489,10 @@ export class HomePageComponent implements OnInit {
     */
   }
 
-  options = {
-    threshold: 0.5,
-  };
-
-  _linkedin_partner_id = "5140609";
-  animHomeWave = null;
-  animCTAWave = null;
-
-  animationData = {
-    // container: animationContainer,
-    renderer: "svg",
-    loop: false,
-    autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/uniskai-img-main.json",
-  };
-  animationDataUnisave = {
-    // container: animationContainerUnisave,
-    renderer: "svg",
-    loop: false,
-    autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/unisave-img-main.json",
-  };
-  animationDataCTAWave = {
-    //container: animationContainerCTAWave,
-    //renderer: 'svg',
-    //loop: true,
-    //autoplay: true,
-    //path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
-  };
-  animationDataHomeWave = {
-    //container: animationContainerHomeWave,
-    //renderer: 'svg',
-    //loop: true,
-    //autoplay: true,
-    //path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
-  };
-
-  animationContainer: HTMLDivElement | null = document.getElementById("animation-uniskai") as HTMLDivElement;
-  animationContainerUnisave: HTMLDivElement | null = document.getElementById("animation-unisave") as HTMLDivElement;
-  animationContainerHomeWave: HTMLDivElement | null = document.getElementById('homeWave') as HTMLDivElement;
-  animationContainerSuccess2: HTMLElement | null = document.getElementById('animation-success-big');
-  animationContainerSuccess: HTMLElement | null = document.getElementById('animation-success');
-  animationContainerCTAWave: HTMLDivElement | null = document.getElementById('ctaWave') as HTMLDivElement;
+  getValue(event: Event): string {
+    return(event.target as Element).id;
+   // return (event.target as HTMLInputElement).value;
+  }
 
   //observer = new IntersectionObserver(this.playAnimationWhenVisible, this.options);
   //observer.observe(animationContainer);
