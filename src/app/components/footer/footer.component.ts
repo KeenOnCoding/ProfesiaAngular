@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import * as  jQuery from 'jquery';
 import * as AOS from 'aos';
 import lottie, { AnimationConfigWithPath } from "lottie-web";
-
+import { ScriptService } from '../../services/script.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
   animationContainer: HTMLDivElement | null = document.getElementById("animation-uniskai") as HTMLDivElement;
   animationContainerUnisave: HTMLDivElement | null = document.getElementById("animation-unisave") as HTMLDivElement;
   animationContainerHomeWave: HTMLDivElement | null = document.getElementById('homeWave') as HTMLDivElement;
@@ -30,56 +29,52 @@ export class FooterComponent implements OnInit {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/uniskai-img-main.json",
+    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataUnisave = {
     container: this.animationContainerUnisave,
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/unisave-img-main.json",
+    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataCTAWave = {
     container: this.animationContainerCTAWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
+    path: this.getJson.getJSON("./assets/wave-main.json")
   };
   animationDataHomeWave = {
     container: this.animationContainerHomeWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
+    path: this.getJson.getJSON("./assets/wave-main.json")
   };
 
-
-  constructor() {
+  constructor(private getJson: ScriptService) {
     //small
-
 
     const animationDataSuccess: AnimationConfigWithPath = {
       container: this.animationContainerSuccess,
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: '/wp-content/themes/profisea-theme/animation/success.json',
+      path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess = lottie.loadAnimation(animationDataSuccess);
 
     //modal
-
 
     const animationDataSuccess2: AnimationConfigWithPath = {
       container: this.animationContainerSuccess2,
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: '/wp-content/themes/profisea-theme/animation/success.json',
+      path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);
-
 
     document.addEventListener('wpcf7mailsent', function (event) {
       if ('231' == this.getValue(event)) {
@@ -144,7 +139,6 @@ export class FooterComponent implements OnInit {
         }, 3000);
       }
     }, false);
-
   }
 
   ngOnInit(): void {
@@ -231,7 +225,6 @@ export class FooterComponent implements OnInit {
         carousel: function () {
           let owl;
           $(document).ready(function () {
-
             owl = (<any>$('.fadeOut')).owlCarousel({
               items: 1,
               autoplay: true,
@@ -262,7 +255,6 @@ export class FooterComponent implements OnInit {
                   margin: 20,
                 },
                 991: {
-
                 },
                 1000: {
                   margin: 10
@@ -314,28 +306,30 @@ export class FooterComponent implements OnInit {
 
     window.addEventListener("load", function (event) {
       jQuery(".cfx_form_main,.wpcf7-form,.wpforms-form,.gform_wrapper form").each(function () {
-        var form = jQuery(this);
-        var screen_width;
-        var screen_height;
-        if (screen_width == "") {
-          if (screen) {
-            screen_width = screen.width;
-          } else {
-            screen_width = jQuery(window).width();
-          }
-        }
-        if (screen_height == "") {
-          if (screen) {
-            screen_height = screen.height;
-          } else {
-            screen_height = jQuery(window).height();
-          }
-        }
-        form.append('<input type="hidden" name="vx_width" value="' + screen_width + '">');
-        form.append('<input type="hidden" name="vx_height" value="' + screen_height + '">');
-        form.append('<input type="hidden" name="vx_url" value="' + window.location.href + '">');
-      });
+        const form: JQuery<HTMLElement> = jQuery(this);
+        let screen_width: number = 0;
+        let screen_height: number = 0;
 
+        if (screen_width === 0) {
+          if (window.screen) {
+            screen_width = window.screen.width;
+          } else {
+            screen_width = jQuery(window).width() || 0;
+          }
+        }
+
+        if (screen_height === 0) {
+          if (window.screen) {
+            screen_height = window.screen.height;
+          } else {
+            screen_height = jQuery(window).height() || 0;
+          }
+        }
+
+        form.append(`<input type="hidden" name="vx_width" value="${screen_width}">`);
+        form.append(`<input type="hidden" name="vx_height" value="${screen_height}">`);
+        form.append(`<input type="hidden" name="vx_url" value="${window.location.href}">`);
+      });
     });
 
     window.addEventListener("resize", () => { setTimeout(() => { AOS.refresh(); }, 500); });

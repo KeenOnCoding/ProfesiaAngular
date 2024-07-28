@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import * as  jQuery from 'jquery';
 import * as AOS from 'aos';
-import lottie, { AnimationConfigWithPath }  from "lottie-web";
+import lottie, { AnimationConfigWithPath } from "lottie-web";
+import { ScriptService } from '../../services/script.service';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
   animationContainer: HTMLDivElement | null = document.getElementById("animation-uniskai") as HTMLDivElement;
   animationContainerUnisave: HTMLDivElement | null = document.getElementById("animation-unisave") as HTMLDivElement;
   animationContainerHomeWave: HTMLDivElement | null = document.getElementById('homeWave') as HTMLDivElement;
@@ -29,59 +29,55 @@ export class HomePageComponent implements OnInit {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/uniskai-img-main.json",
+    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataUnisave = {
     container: this.animationContainerUnisave,
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: "/wp-content/themes/profisea-theme/animation/unisave-img-main.json",
+    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataCTAWave = {
     container: this.animationContainerCTAWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
+    path: this.getJson.getJSON("./assets/wave-main.json")
   };
   animationDataHomeWave = {
     container: this.animationContainerHomeWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/wp-content/themes/profisea-theme/animation/wave-main.json',
+    path: this.getJson.getJSON("./assets/wave-main.json")
   };
 
-
-  constructor() {
+  constructor(private getJson: ScriptService) {
     //small
 
-    
     const animationDataSuccess: AnimationConfigWithPath = {
       container: this.animationContainerSuccess,
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: '/wp-content/themes/profisea-theme/animation/success.json',
+      path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess = lottie.loadAnimation(animationDataSuccess);
 
     //modal
 
-    
-   const animationDataSuccess2: AnimationConfigWithPath = {
-     container: this.animationContainerSuccess2,
-     renderer: 'svg',
-     loop: false,
-     autoplay: false,
-     path: '/wp-content/themes/profisea-theme/animation/success.json',
-   };
-   const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);
+    const animationDataSuccess2: AnimationConfigWithPath = {
+      container: this.animationContainerSuccess2,
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      path: this.getJson.getJSON("./assets/success.json")
+    };
+    const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);
 
-    
     document.addEventListener('wpcf7mailsent', function (event) {
-      if ('231' == this.getValue(event) ){
+      if ('231' == this.getValue(event)) {
         document.querySelector('.modal-small').classList.add('show');
         animSuccess.play();
         setTimeout(function () {
@@ -143,7 +139,6 @@ export class HomePageComponent implements OnInit {
         }, 3000);
       }
     }, false);
-    
   }
 
   ngOnInit(): void {
@@ -230,7 +225,6 @@ export class HomePageComponent implements OnInit {
         carousel: function () {
           let owl;
           $(document).ready(function () {
-
             owl = (<any>$('.fadeOut')).owlCarousel({
               items: 1,
               autoplay: true,
@@ -261,7 +255,6 @@ export class HomePageComponent implements OnInit {
                   margin: 20,
                 },
                 991: {
-
                 },
                 1000: {
                   margin: 10
@@ -490,8 +483,8 @@ export class HomePageComponent implements OnInit {
   }
 
   getValue(event: Event): string {
-    return(event.target as Element).id;
-   // return (event.target as HTMLInputElement).value;
+    return (event.target as Element).id;
+    // return (event.target as HTMLInputElement).value;
   }
 
   //observer = new IntersectionObserver(this.playAnimationWhenVisible, this.options);
