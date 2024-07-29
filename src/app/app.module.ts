@@ -20,7 +20,7 @@ import { TechnologyStackComponent } from './components/pages/technology-stack/te
 import { CareersComponent } from './components/pages/careers/careers.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { FinfineComponent } from './components/pages/finfine/finfine.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +48,8 @@ import { FinfineComponent } from './components/pages/finfine/finfine.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [ScriptService],
   bootstrap: [AppComponent]
