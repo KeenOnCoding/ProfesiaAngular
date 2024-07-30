@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Renderer2, Component, OnInit, Inject } from '@angular/core';
 import * as  jQuery from 'jquery';
 import * as AOS from 'aos';
 import lottie, { AnimationConfigWithPath } from "lottie-web";
 import { ScriptService } from '../../services/script.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -53,7 +55,14 @@ export class FooterComponent implements OnInit {
     path: this.getJson.getJSON("./assets/wave-main.json")
   };
 
-  constructor(private getJson: ScriptService) {
+  registerForm: FormGroup;
+  submitted = false;
+
+  constructor(
+    private _renderer2: Renderer2,
+    @Inject(DOCUMENT) private _document: Document,
+    private formBuilder: FormBuilder,
+    private getJson: ScriptService) {
     //small
 
     const animationDataSuccess: AnimationConfigWithPath = {
@@ -142,6 +151,22 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let script = this._renderer2.createElement('script');
+    script.type = "text/javascript"
+    script.src = this.getJson.getJSON("./assets/index.js")
+    script.id = "contact-form-7-js"
+
+
+    this._renderer2.appendChild(this._document.body, script);
+  
+
+    this.registerForm = this.formBuilder.group({
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    });
+
     $('.scroll-to').on('click', function (e: JQuery.ClickEvent) {
       e.preventDefault();
 
@@ -480,6 +505,19 @@ export class FooterComponent implements OnInit {
 
     this.renderer.appendChild(document.head, script9);
     */
+  }
+
+  public get f() { return this.registerForm.controls; }
+
+  public onSubmit() {
+    this.submitted = true;
+    
+    // stop here if form is invalid
+    if (this.registerForm.invalid) {
+      return;
+    }
+
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
   }
 
   getValue(event: Event): string {
