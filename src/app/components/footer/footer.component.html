@@ -28,8 +28,8 @@
         <div class="wpcf7 js" id="wpcf7-f231-o1" lang="ru-RU" dir="ltr">
           <div class="screen-reader-response">
           <p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-          <form action="/#wpcf7-f231-o1"
-                method="post"
+          <form [formGroup]="registerForm"
+                (ngSubmit)="onSubmit()"
                 class="wpcf7-form init"
                 aria-label="Contact form"
                 enctype="multipart/form-data"
@@ -45,11 +45,65 @@
               <input type="hidden" name="_wpcf7_posted_data_hash" value="">
               <input type="hidden" name="_wpcf7_recaptcha_response" value="03AFcWeA56DcPe2BnpfZyPG8EGTjJvVSMd46yO6GJx_tsa2mufL3u2qsNnh8SDgELDLVj8eFl3gSa9VVONAwv6FfdDMB7UpteufeF3QL1a4soGmaNZoYSrbl4A3xY6YGeavcDgIOIMQSHWMm9_wwvFootgq8RTYW4yqyKz0ZlszaB3al-U9wx53wk8jcL9QP9Y1TSxIsw8GX-J8KEPvGqnvWYkgGaXstNWmUfcXtYaHbVnncl-oNciDJ6mk2Pu3G6bmU3NbYpGrVcElwAmiUkT2lCH9oSD_5-9PYCvqlahpUrDNblVqi635vkw9Vn0kys-BLXwMVBhNftUfSgWu927L-iVHrRV8JtJ6369OjNCquPOpeBe3XMRjh4l23D6esfuBJj0CUCzXaSlzRrGqhUyAt2QNbSjYRuAB89RTY1e5cQwrq-IybrWE9JZM7RZ0hjj7s8JkCeiv23UCjMw0jEDVQIce_4seOtyPL6LXCn0hOxpnZAL9o3O6RxnqTQHoQ20pQmq1GNkTUU7r9oTVZ7js_34bYnGn78FGGW9vjW_-6UlIY4yQNSkd9Hasu6uyLMnyI0C5CvvSn8tyPfGmFN3xiQlfdrDqgbpWa5mQBHFOprKkAWQw-Vf-TVSRkWKATf7PT-0pfSLpVEt0rPUzs5GRWNdvQM8oaSvhPofgs_fAj1DidQPue-5CdZI-6uAOeaVs3z0c1_jc84vEkQwa4Bo1aH1o51kouUDp79bOBUlSGmoy8bIThMfrXEmJh1pMOqMYPmagVbjcuBrBB6bCGuWT889i4UOfAzHalOOn5X0aagJdBrnhgPoXc3ZKFTfXdWpSWvBX54BbUJHzfqnzUlFquifDKCfeqtKMg">
             </div>
-            <span class="wpcf7-form-control-wrap" data-name="text-826"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name*" value="" type="text" name="text-826"></span>
-            <span class="wpcf7-form-control-wrap" data-name="text-330"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company*" value="" type="text" name="text-330"></span>
-            <span class="wpcf7-form-control-wrap" data-name="email-801"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail*" value="" type="email" name="email-801"></span>
-            <span class="wpcf7-form-control-wrap" data-name="tel-669"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone*" value="" type="tel" name="tel-669"></span>
-            <span class="wpcf7-form-control-wrap" data-name="textarea-971"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*" name="textarea-971"></textarea></span>
+            <span class="wpcf7-form-control-wrap"
+                  data-name="text-826">
+            <input size="40"
+                   
+                   formControlName="name"
+                   [ngStyle]="{'border': submitted && f.name.errors ? 'red 2px solid' : null }"              
+                   placeholder="Name*"
+                   value=""
+                   type="text"
+                   name="text-826">
+            </span>
+            <span class="wpcf7-form-control-wrap"
+                  data-name="text-330">
+            <input size="40"
+                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                   formControlName="company"
+                   [ngStyle]="{'border': submitted && f.company.errors ? 'red 2px solid' : null }"
+                   aria-required="true"
+                   aria-invalid="false"
+                   placeholder="Company*"
+                   value=""
+                   type="text"
+                   name="text-330"></span>
+            <span class="wpcf7-form-control-wrap"
+                  data-name="email-801">
+            <input size="40"
+                   class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" 
+                   formControlName="email"
+                   [ngStyle]="{'border': submitted && f.email.errors ? 'red 2px solid' : null }"
+                   aria-required="true"
+                   aria-invalid="false"
+                   placeholder="E-mail*"
+                   value=""
+                   type="email"
+                   name="email-801"></span>
+            <span class="wpcf7-form-control-wrap"
+                  data-name="tel-669">
+            <input size="40"
+                   class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
+                   formControlName="phone"
+                   [ngStyle]="{'border': submitted && f.phone.errors ? 'red 2px solid' : null }"
+                   aria-required="true"
+                   aria-invalid="false"
+                   placeholder="Phone*"
+                   value=""
+                   type="tel"
+                   name="tel-669"></span>
+            <span class="wpcf7-form-control-wrap"
+                  data-name="textarea-971">
+            <textarea cols="40"
+                      rows="10"
+                      class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                      formControlName="message"
+                [ngStyle]="{'border': submitted && f.message.errors ? 'red 2px solid' : null }"
+                  
+                      aria-required="true"
+                      aria-invalid="false"
+                      placeholder="Message*"
+                      name="textarea-971"></textarea></span>
             <div class="dflex form-wrapper--2col">
               <div class="attach">
                 <label for="fileInputFooter">Attach File</label>
@@ -84,7 +138,7 @@
     <div class="dflex container">
 
       <div class="footer-logo" data-aos-delay="200">
-        <img width="223" height="38" src="https://www.profisea.com/wp-content/themes/profisea-theme/image/logo-profisea.svg" alt="FlexTweak Logo Footer">
+        <!--<img width="223" height="38" src="../../assets/images/logo-profisea.svg" alt="FlexTweak Logo Footer">-->
         <div class="logo-partners">
           <img width="347" height="109" src="https://www.profisea.com/wp-content/uploads/2023/11/logo-partners-footer.png" alt="FlexTweak Partners">
         </div>
@@ -104,7 +158,7 @@
       <div class="footer-products-nav item-nav" data-aos-delay="300">
         <p class="title">Products</p>
         <ul id="menu-footer-products" class="">
-          <li id="menu-item-222" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a target="_blank" rel="noopener" href="/">Uniskai by FinFine</a></li>
+          <!--<li id="menu-item-222" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-222"><a target="_blank" rel="noopener" href="/">Uniskai by FinFine</a></li>-->
           <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a href="/finfine">FinFine by FlexTweak</a></li>
         </ul>
         <p class="title hidden-lg">Resources</p>
@@ -138,7 +192,7 @@
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.02454 4.125C6.02454 2.676 7.20054 1.5 8.64954 1.5H15.3995C16.8485 1.5 18.0245 2.676 18.0245 4.125V19.875C18.0245 20.5712 17.748 21.2389 17.2557 21.7312C16.7634 22.2234 16.0957 22.5 15.3995 22.5H8.64954C7.95334 22.5 7.28566 22.2234 6.79338 21.7312C6.3011 21.2389 6.02454 20.5712 6.02454 19.875V4.125ZM10.5245 18C10.3256 18 10.1349 18.079 9.99421 18.2197C9.85355 18.3603 9.77454 18.5511 9.77454 18.75C9.77454 18.9489 9.85355 19.1397 9.99421 19.2803C10.1349 19.421 10.3256 19.5 10.5245 19.5H13.5245C13.7234 19.5 13.9142 19.421 14.0549 19.2803C14.1955 19.1397 14.2745 18.9489 14.2745 18.75C14.2745 18.5511 14.1955 18.3603 14.0549 18.2197C13.9142 18.079 13.7234 18 13.5245 18H10.5245Z" fill="white"></path>
           </svg>
-          <a href="tel:+972528542524">+972 52-854-25-24</a>
+          <a href="tel:+48505498851">+48 505 498 851</a>
         </p>
         <p class="email">
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +200,7 @@
           </svg>
           <a href="mailto:info@flextweak.com">support@flestweak.com</a>
         </p>
-        <ul class="socials">
+        <!--<ul class="socials">
           <li>
             <a href="https://www.linkedin.com/company/flextweak" target="_blank" rel="nofollow" aria-label="LinkedIn Link">
               <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +232,7 @@
               </svg>
             </a>
           </li>
-        </ul>
+        </ul>-->
       </div>
     </div>
   </div>

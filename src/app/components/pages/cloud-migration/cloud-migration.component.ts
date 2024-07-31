@@ -215,20 +215,20 @@ export class CloudMigrationComponent implements OnInit {
         });
       }
     });
-    document.addEventListener("DOMContentLoaded", () => {
-      const words: NodeListOf<HTMLElement> = document.querySelectorAll('.cd-words-wrapper span');
-      let index: number = 0;
+    //document.addEventListener("DOMContentLoaded", () => {
+    //  const words: NodeListOf<HTMLElement> = document.querySelectorAll('.cd-words-wrapper span');
+    //  let index: number = 0;
 
-      function changeWord(): void {
-        words[index].classList.remove('is-visible');
-        words[index].classList.add('is-hidden');
-        index = (index + 1) % words.length;
-        words[index].classList.remove('is-hidden');
-        words[index].classList.add('is-visible');
-      }
+    //  function changeWord(): void {
+    //    words[index].classList.remove('is-visible');
+    //    words[index].classList.add('is-hidden');
+    //    index = (index + 1) % words.length;
+    //    words[index].classList.remove('is-hidden');
+    //    words[index].classList.add('is-visible');
+    //  }
 
-      setInterval(changeWord, 1500);
-    });
+    //  setInterval(changeWord, 1500);
+    //});
     document.addEventListener('DOMContentLoaded', () => {
       const fileInput: HTMLInputElement | null = document.getElementById('fileInput') as HTMLInputElement;
       if (fileInput) {

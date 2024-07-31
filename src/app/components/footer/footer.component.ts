@@ -70,7 +70,7 @@ export class FooterComponent implements OnInit {
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: this.getJson.getJSON("./assets/success.json")
+     // path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess = lottie.loadAnimation(animationDataSuccess);
 
@@ -81,10 +81,10 @@ export class FooterComponent implements OnInit {
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: this.getJson.getJSON("./assets/success.json")
+      //path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);
-
+    
     document.addEventListener('wpcf7mailsent', function (event) {
       if ('231' == this.getValue(event)) {
         document.querySelector('.modal-small').classList.add('show');
@@ -151,6 +151,8 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    /*
     let script = this._renderer2.createElement('script');
     script.type = "text/javascript"
     script.src = this.getJson.getJSON("./assets/index.js")
@@ -158,13 +160,23 @@ export class FooterComponent implements OnInit {
 
 
     this._renderer2.appendChild(this._document.body, script);
-  
+  */
 
     this.registerForm = this.formBuilder.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      name: ['',
+        Validators.required],
+      company: ['',
+        Validators.required],
+      email: ['', [
+        Validators.required,
+        Validators.email,
+        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+      phone: ['', [
+        Validators.required,
+        Validators.minLength(6)]],
+      message: ['', [
+        Validators.required,
+        Validators.minLength(10)]]
     });
 
     $('.scroll-to').on('click', function (e: JQuery.ClickEvent) {
@@ -369,20 +381,20 @@ export class FooterComponent implements OnInit {
         });
       }
     });
-    document.addEventListener("DOMContentLoaded", () => {
-      const words: NodeListOf<HTMLElement> = document.querySelectorAll('.cd-words-wrapper span');
-      let index: number = 0;
+    //document.addEventListener("DOMContentLoaded", () => {
+    //  const words: NodeListOf<HTMLElement> = document.querySelectorAll('.cd-words-wrapper span');
+    //  let index: number = 0;
 
-      function changeWord(): void {
-        words[index].classList.remove('is-visible');
-        words[index].classList.add('is-hidden');
-        index = (index + 1) % words.length;
-        words[index].classList.remove('is-hidden');
-        words[index].classList.add('is-visible');
-      }
+    //  function changeWord(): void {
+    //    words[index].classList.remove('is-visible');
+    //    words[index].classList.add('is-hidden');
+    //    index = (index + 1) % words.length;
+    //    words[index].classList.remove('is-hidden');
+    //    words[index].classList.add('is-visible');
+    //  }
 
-      setInterval(changeWord, 1500);
-    });
+    //  setInterval(changeWord, 1500);
+    //});
     document.addEventListener('DOMContentLoaded', () => {
       const fileInput: HTMLInputElement | null = document.getElementById('fileInput') as HTMLInputElement;
       if (fileInput) {
@@ -440,101 +452,33 @@ export class FooterComponent implements OnInit {
         });
       }
     });
-    /*
-    this.script.load('wp-polyfill-inert',
-      'regenerator-runtime',
-      'home',
-      'wp-polyfill',
-      'jquery',
-      'aos',
-      'global',
-      'owl-carousel',
-      'jquery-mobile',
-      'main')
-      .then(data => {
-        console.log('script loaded ', data);
-      }).catch(error => console.log(error));
-
-    get("https://www.profisea.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2", () => {});
-    get("https://www.profisea.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0", () => { });
-    get("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js", () => { });
-    get("https://unpkg.com/aos@2.3.1/dist/aos.js", () => { });
-    get("https://www.profisea.com/wp-content/themes/profisea-theme/js/global.js?ver=1.6", () => { });
-    get("https://www.profisea.com/wp-content/themes/profisea-theme/libs/owl/owl.carousel.min.js", () => { });
-    get("https://www.profisea.com/wp-content/themes/profisea-theme/js/jquery.mobile.custom.min.js", () => { });
-    get("https://www.profisea.com/wp-content/themes/profisea-theme/js/home.js", () => { });
-
-    const script0 = this.renderer.createElement('script');
-    script0.src = `https://www.profisea.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2`;
-    this.renderer.appendChild(document.head, script0);
-
-    const script1 = this.renderer.createElement('script');
-    script1.src = `https://www.profisea.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0`;
-    this.renderer.appendChild(document.head, script1);
-
-    const script2 = this.renderer.createElement('script');
-    script2.src = `https://www.profisea.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0`;
-    this.renderer.appendChild(document.head, script2);
-
-    const script3 = this.renderer.createElement('script');
-    script3.src = `https://www.profisea.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2`;
-    this.renderer.appendChild(document.head, script3);
-
-    const script4 = this.renderer.createElement('script');
-    script4.src = `https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js`;
-    this.renderer.appendChild(document.head, script4);
-
-    const script5 = this.renderer.createElement('script');
-    script5.src = `https://unpkg.com/aos@2.3.1/dist/aos.js`;
-    this.renderer.appendChild(document.head, script5);
-
-    const script6 = this.renderer.createElement('script');
-    script6.src = `https://www.profisea.com/wp-content/themes/profisea-theme/js/global.js?ver=1.6`;
-    this.renderer.appendChild(document.head, script6);
-
-    const script7 = this.renderer.createElement('script');
-    script7.src = `https://www.profisea.com/wp-content/themes/profisea-theme/libs/owl/owl.carousel.min.js`;
-    this.renderer.appendChild(document.head, script7);
-
-    const script8 = this.renderer.createElement('script');
-    script8.src = `https://www.profisea.com/wp-content/themes/profisea-theme/js/jquery.mobile.custom.min.js`;
-    this.renderer.appendChild(document.head, script8);
-
-    const script9 = this.renderer.createElement('script');
-    script9.src = `https://www.profisea.com/wp-content/themes/profisea-theme/js/home.js`;
-
-    this.renderer.appendChild(document.head, script9);
-    */
   }
 
   public get f() { return this.registerForm.controls; }
 
   public onSubmit() {
+    console.log('SUBMIT');
     this.submitted = true;
     
     // stop here if form is invalid
     if (this.registerForm.invalid) {
       return;
     }
-
+    this.registerForm.reset({
+      'name': '',
+      'company': '',
+      'email': '',
+      'phone': '',
+      'message': ''
+    });
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
+    
   }
 
   getValue(event: Event): string {
     return (event.target as Element).id;
     // return (event.target as HTMLInputElement).value;
   }
-
-  //observer = new IntersectionObserver(this.playAnimationWhenVisible, this.options);
-  //observer.observe(animationContainer);
-  //observerUnisave = new IntersectionObserver(this.playAnimationWhenVisibleUnisave, this.options);
-  //observerUnisave.observe(animationContainerUnisave);
-
-  //observer = new IntersectionObserver(this.playAnimationWhenVisible, this.options);
-  //observer.observe(animationContainer);
-
-  //observerUnisave = new IntersectionObserver(this.playAnimationWhenVisibleUnisave, this.options);
-  //observerUnisave.observe(animationContainerUnisave);
 
   fileSelected(input: HTMLInputElement): void {
     const fileInfo: HTMLElement = document.getElementById("file-info-modal") as HTMLElement;
