@@ -29,31 +29,31 @@ export class HomePageComponent implements OnInit {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
+    //path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataUnisave = {
     container: this.animationContainerUnisave,
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
+    //path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataCTAWave = {
     container: this.animationContainerCTAWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: this.getJson.getJSON("./assets/wave-main.json")
+    //path: this.getJson.getJSON("./assets/wave-main.json")
   };
   animationDataHomeWave = {
     container: this.animationContainerHomeWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: this.getJson.getJSON("./assets/wave-main.json")
+    //path: this.getJson.getJSON("./assets/wave-main.json")
   };
 
-  constructor(private getJson: ScriptService) {
+  constructor(/*private getJson: ScriptService*/) {
     //small
 
     const animationDataSuccess: AnimationConfigWithPath = {
@@ -61,7 +61,7 @@ export class HomePageComponent implements OnInit {
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: this.getJson.getJSON("./assets/success.json")
+      //path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess = lottie.loadAnimation(animationDataSuccess);
 
@@ -72,7 +72,7 @@ export class HomePageComponent implements OnInit {
       renderer: 'svg',
       loop: false,
       autoplay: false,
-      path: this.getJson.getJSON("./assets/success.json")
+      //path: this.getJson.getJSON("./assets/success.json")
     };
     const animSuccess2 = lottie.loadAnimation(animationDataSuccess2);
 

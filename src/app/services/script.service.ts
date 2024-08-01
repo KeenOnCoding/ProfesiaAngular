@@ -13,7 +13,7 @@ export class ScriptService {
     this.http.get(str)
       .subscribe(data =>
       {
-        console.log(data);
+        //console.log(data);
         this.userInfo = data
       });
     return this.userInfo;

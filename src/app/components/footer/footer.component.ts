@@ -31,28 +31,28 @@ export class FooterComponent implements OnInit {
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
+    //path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataUnisave = {
     container: this.animationContainerUnisave,
     renderer: "svg",
     loop: false,
     autoplay: false,
-    path: this.getJson.getJSON("./assets/uniskai-img-main.json")
+    //path: this.getJson.getJSON("./assets/uniskai-img-main.json")
   };
   animationDataCTAWave = {
     container: this.animationContainerCTAWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: this.getJson.getJSON("./assets/wave-main.json")
+    //path: this.getJson.getJSON("./assets/wave-main.json")
   };
   animationDataHomeWave = {
     container: this.animationContainerHomeWave,
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: this.getJson.getJSON("./assets/wave-main.json")
+    //path: this.getJson.getJSON("./assets/wave-main.json")
   };
 
   registerForm: FormGroup;
@@ -62,7 +62,7 @@ export class FooterComponent implements OnInit {
     private _renderer2: Renderer2,
     @Inject(DOCUMENT) private _document: Document,
     private formBuilder: FormBuilder,
-    private getJson: ScriptService) {
+    /*private getJson: ScriptService*/) {
     //small
 
     const animationDataSuccess: AnimationConfigWithPath = {
