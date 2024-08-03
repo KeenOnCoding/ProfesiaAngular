@@ -3,16 +3,25 @@
     <a href="/" class="logo" aria-label="FlexTweak">
       <img width="50" height="36" src="../../assets/images/home-button-svgrepo-com.svg" alt="Logo FlexTweak">
     </a>
-    <div class="menu">
+    <div class="menu"
+         [ngStyle]="{'display': menu ? 'block' : null }"
+         >
       <ul>
-        <li class="item-menu has-submenu">
+        <li class="item-menu has-submenu"
+            >
           <a href="#">
             Services
-            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg (click)="menuServicesClick()"
+                 width="17"
+                 height="16"
+                 viewBox="0 0 17 16"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
               <path d="M4.64897 9.80369C4.90848 10.0632 5.32917 10.0634 5.58897 9.80421L8.17871 7.2201L10.7685 9.80421C11.0283 10.0634 11.4489 10.0632 11.7085 9.80369C11.9682 9.54398 11.9682 9.1229 11.7085 8.86318L8.88582 6.04054C8.49529 5.65002 7.86213 5.65002 7.4716 6.04054L4.64897 8.86318C4.38925 9.1229 4.38925 9.54398 4.64897 9.80369Z"></path>
             </svg>
           </a>
-          <ul class="sub-menu">
+          <ul class="sub-menu"
+              [ngStyle]="{'display': menu  && menuServices ? 'block' : null }">
             <li>
               <a href="/devops">
                 <span>
@@ -70,11 +79,13 @@
         <li class="item-menu has-submenu">
           <a href="#">
             Products
-            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg (click)="menuProductsClick()"
+                 width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.64897 9.80369C4.90848 10.0632 5.32917 10.0634 5.58897 9.80421L8.17871 7.2201L10.7685 9.80421C11.0283 10.0634 11.4489 10.0632 11.7085 9.80369C11.9682 9.54398 11.9682 9.1229 11.7085 8.86318L8.88582 6.04054C8.49529 5.65002 7.86213 5.65002 7.4716 6.04054L4.64897 8.86318C4.38925 9.1229 4.38925 9.54398 4.64897 9.80369Z"></path>
             </svg>
           </a>
-          <ul class="sub-menu">
+          <ul class="sub-menu"
+              [ngStyle]="{'display': menu  && menuProducts ? 'block' : null }">
             <!--<li><a href="https://profisealabs.com" target="_blank">Uniskai by FinFine</a></li>-->
             <li><a href="/finfine">FinFine by FlexTweak</a></li>
           </ul>
@@ -85,13 +96,19 @@
           </a>
         </li>
         <li class="item-menu has-submenu">
-          <a href="/about">
+          <a>
             Company
-            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg (click)="menuCompanyClick()"
+                 width="17"
+                 height="16"
+                 viewBox="0 0 17 16"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
               <path d="M4.64897 9.80369C4.90848 10.0632 5.32917 10.0634 5.58897 9.80421L8.17871 7.2201L10.7685 9.80421C11.0283 10.0634 11.4489 10.0632 11.7085 9.80369C11.9682 9.54398 11.9682 9.1229 11.7085 8.86318L8.88582 6.04054C8.49529 5.65002 7.86213 5.65002 7.4716 6.04054L4.64897 8.86318C4.38925 9.1229 4.38925 9.54398 4.64897 9.80369Z"></path>
             </svg>
           </a>
-          <ul class="sub-menu">
+          <ul class="sub-menu"
+              [ngStyle]="{'display': menu  && menuCompany ? 'block' : null }">>
             <li><a href="/about">About Us</a></li>
             <li><a href="/aws-partnership">AWS Partnership</a></li>
             <li><a href="/technology-stack">Technology Stack</a></li>
@@ -110,7 +127,7 @@
         <a href="#modalForm" class="btn-theme btn-white link-modal">Get assessment</a>
       </div>
     </div>
-    <div class="btn-open-menu">
+    <div class="btn-open-menu" (click)="menuClick()">
       <span></span>
       <span></span>
     </div>
