@@ -1,3 +1,4 @@
+
 <header>
   <div class="wrapper dflex scroll">
     <a href="/" class="logo" aria-label="FlexTweak">
@@ -127,7 +128,9 @@
         <a href="#modalForm" class="btn-theme btn-white link-modal">Get assessment</a>
       </div>
     </div>
-    <div class="btn-open-menu" (click)="menuClick()">
+    <div 
+         [ngClass]="menu ? 'btn-open-menu active' : 'btn-open-menu' "
+         (click)="menuClick()">
       <span></span>
       <span></span>
     </div>
