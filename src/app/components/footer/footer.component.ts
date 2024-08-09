@@ -62,7 +62,7 @@ export class FooterComponent implements OnInit {
     private _renderer2: Renderer2,
     @Inject(DOCUMENT) private _document: Document,
     private formBuilder: FormBuilder,
-    /*private getJson: ScriptService*/) {
+    private getJson: ScriptService) {
     //small
 
     const animationDataSuccess: AnimationConfigWithPath = {
@@ -151,6 +151,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+   
 
     /*
     let script = this._renderer2.createElement('script');
@@ -457,13 +458,14 @@ export class FooterComponent implements OnInit {
   public get f() { return this.registerForm.controls; }
 
   public onSubmit() {
-    console.log('SUBMIT');
+    //console.log('SUBMIT');
     this.submitted = true;
     
     // stop here if form is invalid
     if (this.registerForm.invalid) {
       return;
     }
+    this.getJson.sendEmail(this.registerForm.controls);
     this.registerForm.reset({
       'name': '',
       'company': '',
@@ -471,7 +473,7 @@ export class FooterComponent implements OnInit {
       'phone': '',
       'message': ''
     });
-    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
+    //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
     
   }
 

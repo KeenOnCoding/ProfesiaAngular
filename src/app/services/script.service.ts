@@ -18,4 +18,26 @@ export class ScriptService {
       });
     return this.userInfo;
   }
+
+  public sendEmail(data: any) {
+    //const headers = { 'Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar' };
+    const body = {
+      name: data.name.value,
+      company: data.company.value,
+      email: data.email.value,
+      phone: data.phone.value,
+      message: data.message.value
+    };
+
+
+    this.http.post<any>('http://localhost:7218/api/email', body)
+      .subscribe(
+        (data) => {
+          console.log(data);
+        },
+        (error) => {
+          console.error(error);
+        }
+      );
+  }
 }
