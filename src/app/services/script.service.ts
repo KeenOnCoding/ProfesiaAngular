@@ -29,14 +29,14 @@ export class ScriptService {
       message: data.message.value
     };
 
-
-    this.http.post<any>('http://localhost:7218/api/email', body)
+    //const headers = { 'Host': 'localhost', 'Content-Lengh': '200' };
+    this.http.post<any>('https://us-west1-deploy-cea83.cloudfunctions.net/csharp-http-function', body)
       .subscribe(
         (data) => {
-          console.log(data);
+          //console.log(JSON.stringify(data));
         },
         (error) => {
-          console.error(error);
+          //console.error(error);
         }
       );
   }
