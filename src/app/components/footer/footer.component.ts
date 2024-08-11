@@ -57,7 +57,6 @@ export class FooterComponent implements OnInit {
 
   registerForm: FormGroup;
   submitted = false;
-
   constructor(
     private _renderer2: Renderer2,
     @Inject(DOCUMENT) private _document: Document,
@@ -152,17 +151,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
    
-
-    /*
-    let script = this._renderer2.createElement('script');
-    script.type = "text/javascript"
-    script.src = this.getJson.getJSON("./assets/index.js")
-    script.id = "contact-form-7-js"
-
-
-    this._renderer2.appendChild(this._document.body, script);
-  */
-
     this.registerForm = this.formBuilder.group({
       name: ['',
         Validators.required],
@@ -174,7 +162,8 @@ export class FooterComponent implements OnInit {
         Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
       phone: ['', [
         Validators.required,
-        Validators.minLength(6)]],
+        Validators.pattern('^[- +()0-9]+$'),
+        Validators.minLength(12)]],
       message: ['', [
         Validators.required,
         Validators.minLength(10)]]
@@ -467,13 +456,13 @@ export class FooterComponent implements OnInit {
     }
     this.getJson.sendEmail(this.registerForm.controls);
     this.registerForm.reset({
-      'name': '',
-      'company': '',
-      'email': '',
-      'phone': '',
-      'message': ''
+      'name': null,
+      'company': null,
+      'email': null,
+      'phone': null,
+      'message': null
     });
-    //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
+    this.submitted = false;
     
   }
 
