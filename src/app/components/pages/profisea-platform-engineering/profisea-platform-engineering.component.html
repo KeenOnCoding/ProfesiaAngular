@@ -1,0 +1,799 @@
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+  img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+  }
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+  /*! This file is auto-generated */
+  .wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em
+  }
+
+  .wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none
+  }
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+  body {
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+  }
+
+  :where(.is-layout-flex) {
+    gap: 0.5em;
+  }
+
+  :where(.is-layout-grid) {
+    gap: 0.5em;
+  }
+
+  body .is-layout-flow > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+  }
+
+  body .is-layout-flow > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+  }
+
+  body .is-layout-flow > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+  }
+
+  body .is-layout-constrained > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+  }
+
+  body .is-layout-constrained > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: var(--wp--style--global--content-size);
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body .is-layout-constrained > .alignwide {
+    max-width: var(--wp--style--global--wide-size);
+  }
+
+  body .is-layout-flex {
+    display: flex;
+  }
+
+  body .is-layout-flex {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+    body .is-layout-flex > * {
+      margin: 0;
+    }
+
+  body .is-layout-grid {
+    display: grid;
+  }
+
+    body .is-layout-grid > * {
+      margin: 0;
+    }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  .has-black-color {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-color {
+    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-color {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-color {
+    color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-color {
+    color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-color {
+    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-color {
+    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-color {
+    color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-color {
+    color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-color {
+    color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-color {
+    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-color {
+    color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-background-color {
+    background-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-background-color {
+    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-background-color {
+    background-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-background-color {
+    background-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-background-color {
+    background-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-background-color {
+    background-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-background-color {
+    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-background-color {
+    background-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-border-color {
+    border-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-border-color {
+    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-border-color {
+    border-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-border-color {
+    border-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-border-color {
+    border-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-border-color {
+    border-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-border-color {
+    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-border-color {
+    border-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+    background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+  }
+
+  .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+    background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+  }
+
+  .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+  }
+
+  .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+    background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+  }
+
+  .has-cool-to-warm-spectrum-gradient-background {
+    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+  }
+
+  .has-blush-light-purple-gradient-background {
+    background: var(--wp--preset--gradient--blush-light-purple) !important;
+  }
+
+  .has-blush-bordeaux-gradient-background {
+    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+  }
+
+  .has-luminous-dusk-gradient-background {
+    background: var(--wp--preset--gradient--luminous-dusk) !important;
+  }
+
+  .has-pale-ocean-gradient-background {
+    background: var(--wp--preset--gradient--pale-ocean) !important;
+  }
+
+  .has-electric-grass-gradient-background {
+    background: var(--wp--preset--gradient--electric-grass) !important;
+  }
+
+  .has-midnight-gradient-background {
+    background: var(--wp--preset--gradient--midnight) !important;
+  }
+
+  .has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+  }
+
+  .has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+  }
+
+  .has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+
+  .wp-block-navigation a:where(:not(.wp-element-button)) {
+    color: inherit;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  .wp-block-pullquote {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.profisea.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8' type='text/css' media='all' />
+
+
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel='shortlink' href='https://www.profisea.com/?p=10251' />
+<link rel="alternate" type="application/json+oembed" href="https://www.profisea.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.profisea.com%2Fprofisea-platform-engineering%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.profisea.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.profisea.com%2Fprofisea-platform-engineering%2F&#038;format=xml" />
+<style id="cky-style-inline">
+  [data-cky-tag] {
+    visibility: hidden;
+  }
+</style>			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.1.40-->
+<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+<link rel="icon" href="https://www.profisea.com/wp-content/uploads/2023/11/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.profisea.com/wp-content/uploads/2023/11/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.profisea.com/wp-content/uploads/2023/11/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.profisea.com/wp-content/uploads/2023/11/cropped-favicon-270x270.png" />
+<style type="text/css" id="wp-custom-css">
+  .grecaptcha-badge {
+    display: none !important
+  }
+</style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/global.css?ver=1.46">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/tpl-platform-engineering.css?ver=1.24">
+
+<section class="title-page">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-delay="100">Platform Engineering </h1>
+    <p data-aos="fade-up" data-aos-delay="200">Flextweak supports your application development and deployment with the latest platform engineering methodologies. Our experts deliver a stable, efficient, and automated solution tailored to the needs of your developers and managers.</p>
+
+    <div class="we-support" data-aos="fade-up" data-aos-delay="200">
+      <p>We support:</p>
+
+      <img width="64" height="64" src="https://www.profisea.com/wp-content/uploads/2023/12/about-page-aws-min.png" alt="aws logo " title="We support aws">
+
+      <img width="64" height="64" src="https://www.profisea.com/wp-content/uploads/2023/12/about-page-icon-2-min.png" alt="Microsoft Azure logo" title="We support Microsoft Azure ">
+
+      <img width="64" height="64" src="https://www.profisea.com/wp-content/uploads/2023/12/about-page-icon-3-min.png" alt="GCP logo" title="We support GCP">
+    </div>
+  </div>
+</section>
+
+<section class="section platform-engineer-text">
+  <div class="dflex container">
+    <div class="image" data-aos="fade-up" data-aos-delay="200">
+      <img width="518" height="452" src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/img-platform-engineering.svg" alt="Image Platform Engineering" title="Platform Engineering Image Flextweak">
+    </div>
+    <div class="text">
+      <div data-aos="fade-up" data-aos-delay="300">
+        <p>Platform engineering is a strategic discipline that empowers software teams with self-service capabilities through efficient toolchains and workflows in the cloud-native era. By implementing an Internal Developer Platform (IDP), companies can streamline the entire application lifecycle, ensuring infrastructure needs are met seamlessly.</p>
+
+        <p>The <a href="https://internaldeveloperplatform.org" target="_blank" rel="nofollow">Internal Developer Platform (IDP)</a> is a vital layer over your existing tech stack, enabling true developer self-service and structured operations. This approach reduces complexity, enhances productivity, and allows developers to focus on innovation, ultimately driving business growth. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section future bg-dark border-round-top">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="200">Platform Engineering – The Future of Your Infrastructure</h2>
+    <p data-aos="fade-up" data-aos-delay="250">Flextweak’s Platform Engineering services are designed to develop, configure, and maintain a high-performance platform that automates critical application lifecycle processes. Our approach ensures your infrastructure is scalable, reliable, and optimized for your business needs. Key steps include:</p>
+
+    <div class="dflex future-items">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <div class="num">1</div>
+        <div class="description">
+          <h3>Platform Development</h3>
+          <p>We build a flexible and resilient infrastructure tailored to your specific requirements, ensuring it can scale as your business grows.</p>
+        </div>
+        <div class="icon">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-platform-development.svg" alt="Platform Development">
+        </div>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <div class="num">2</div>
+        <div class="description">
+          <h3>Automation</h3>
+          <p>By automating repetitive tasks like code integration and deployment, we reduce errors, speed up development cycles, and free your teams to focus on innovation.</p>
+        </div>
+        <div class="icon">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-automation.svg" alt="Automation">
+        </div>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <div class="num">3</div>
+        <div class="description">
+          <h3>Monitoring and Analysis</h3>
+          <p>We integrate advanced monitoring tools to provide real-time insights, allowing us to address issues and optimize performance proactively.</p>
+        </div>
+        <div class="icon">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-monitoring-and-analysis.svg" alt="Monitoring and Analysis">
+        </div>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <div class="num">4</div>
+        <div class="description">
+          <h3>Optimization</h3>
+          <p>Continuous refinement of processes and tools ensures your platform runs at peak efficiency, reducing costs and aligning with your business objectives.</p>
+        </div>
+        <div class="icon">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-optimization.svg" alt="Optimization">
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<section class="counter bg-dark" style="border-radius: 0px; ">
+  <div class="wrapper-counter">
+    <div class="lines-counter">
+      <svg width="1440" height="102" viewBox="0 0 1440 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-43.1981 100.166C877.5 -160.5 935 274.999 1520.5 1.49943" stroke="#FF9900" stroke-width="2" />
+      </svg>
+      <svg width="1440" height="214" viewBox="0 0 1440 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-2.5 18.5004C502.5 -86.0003 389.5 346.5 1462 169.499" stroke="#B34DBF" stroke-width="2" />
+      </svg>
+    </div>
+
+    <div class="container">
+      <h2 data-aos="fade-up" data-aos-delay="100">Results You Can Expect</h2>
+    </div>
+
+    <div class="dflex container">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num"><span class="counter-n" data-num="30">0</span>%</p>
+        <p class="title">Reduction in Application Deployment Time</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num"><span class="counter-n" data-num="50">0</span>%</p>
+        <p class="title">Reduction in Downtime and Enhanced Performance</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="num"><span class="counter-n" data-num="40">0</span>%</p>
+        <p class="title">Increase in Developer Productivity</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="benefits bg-dark">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="100">Who Benefits from Platform Engineering?</h2>
+
+    <div class="wrapper-benefits">
+      <div class="image" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/img-benefits.svg" alt="Who Benefits from Platform Engineering?">
+      </div>
+      <div class="content-benefits">
+        <div class="item green" data-aos="fade-up" data-aos-delay="100">
+          <p class="title">Developers</p>
+          <p>Gain access to simple and efficient development and testing tools, enabling faster delivery of high-quality software.</p>
+        </div>
+
+        <div class="item blue" data-aos="fade-up" data-aos-delay="150">
+          <p class="title">DevOps Teams</p>
+          <p>Simplify deployment and monitoring processes, reducing the complexity of managing infrastructure.</p>
+        </div>
+
+        <div class="item red" data-aos="fade-up" data-aos-delay="200">
+          <p class="title">Project Managers</p>
+          <p>Maintain transparency and control over development processes, ensuring projects stay on track and within budget. </p>
+        </div>
+
+        <div class="item yellow" data-aos="fade-up" data-aos-delay="250">
+          <p class="title">IT Directors</p>
+          <p>Optimize resource utilization, reduce costs, and improve the overall efficiency of your infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="platform bg-dark">
+  <div class="container">
+    <div class="desctiption">
+      <h2 data-aos="fade-up" data-aos-delay="100">Platform Engineering for Businesses and Startups</h2>
+      <p data-aos="fade-up" data-aos-delay="200">Internal Developer Platforms (IDPs) are critical in implementing Platform Engineering strategies, streamlining workflows, and increasing productivity. Flextweak recommends and implements the top 3 IDP solutions tailored to meet the unique needs of your organization:</p>
+    </div>
+    <div class="wrapper-platform">
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/crossplane-logo.svg" alt="Ideal for organizations looking to centralize their development resources and improve visibility across teams.">
+        <p>Ideal for organizations looking to centralize their development resources and improve visibility across teams. </p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/kubevela-logo.svg" alt="Suitable for teams that need a flexible interface to easily manage applications and infrastructure.">
+        <p>Suitable for teams that need a flexible interface to easily manage applications and infrastructure.</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/aws-cdk-logo.svg" alt="Best for teams focused on managing APIs and microservices in a scalable and efficient manner.">
+        <p>Best for teams focused on managing APIs and microservices in a scalable and efficient manner.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="enterprises bg-dark">
+  <div class="container">
+    <div class="description" data-aos="fade-up" data-aos-delay="100">
+      <h2>Platform Engineering For Enterprises</h2>
+      <p>Flextweak’s platform engineering solutions are designed for large enterprises. They offer a structured approach to developing and deploying custom IDPs with full control. Our team handles the entire process on a turnkey basis, from assessment and planning to full deployment and continuous improvement, ensuring alignment with industry best practices. </p>
+      <p><strong>Our structured approach includes: </strong></p>
+    </div>
+
+    <div class="wrapper-enterprises">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-assessment-and-planning.svg" alt="Assessment and Planning">
+        <p>Assessment and <br> Planning</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="150">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-designing-the-platform.svg" alt="Designing the Platform">
+        <p>Designing the <br> Platform</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-building-core-components.svg" alt="Building Core Components">
+        <p>Building Core <br> Components</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="250">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-incremental-rollout.svg" alt="Incremental Rollout">
+        <p>Incremental <br> Rollout</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-training-and-documentation.svg" alt="Training and Documentation">
+        <p>Training and <br> Documentation</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="350">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-full-deployment.svg" alt="Full Deployment">
+        <p>Full <br> Deployment</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-continuous-improvement.svg" alt="Continuous Improvement">
+        <p>Continuous <br> Improvement</p>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="450">
+        <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/icon-governance-and-compliance.svg" alt="Governance and Compliance">
+        <p>Governance <br> and Compliance</p>
+      </div>
+
+    </div>
+
+    <p class="gradient-blue-text" data-aos="fade-up" data-aos-delay="100">As a result, enterprises benefit from enhanced productivity, reduced operational complexity, and infrastructure that aligns seamlessly with business goals.</p>
+  </div>
+</section>
+
+<section class="section stack border-round-top">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="200">Technology Stack</h2>
+    <p data-aos="fade-up" data-aos-delay="250">
+      Unleash the Power of DevOps Tools
+      with Flextweak
+    </p>
+    <a href="/technology-stack" class="btn-theme btn-blue" data-aos="fade-up" data-aos-delay="300">See All Tools</a>
+  </div>
+</section>
+
+<section class="stack-technology">
+  <div class="container">
+    <div class="description" data-aos="fade-up" data-aos-delay="100">
+      <p>At Flextweak, we leverage a robust, cutting-edge technology stack to deliver exceptional Platform Engineering services and solutions. Our technology stack includes:</p>
+    </div>
+
+    <div class="wrapper-stack wrapper-stack-first">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">CI/CD</p>
+        <p>ArgoCD, Tekton, Shipwright, Gitlab CI, Github Actions, Kubebuilder, Go lang, CUE lang etc. for automating development and deployment processes.</p>
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/devicon_gitlab.svg" alt="CI/CD Logo 1">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/simple-icons_tekton.svg" alt="CI/CD Logo 2">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/Kubebuilder.svg" alt="CI/CD Logo 3">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/shipwright-logo.svg" alt="CI/CD Logo 4">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/devicon_argocd.svg" alt="CI/CD Logo 5">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/fa6-brands_golang.svg" alt="CI/CD Logo 6">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/ci/cue.svg" alt="CI/CD Logo 7">
+        </div>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="title">Infrastructure as Code (IaC)</p>
+        <p>Terraform, Pulumi, AWS CDK, Crossplane, Kubevela for automating infrastructure creation and management.</p>
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/infrastructure/devicon_terraform.svg" alt="Infrastructure as Code (IaC) Logo 1">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/infrastructure/vscode-icons_file-type-pulumi.svg" alt="Infrastructure as Code (IaC) Logo 2">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/infrastructure/acc73db51c6a7721a234035449d83809.png" alt="Infrastructure as Code (IaC) Logo 3">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wrapper-stack wrapper-stack-second">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="100">
+        <p class="title">Containerization</p>
+        <p>Docker, Kubernetes for container management and orchestration</p>
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/containerization/logos_docker-icon.svg" alt="Containerization Logo 1">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/containerization/devicon_kubernetes.svg" alt="Containerization Logo 2">
+        </div>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <p class="title">Monitoring and Logging</p>
+        <p>Prometheus, Grafana for monitoring, ELK stack for log analysis.</p>
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/monitoring/vscode-icons_file-type-prometheus.svg" alt="Monitoring and Logging Logo 1">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/monitoring/logos_grafana.svg" alt="Monitoring and Logging Logo 2">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/monitoring/image-480.svg" alt="Monitoring and Logging Logo 3">
+        </div>
+      </div>
+
+      <div class="item" data-aos="fade-up" data-aos-delay="300">
+        <p class="title">Security Tools</p>
+        <p>Vault, Secret Manager, Trivy, Aqua Security, Wiz, etc. for managing secrets and access rights.</p>
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/security/logos_vault-icon.svg" alt="Security Tools Logo 1">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/security/icon-3.svg" alt="Security Tools Logo 2">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/security/image-481.png" alt="Security Tools Logo 3">
+          <img src="https://www.profisea.com/wp-content/themes/profisea-theme/image/platform-engineering/security/image-482.png" alt="Security Tools Logo 4">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-white">
+  <h2 data-aos="fade-up" data-aos-delay="200">Let's Get Started</h2>
+  <p data-aos="fade-up" data-aos-delay="250">If you’re ready to succeed, we are ready to help!</p>
+
+  <div class="btn-lets-get-started" data-aos="fade-up" data-aos-delay="200">
+    <div data-aos="fade-up" data-aos-delay="250">
+      <a href="#modalForm" class="btn-theme btn-blue link-modal" data-aos="fade-up" data-aos-delay="300">Discuss your project</a>
+    </div>
+  </div>
+  <div class="lines-cta-white" data-aos="fade-up" data-aos-delay="400" id="ctaWave"></div>
+</section>
+
+<div class="section bg-dark-footer our-cases">
+  <div class="container">
+    <h2 class="white" data-aos="fade-up" data-aos-delay="200">Our Case Studies</h2>
+
+    <div class="dflex wrapper-cases">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2024/01/avo-logo-white.png" alt="Client 1 How Avo Maximized AWS Cloud Cost Savings with Flextweak’s FinOps Expertise">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 How Avo Maximized AWS Cloud Cost Savings with Flextweak’s FinOps Expertise">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/avo/">How Avo Maximized AWS Cloud Cost Savings with Flextweak’s FinOps Expertise</a></h3>
+        <p>
+          Fueled by its vision for innovation, security, and cost-efficiency, Avo embraced Amazon Web Services (AWS) as its cloud platform. However, their journey wasn't without its challenges. Overprovisioning, underutilized resources, and unmanaged cloud storage led to inefficient spending and higher-than-anticipated cloud costs.
+
+          Recognizing the need for optimization, Avo cooperated with Flextweak, an AWS Advanced Tier Services partner, to establish the necessary infrastructure changes on AWS, focusing on DevOps and FinOps services.
+        </p>
+        <a href="https://www.profisea.com/case-studies/avo/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/12/playstream-logo-white.png" alt="Client 1 Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Flextweak">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Flextweak">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/playstream-redefining-live-streaming-engagement-through-aws-cloud-migration-with-profisea/">Playstream: Redefining Live Streaming Engagement through AWS Cloud Migration with Flextweak</a></h3>
+        <p>Playstream is an innovative Israeli company that aims to enrich the interaction between viewers and streamers, creating a more captivating and enjoyable live-streaming experience.</p>
+        <a href="https://www.profisea.com/case-studies/playstream-redefining-live-streaming-engagement-through-aws-cloud-migration-with-profisea/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2023/10/StructShare-logo-white.png" alt="Client 1 Boosting Cloud Efficiency: How StructShare Partnership with Flextweak Results in Best-in-Class AWS Cloud Infrastructure">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Boosting Cloud Efficiency: How StructShare Partnership with Flextweak Results in Best-in-Class AWS Cloud Infrastructure">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/boosting-cloud-efficiency-how-structshare-partnership-with-profisea-results-in-best-in-class-aws-cloud-infrastructure/">Boosting Cloud Efficiency: How StructShare Partnership with Flextweak Results in Best-in-Class AWS Cloud Infrastructure</a></h3>
+        <p>By utilizing AWS services improved application and database workload scalability and reliability for StructShare going forward. </p>
+        <a href="https://www.profisea.com/case-studies/boosting-cloud-efficiency-how-structshare-partnership-with-profisea-results-in-best-in-class-aws-cloud-infrastructure/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -21,6 +21,13 @@ import { CareersComponent } from './components/pages/careers/careers.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { FinfineComponent } from './components/pages/finfine/finfine.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PlatformEngineeringComponent } from './components/pages/profisea-platform-engineering/profisea-platform-engineering.component';
+import { MachineLearningOperationsComponent } from './components/pages/machine-learning-operations/machine-learning-operations.component';
+import { AiGenaiServicesComponent } from './components/pages/ai-genai-services/ai-genai-services.component';
+import { OracleCloudPartnershipComponent } from './components/pages/oracle-cloud-partnership/oracle-cloud-partnership.component';
+import { AzurePartnershipComponent } from './components/pages/azure-partnership/azure-partnership.component';
+import { GcpPartnershipComponent } from './components/pages/gcp-partnership/gcp-partnership.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +46,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     TechnologyStackComponent,
     CareersComponent,
     PageNotFoundComponent,
-    FinfineComponent
+    FinfineComponent,
+    PlatformEngineeringComponent,
+    MachineLearningOperationsComponent,
+    AiGenaiServicesComponent,
+    OracleCloudPartnershipComponent,
+    AzurePartnershipComponent,
+    GcpPartnershipComponent
   ],
   exports: [
     HeaderComponent,

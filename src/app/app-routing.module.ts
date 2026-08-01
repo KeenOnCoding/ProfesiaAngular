@@ -14,6 +14,12 @@ import { CareersComponent } from './components/pages/careers/careers.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { FinfineComponent } from './components/pages/finfine/finfine.component';
+import { PlatformEngineeringComponent } from './components/pages/profisea-platform-engineering/profisea-platform-engineering.component';
+import { MachineLearningOperationsComponent } from './components/pages/machine-learning-operations/machine-learning-operations.component';
+import { AiGenaiServicesComponent } from './components/pages/ai-genai-services/ai-genai-services.component';
+import { OracleCloudPartnershipComponent } from './components/pages/oracle-cloud-partnership/oracle-cloud-partnership.component';
+import { AzurePartnershipComponent } from './components/pages/azure-partnership/azure-partnership.component';
+import { GcpPartnershipComponent } from './components/pages/gcp-partnership/gcp-partnership.component';
 
 const routes: Routes = [
   {
@@ -58,6 +64,18 @@ const routes: Routes = [
     component: AwsPartnershipComponent
   },
   {
+    path: 'oracle-cloud-partnership',
+    component: OracleCloudPartnershipComponent
+  },
+  {
+    path: 'azure-partnership',
+    component: AzurePartnershipComponent
+  },
+  {
+    path: 'gcp-partnership',
+    component: GcpPartnershipComponent
+  },
+  {
     path: 'technology-stack',
     component: TechnologyStackComponent
   },
@@ -68,6 +86,18 @@ const routes: Routes = [
   {
     path: 'finfine',
     component: FinfineComponent
+  },
+  {
+    path: 'profisea-platform-engineering',
+    component: PlatformEngineeringComponent
+  },
+  {
+    path: 'machine-learning-operations',
+    component: MachineLearningOperationsComponent
+  },
+  {
+    path: 'ai-genai-services',
+    component: AiGenaiServicesComponent
   },
   {
     path: '**', pathMatch: 'full',

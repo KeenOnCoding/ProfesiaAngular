@@ -476,11 +476,11 @@ document.addEventListener('wpcf7mailsent', function (event) {
   }
 }, false);
 
-$(document).mouseup(function (e) { // событие клика по веб-документу
-  var div = $("#modalForm .content"); // тут указываем ID элемента
-  if (!div.is(e.target) // если клик был не по нашему блоку
-    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    $('.modal').removeClass('show'); // скрываем его
+$(document).mouseup(function (e) { 
+  var div = $("#modalForm .content"); 
+  if (!div.is(e.target) 
+    && div.has(e.target).length === 0) { 
+    $('.modal').removeClass('show'); 
     $('body').removeClass('overflow-hidden');
   }
 });

@@ -1,0 +1,690 @@
+
+
+<style>
+  img:is([sizes="auto" i], [sizes^="auto," i]) {
+    contain-intrinsic-size: 3000px 1500px
+  }
+</style>
+
+
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+  /*! This file is auto-generated */
+  .wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em
+  }
+
+  .wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none
+  }
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+  :root {
+    --wp--preset--aspect-ratio--square: 1;
+    --wp--preset--aspect-ratio--4-3: 4/3;
+    --wp--preset--aspect-ratio--3-4: 3/4;
+    --wp--preset--aspect-ratio--3-2: 3/2;
+    --wp--preset--aspect-ratio--2-3: 2/3;
+    --wp--preset--aspect-ratio--16-9: 16/9;
+    --wp--preset--aspect-ratio--9-16: 9/16;
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+  }
+
+  :where(.is-layout-flex) {
+    gap: 0.5em;
+  }
+
+  :where(.is-layout-grid) {
+    gap: 0.5em;
+  }
+
+  body .is-layout-flex {
+    display: flex;
+  }
+
+  .is-layout-flex {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+    .is-layout-flex > :is(*, div) {
+      margin: 0;
+    }
+
+  body .is-layout-grid {
+    display: grid;
+  }
+
+  .is-layout-grid > :is(*, div) {
+    margin: 0;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  .has-black-color {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-color {
+    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-color {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-color {
+    color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-color {
+    color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-color {
+    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-color {
+    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-color {
+    color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-color {
+    color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-color {
+    color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-color {
+    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-color {
+    color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-background-color {
+    background-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-background-color {
+    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-background-color {
+    background-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-background-color {
+    background-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-background-color {
+    background-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-background-color {
+    background-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-background-color {
+    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-background-color {
+    background-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-border-color {
+    border-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-border-color {
+    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-border-color {
+    border-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-border-color {
+    border-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-border-color {
+    border-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-border-color {
+    border-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-border-color {
+    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-border-color {
+    border-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+    background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+  }
+
+  .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+    background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+  }
+
+  .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+  }
+
+  .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+    background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+  }
+
+  .has-cool-to-warm-spectrum-gradient-background {
+    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+  }
+
+  .has-blush-light-purple-gradient-background {
+    background: var(--wp--preset--gradient--blush-light-purple) !important;
+  }
+
+  .has-blush-bordeaux-gradient-background {
+    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+  }
+
+  .has-luminous-dusk-gradient-background {
+    background: var(--wp--preset--gradient--luminous-dusk) !important;
+  }
+
+  .has-pale-ocean-gradient-background {
+    background: var(--wp--preset--gradient--pale-ocean) !important;
+  }
+
+  .has-electric-grass-gradient-background {
+    background: var(--wp--preset--gradient--electric-grass) !important;
+  }
+
+  .has-midnight-gradient-background {
+    background: var(--wp--preset--gradient--midnight) !important;
+  }
+
+  .has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+  }
+
+  .has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+  }
+
+  .has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :root :where(.wp-block-pullquote) {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.profisea.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.6' type='text/css' media='all' />
+
+<style id="cky-style-inline">
+  [data-cky-tag] {
+    visibility: hidden;
+  }
+</style>			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.6-->
+
+
+<style type="text/css" id="wp-custom-css">
+  .grecaptcha-badge {
+    display: none !important
+  }
+</style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/global.css?ver=1785490767">
+
+
+
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/libs/owl/owl.carousel.min.css">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/tpl-gcp.css?ver=1785490767">
+
+
+
+
+
+
+
+
+<!-- Google Tag Manager -->
+
+
+<section class="title-page">
+  <div class="container">
+    <h1 data-aos="fade-up" data-aos-delay="100">A Trusted <br>GCP Partner </h1>
+  </div>
+</section>
+
+<section class="section buold-faster">
+  <div class="container">
+    <div class="image" data-aos="fade-up" data-aos-delay="100">
+      <img width="360" height="292" src="../../../assets/images/gcp-partnership/gcp-image.svg" alt="Build Faster. Scale Smarter. Innovate with Google Cloud." title="Build Faster. Scale Smarter. Innovate with Google Cloud. Image">
+    </div>
+    <div class="text" data-aos="fade-up" data-aos-delay="200">
+      <h2>Build Faster. Scale Smarter. Innovate with Google Cloud.</h2>
+      <p>Google Cloud was built for organizations that want to move fast, leverage data effectively, and bring AI-powered innovation into their products and operations.</p>
+      <p>At FlexTweak, we help companies unlock the full potential of Google Cloud through cloud-native architectures, Kubernetes platforms, AI infrastructure, and cost-efficient operations.</p>
+      <p>Whether you're scaling a SaaS platform, building AI products, or modernizing your cloud environment, our team helps you stay focused on innovation while we handle the complexity behind the scenes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark border-round-top why-google-cloud">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="100">Why Google Cloud?</h2>
+
+    <div class="description" data-aos="fade-up" data-aos-delay="200">
+      <p>Google Cloud has become the platform of choice for organizations building modern applications, data platforms, and AI-driven solutions.</p>
+      <p>Organizations choose Google Cloud to accelerate product development, improve scalability, and create better experiences for their users.</p>
+    </div>
+
+    <div class="items-why-google-cloud">
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-industry-leading-kubernetes-ecosystem.svg" alt="Industry-Leading Kubernetes Ecosystem">
+        <p>Industry-Leading Kubernetes Ecosystem</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-advanced-ai-and-machine-learning-services.svg" alt="Advanced AI and Machine Learning Services">
+        <p>Advanced AI and Machine Learning Services</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-powerful-analytics-and-data-platforms.svg" alt="Powerful Analytics and Data Platforms">
+        <p>Powerful Analytics and Data Platforms</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-cloud-native-development-environments.svg" alt="Cloud-Native Development Environments">
+        <p>Cloud-Native Development Environments</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-global-infrastructure-enterprise-grade-security.svg" alt="Global Infrastructure with Enterprise-Grade Security">
+        <p>Global Infrastructure with Enterprise-Grade Security</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark how-helps">
+  <div class="container">
+    <h2>How FlexTweak Helps</h2>
+
+    <div id="pillars">
+      <div class="container">
+        <div class="carousel-pillars dflex">
+          <div class="carousel-pillars-nav">
+            <ul class="carousel-pillars-nav-ul">
+
+              <li class="dflex d-flex-align-center active" data="1">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill">
+                  <path d="M16.0656 4.8C11.6795 4.8 8.05167 8.0518 7.46356 12.2758C7.40782 12.6761 7.06216 12.972 6.65798 12.9653C6.63204 12.9649 6.60607 12.9647 6.58007 12.9647C4.03784 12.9647 1.97695 15.0256 1.97695 17.5678C1.97695 20.11 4.03784 22.1709 6.58007 22.1709L6.59108 22.1709L6.59305 22.1709H8.94177V23.7709H6.59305L6.58007 23.7709C3.15418 23.7709 0.376953 20.9937 0.376953 17.5678C0.376953 14.3398 2.84267 11.6876 5.99343 11.3921C6.96079 6.71515 11.1021 3.2 16.0656 3.2C19.6946 3.2 22.8837 5.07985 24.7136 7.91546C28.3857 8.64314 31.1539 11.881 31.1539 15.7668C31.1539 20.1873 27.5704 23.7709 23.1498 23.7709L22.589 23.7709V22.1709L23.1498 22.1709C26.6867 22.1709 29.5539 19.3037 29.5539 15.7668C29.5539 12.5547 27.1885 9.89377 24.1048 9.43322C23.8673 9.39774 23.6582 9.25745 23.5354 9.05108C22.0198 6.50385 19.2412 4.8 16.0656 4.8Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0711 10.9646C19.0711 10.5228 18.7129 10.1646 18.2711 10.1646C17.8292 10.1646 17.4711 10.5228 17.4711 10.9646V12.8046H15.0497V10.966C15.0497 10.5242 14.6916 10.166 14.2497 10.166C13.8079 10.166 13.4497 10.5242 13.4497 10.966V12.8162C12.9653 12.8667 12.5101 13.0819 12.1626 13.4295C11.7874 13.8047 11.5664 14.3052 11.5403 14.8326H9.60039C9.15856 14.8326 8.80039 15.1908 8.80039 15.6326C8.80039 16.0745 9.15856 16.4326 9.60039 16.4326H11.5377V18.798H9.60039C9.15856 18.798 8.80039 19.1562 8.80039 19.598C8.80039 20.0398 9.15856 20.398 9.60039 20.398H11.5424C11.5765 20.9122 11.7959 21.3985 12.1626 21.7651C12.5101 22.1127 12.9653 22.328 13.4497 22.3785V26H2.40039C1.95856 26 1.60039 26.3582 1.60039 26.8C1.60039 27.2418 1.95856 27.6 2.40039 27.6H29.2004C29.6422 27.6 30.0004 27.2418 30.0004 26.8C30.0004 26.3582 29.6422 26 29.2004 26H19.0831V22.3868C19.6061 22.358 20.1019 22.1375 20.4742 21.7651C20.8409 21.3985 21.0603 20.9122 21.0944 20.398H23.0337C23.4756 20.398 23.8337 20.0398 23.8337 19.598C23.8337 19.1562 23.4756 18.798 23.0337 18.798H21.0991V16.4326H23.0337C23.4756 16.4326 23.8337 16.0745 23.8337 15.6326C23.8337 15.1908 23.4756 14.8326 23.0337 14.8326H21.0965C21.0704 14.3052 20.8494 13.8047 20.4742 13.4295C20.099 13.0543 19.5985 12.8333 19.0711 12.8072V10.9646ZM17.4831 22.39H15.0497V26H17.4831V22.39ZM19.3428 14.5609C19.2428 14.4608 19.1072 14.4046 18.9657 14.4046H13.6711C13.5296 14.4046 13.394 14.4608 13.2939 14.5609C13.1939 14.6609 13.1377 14.7965 13.1377 14.938V20.2566C13.1377 20.3981 13.1939 20.5337 13.2939 20.6338C13.394 20.7338 13.5296 20.79 13.6711 20.79H18.9657C19.1072 20.79 19.2428 20.7338 19.3428 20.6338C19.4429 20.5337 19.4991 20.3981 19.4991 20.2566V19.6446C19.4982 19.6291 19.4977 19.6136 19.4977 19.598C19.4977 19.5823 19.4982 19.5668 19.4991 19.5514V15.6792C19.4982 15.6638 19.4977 15.6483 19.4977 15.6326C19.4977 15.617 19.4982 15.6015 19.4991 15.5861V14.938C19.4991 14.7965 19.4429 14.6609 19.3428 14.5609Z" />
+                </svg>
+
+                <span>Cloud-Native Architecture</span>
+              </li>
+              <li class="dflex d-flex-align-center" data="2">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4282 25.7145C24.9746 25.7145 26.2282 24.4608 26.2282 22.9145C26.2282 21.3681 24.9746 20.1145 23.4282 20.1145C21.8818 20.1145 20.6282 21.3681 20.6282 22.9145C20.6282 24.4608 21.8818 25.7145 23.4282 25.7145ZM23.4282 24.1145C24.091 24.1145 24.6282 23.5772 24.6282 22.9145C24.6282 22.2517 24.091 21.7145 23.4282 21.7145C22.7655 21.7145 22.2282 22.2517 22.2282 22.9145C22.2282 23.5772 22.7655 24.1145 23.4282 24.1145Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5065 16.0317C21.6903 15.9798 21.8836 15.9712 22.0714 16.0065C22.2595 16.042 22.4368 16.1206 22.5894 16.2362L23.3614 16.8133L24.1335 16.2362C24.286 16.1206 24.4633 16.042 24.6515 16.0065C24.8392 15.9712 25.0326 15.9798 25.2164 16.0317C25.7952 16.1903 26.3519 16.4203 26.8738 16.7166L26.8785 16.7192C27.0406 16.8127 27.1798 16.9411 27.2861 17.0952C27.3923 17.2492 27.4629 17.425 27.4926 17.6097L27.4948 17.6238L27.6317 18.5823L28.5902 18.7192L28.6042 18.7213C28.789 18.7511 28.9648 18.8217 29.1188 18.9279C29.2728 19.0341 29.4013 19.1734 29.4947 19.3355L29.4974 19.3401C29.7936 19.862 30.0237 20.4187 30.1823 20.9975C30.2342 21.1813 30.2428 21.3747 30.2074 21.5625C30.172 21.7507 30.0933 21.9281 29.9775 22.0807L29.3982 22.8545L29.9769 23.6234C30.0929 23.7762 30.1719 23.954 30.2074 24.1426C30.2428 24.3304 30.2342 24.5238 30.1823 24.7076C30.0237 25.2863 29.7936 25.8431 29.4974 26.365L29.4947 26.3696C29.4013 26.5317 29.2728 26.671 29.1188 26.7772C28.9648 26.8834 28.789 26.954 28.6042 26.9837L28.5897 26.9859L27.6312 27.1223L27.4948 28.0808L27.4926 28.0954C27.4629 28.2801 27.3923 28.4559 27.2861 28.6099C27.1798 28.764 27.0406 28.8924 26.8785 28.9858L26.8739 28.9885C26.352 29.2847 25.7952 29.5148 25.2165 29.6734C25.0326 29.7253 24.8392 29.7339 24.6515 29.6985C24.4634 29.6631 24.2861 29.5845 24.1336 29.4689L23.3614 28.8917L22.5901 29.4683C22.3728 29.6337 22.1065 29.7221 21.8333 29.7196C21.7227 29.719 21.6126 29.7035 21.5062 29.6733C20.9275 29.5147 20.3708 29.2847 19.849 28.9885L19.8443 28.9859C19.6822 28.8924 19.543 28.764 19.4368 28.6099C19.3305 28.4559 19.26 28.2801 19.2302 28.0954L19.2281 28.0813L19.0912 27.1228L18.1327 26.9859L18.1186 26.9837C17.9339 26.954 17.7581 26.8834 17.604 26.7772C17.45 26.671 17.3216 26.5317 17.2281 26.3696L17.2254 26.365C16.9292 25.8431 16.6991 25.2863 16.5406 24.7075C16.4887 24.5237 16.48 24.3303 16.5154 24.1426C16.5509 23.9543 16.6296 23.7769 16.7453 23.6243L17.3247 22.8506L16.7461 22.0818C16.63 21.929 16.551 21.7512 16.5154 21.5625C16.48 21.3747 16.4887 21.1814 16.5406 20.9976C16.6991 20.4188 16.9292 19.862 17.2255 19.3401L17.2281 19.3355C17.3216 19.1733 17.45 19.0341 17.604 18.9279C17.7581 18.8217 17.9339 18.7511 18.1186 18.7213L18.1327 18.7192L19.0912 18.5823L19.2281 17.6238L19.2302 17.6097C19.26 17.425 19.3305 17.2492 19.4368 17.0952C19.543 16.9411 19.6822 16.8127 19.8443 16.7192L19.849 16.7166C20.3709 16.4203 20.9277 16.1903 21.5065 16.0317ZM21.7696 17.6211C21.4299 17.725 21.1008 17.861 20.7867 18.027L20.6161 19.2213C20.5916 19.3927 20.5122 19.5515 20.3898 19.6739L20.1828 19.881C20.0604 20.0033 19.9016 20.0827 19.7302 20.1072L18.5359 20.2778C18.37 20.5917 18.2341 20.9206 18.1302 21.2601L18.8571 22.226C18.9614 22.3646 19.0178 22.5335 19.0178 22.707V22.9925C19.0178 23.1653 18.9618 23.3336 18.8582 23.4719L18.13 24.4445C18.234 24.7842 18.3699 25.1132 18.5359 25.4272L19.7302 25.5979C19.9016 25.6223 20.0604 25.7017 20.1827 25.8241L20.3898 26.0312C20.5122 26.1536 20.5916 26.3124 20.6161 26.4838L20.7867 27.6781C21.1008 27.8441 21.4299 27.98 21.7696 28.084L22.7369 27.361C22.8752 27.2576 23.0432 27.2017 23.2159 27.2017H23.5069C23.6796 27.2017 23.8476 27.2576 23.9859 27.361L24.9532 28.084C25.2929 27.98 25.622 27.8442 25.936 27.6781L26.1067 26.4786C26.1311 26.3071 26.2105 26.1481 26.333 26.0256C26.3779 25.9808 26.4093 25.9503 26.434 25.9265C26.4652 25.8963 26.4856 25.8765 26.5082 25.8517C26.6336 25.7138 26.8031 25.624 26.9875 25.5978L28.187 25.4271C28.3529 25.1133 28.4888 24.7844 28.5927 24.445L27.8658 23.4791C27.7523 23.3283 27.6958 23.1422 27.7063 22.9537C27.7075 22.9312 27.7078 22.9013 27.7072 22.8584L27.7063 22.8111L27.706 22.7916C27.7055 22.7686 27.705 22.7406 27.705 22.7126C27.705 22.5397 27.761 22.3715 27.8646 22.2331L28.5928 21.2606C28.4889 20.9209 28.353 20.5919 28.187 20.2778L26.9926 20.1072C26.8213 20.0827 26.6625 20.0033 26.5401 19.8809L26.333 19.6739C26.2106 19.5515 26.1312 19.3927 26.1067 19.2213L25.9361 18.027C25.622 17.861 25.2929 17.725 24.9532 17.6211L23.9859 18.3441C23.8476 18.4475 23.6796 18.5033 23.5069 18.5033H23.2159C23.0432 18.5033 22.8752 18.4475 22.7369 18.3441L21.7696 17.6211Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0992 1.6C15.5408 1.60016 15.8991 1.95832 15.8992 2.4V5.3C18.2435 5.49946 20.3387 6.56799 21.8656 8.18047L24.1367 6.37422C24.4824 6.09939 24.9859 6.15669 25.2609 6.50234C25.5358 6.84804 25.4783 7.3515 25.1328 7.62656L22.8632 9.43125C23.8176 10.8659 24.3849 12.5794 24.4164 14.4242C24.3958 14.4276 24.3752 14.4305 24.3547 14.4344C24.0006 14.5012 23.6638 14.6359 23.3609 14.8281C23.1897 14.7195 23.0077 14.6294 22.8179 14.5594C22.8128 13.0397 22.3677 11.6246 21.6047 10.432L17.6625 13.568C17.7631 13.8213 17.8271 14.0928 17.8484 14.3766L20.014 14.8562C19.6866 14.993 19.3675 15.1496 19.0586 15.325L19.0492 15.3305L19.0445 15.3328C18.7225 15.5185 18.4403 15.7656 18.2132 16.0586L18.1898 16.0898L17.5031 15.9383C17.3621 16.1884 17.1816 16.4123 16.9726 16.6062L17.307 17.2922C17.1412 17.3549 16.9807 17.4316 16.8289 17.5242L16.6953 17.6109C16.4301 17.7939 16.1978 18.0198 16.0086 18.2789L15.5359 17.3094C15.4391 17.3248 15.3405 17.3363 15.2406 17.3414L15.0984 17.3445C14.9571 17.3445 14.8184 17.333 14.6828 17.3125L12.5132 21.8609C13.3123 22.1449 14.1715 22.3011 15.0672 22.3047C15.1374 22.496 15.2272 22.6798 15.3367 22.8523C15.1444 23.1553 15.0097 23.492 14.9429 23.8461C14.9393 23.8653 14.9368 23.8847 14.9336 23.9039C13.8398 23.8849 12.7927 23.6765 11.8218 23.3117L10.5734 25.9297C10.3831 26.3282 9.90565 26.497 9.507 26.307C9.10836 26.1167 8.93947 25.6393 9.12965 25.2406L10.3781 22.6219C8.40739 21.4617 6.90044 19.5991 6.20387 17.3766L3.37418 18.0047C2.94283 18.1003 2.51512 17.8282 2.4195 17.3969C2.32394 16.9657 2.59617 16.5387 3.02731 16.443L5.8609 15.8141C5.80799 15.4121 5.77809 15.0023 5.77809 14.5859C5.77815 12.6787 6.35203 10.9058 7.33512 9.4289L5.06403 7.62656C4.71795 7.35189 4.65967 6.84842 4.93434 6.50234C5.20906 6.15654 5.71258 6.09886 6.05856 6.37344L8.33278 8.17812C9.85977 6.56641 11.9553 5.49915 14.2992 5.3V2.4C14.2992 1.95822 14.6574 1.6 15.0992 1.6ZM7.77418 17.0289C8.35372 18.7673 9.53389 20.2304 11.0695 21.1719L13.239 16.6242C13.0227 16.4268 12.8393 16.1944 12.6945 15.9375L7.77418 17.0289ZM15.0984 13.4273C14.4587 13.4276 13.9399 13.9462 13.9398 14.5859C13.9398 15.2257 14.4587 15.7443 15.0984 15.7445C15.7384 15.7445 16.257 15.2259 16.257 14.5859C16.2569 13.9461 15.7383 13.4273 15.0984 13.4273ZM8.5945 10.4281C7.82555 11.6284 7.37815 13.0547 7.37809 14.5859C7.37809 14.8837 7.39607 15.1775 7.42887 15.4664L12.3484 14.3758C12.37 14.0889 12.4356 13.8143 12.5382 13.5586L8.5945 10.4281ZM15.8992 11.9453C16.1759 12.0291 16.4339 12.1556 16.6664 12.3164L20.6086 9.18047C19.383 7.9314 17.7373 7.09563 15.8992 6.90625V11.9453ZM14.2992 6.90625C12.4621 7.09526 10.8169 7.92967 9.59137 9.17734L13.5406 12.3117C13.771 12.1535 14.0255 12.0273 14.2992 11.9445V6.90625Z" />
+                </svg>
+                <span>Kubernetes & Platform Engineering</span>
+              </li>
+              <li class="dflex d-flex-align-center" data="3">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0762 7.19962C18.414 7.19974 18.7488 7.26634 19.0609 7.39565C19.373 7.52501 19.6568 7.71471 19.8957 7.95358C20.1346 8.19258 20.3245 8.47657 20.4537 8.78878C20.5235 8.95733 20.5744 9.13261 20.607 9.31121C20.9766 9.36818 21.334 9.4934 21.6593 9.68333C22.1169 9.95061 22.4956 10.3351 22.7558 10.7968C23.016 11.2583 23.1489 11.7808 23.1406 12.3105C23.1356 12.6309 23.0783 12.9469 22.9738 13.2469C23.4146 13.4332 23.8076 13.7239 24.1161 14.0977C24.5579 14.6332 24.7996 15.3059 24.7996 16.0001C24.7996 16.6944 24.558 17.3675 24.1161 17.903C23.8075 18.2768 23.4142 18.567 22.9733 18.7533C23.0778 19.0534 23.1352 19.3693 23.1402 19.6897C23.1483 20.2194 23.0155 20.7419 22.7553 21.2034C22.4951 21.6649 22.1167 22.0492 21.6593 22.3164C21.334 22.5063 20.9765 22.631 20.607 22.688C20.5137 23.1988 20.268 23.6739 19.8957 24.0461C19.4131 24.5287 18.7582 24.7995 18.0757 24.7996C17.3932 24.7996 16.7384 24.5286 16.2557 24.0461C16.1621 23.9525 16.0761 23.8525 15.9989 23.747C15.922 23.8519 15.8375 23.952 15.7444 24.0452C15.2619 24.5279 14.607 24.799 13.9244 24.7991C13.2418 24.7993 12.5868 24.5287 12.104 24.0461C11.7314 23.6738 11.4855 23.1986 11.3922 22.6875C11.0228 22.6305 10.6656 22.5063 10.3404 22.3164C9.88288 22.0492 9.50459 21.6649 9.24434 21.2034C8.9841 20.7419 8.8509 20.2194 8.85904 19.6897C8.86397 19.3693 8.92096 19.0534 9.02542 18.7533C8.58469 18.567 8.19206 18.2767 7.88361 17.903C7.44161 17.3675 7.19966 16.6949 7.1996 16.0006C7.1996 15.3062 7.44156 14.6333 7.88361 14.0977C8.1921 13.7239 8.58461 13.4332 9.02542 13.2469C8.92094 12.947 8.86358 12.6312 8.85855 12.311C8.85028 11.7812 8.98317 11.2584 9.24337 10.7968C9.50365 10.3351 9.88224 9.95062 10.3399 9.68333C10.6653 9.49335 11.0225 9.36818 11.3922 9.31121C11.4855 8.80058 11.7318 8.32624 12.104 7.95407C12.5867 7.47144 13.2413 7.2001 13.924 7.2001C14.6065 7.20014 15.2613 7.47147 15.7439 7.95407C15.837 8.04717 15.9219 8.1469 15.9989 8.25177C16.0761 8.14638 16.1622 8.0466 16.2557 7.9531C16.7385 7.47064 17.3936 7.19948 18.0762 7.19962ZM18.0757 8.19583C17.6575 8.19578 17.256 8.36182 16.9602 8.65745C16.6643 8.95319 16.4981 9.3545 16.498 9.77283C16.498 9.80751 16.4941 9.84133 16.4873 9.87401C16.4823 9.89868 16.4745 9.92232 16.4659 9.94551C16.4579 9.96706 16.4494 9.98824 16.4387 10.0083C16.3547 10.165 16.1896 10.2719 15.9994 10.2719C15.7244 10.2718 15.5013 10.0487 15.5012 9.7738C15.5012 9.35555 15.3352 8.95421 15.0395 8.65842C14.7437 8.36265 14.3423 8.19635 13.924 8.19631C13.5056 8.19631 13.1043 8.36261 12.8084 8.65842C12.5126 8.95422 12.3462 9.35549 12.3462 9.7738C12.3462 9.90585 12.2937 10.0326 12.2003 10.126C12.1069 10.2193 11.9801 10.2719 11.8481 10.2719C11.4947 10.2718 11.1476 10.3656 10.8425 10.5438C10.5374 10.722 10.2848 10.9779 10.1113 11.2856C9.93778 11.5934 9.84938 11.9422 9.8549 12.2955C9.86046 12.6486 9.95995 12.9939 10.1429 13.296C10.2273 13.4354 10.2381 13.6073 10.1721 13.7562C10.106 13.9051 9.97107 14.0123 9.81111 14.0432C9.3565 14.1311 8.94652 14.3744 8.65179 14.7315C8.35705 15.0886 8.19594 15.5376 8.19594 16.0006C8.19601 16.4635 8.35709 16.9122 8.65179 17.2692C8.94652 17.6263 9.35651 17.8696 9.81111 17.9575C9.97105 17.9884 10.106 18.0956 10.1721 18.2445C10.2381 18.3933 10.2272 18.5649 10.1429 18.7042C9.96004 19.0064 9.86081 19.3521 9.85538 19.7052C9.84999 20.0583 9.9388 20.4065 10.1123 20.7141C10.2858 21.0218 10.5379 21.2777 10.843 21.4559C11.148 21.634 11.4948 21.7283 11.8481 21.7283C12.1231 21.7283 12.3461 21.951 12.3462 22.2259C12.3463 22.6442 12.5126 23.0456 12.8084 23.3413C13.1043 23.637 13.5056 23.803 13.924 23.8029C14.3423 23.8028 14.7437 23.6367 15.0395 23.3408C15.3352 23.045 15.5012 22.6437 15.5012 22.2254C15.5012 21.9504 15.7243 21.7274 15.9994 21.7273C16.1725 21.7273 16.3251 21.8156 16.4143 21.9496C16.4339 21.9789 16.4494 22.0108 16.4625 22.044C16.4673 22.0563 16.4723 22.0687 16.4761 22.0815C16.4901 22.1273 16.498 22.176 16.498 22.2264C16.4981 22.6446 16.6644 23.0456 16.9602 23.3413C17.256 23.637 17.6574 23.8034 18.0757 23.8034C18.494 23.8033 18.8955 23.637 19.1913 23.3413C19.4868 23.0456 19.6529 22.6445 19.6529 22.2264C19.6529 22.0943 19.7055 21.9672 19.7989 21.8737C19.8923 21.7805 20.0191 21.7283 20.1511 21.7283C20.5043 21.7283 20.8517 21.634 21.1567 21.4559C21.4616 21.2777 21.714 21.0217 21.8874 20.7141C22.0608 20.4065 22.1492 20.0583 22.1438 19.7052C22.1384 19.3521 22.0391 19.0064 21.8563 18.7042C21.772 18.5648 21.761 18.3928 21.8271 18.244C21.8932 18.0953 22.0282 17.9884 22.1881 17.9575C22.6426 17.8696 23.0527 17.6262 23.3474 17.2692C23.6421 16.9121 23.8032 16.4631 23.8032 16.0001C23.8032 15.5372 23.6421 15.0885 23.3474 14.7315C23.0527 14.3745 22.6426 14.1311 22.1881 14.0432C22.0282 14.0123 21.8932 13.9051 21.8271 13.7562C21.7611 13.6073 21.7719 13.4354 21.8563 13.296C22.0393 12.9938 22.1388 12.6482 22.1443 12.295C22.1498 11.9418 22.0614 11.5933 21.8879 11.2856C21.7145 10.978 21.4621 10.722 21.1572 10.5438C20.8522 10.3657 20.5048 10.2719 20.1516 10.2719C20.0195 10.2719 19.8923 10.2193 19.7989 10.126C19.7054 10.0325 19.6529 9.90547 19.6529 9.77332C19.653 9.56626 19.6125 9.36097 19.5333 9.16966C19.454 8.97837 19.3376 8.80438 19.1913 8.65793C19.0449 8.51152 18.8707 8.39527 18.6795 8.31597C18.4882 8.23672 18.2828 8.1959 18.0757 8.19583Z" />
+                  <path d="M24.5199 16.0004C24.5199 15.3713 24.3007 14.7614 23.9004 14.2762C23.6209 13.9375 23.2641 13.674 22.8644 13.5051C22.7287 13.4476 22.6607 13.2943 22.709 13.1551C22.8039 12.8827 22.856 12.5957 22.8605 12.3059C22.8679 11.8259 22.7478 11.3523 22.5121 10.934C22.2763 10.5158 21.9329 10.1676 21.5183 9.9254C21.2239 9.75351 20.8998 9.63961 20.5644 9.5879C20.4465 9.56973 20.3531 9.47871 20.3316 9.36134C20.3025 9.20155 20.2568 9.04527 20.1949 8.89571C20.0797 8.61762 19.9109 8.36418 19.698 8.15118C19.4852 7.93832 19.2316 7.76959 18.9535 7.65431C18.6754 7.53913 18.3772 7.47942 18.0762 7.47931C17.4678 7.47918 16.8838 7.7212 16.4535 8.15118C16.3697 8.235 16.293 8.3243 16.2246 8.41759C16.1719 8.48938 16.0879 8.53163 15.9988 8.53165C15.9097 8.53163 15.8258 8.48942 15.773 8.41759C15.7042 8.32369 15.6283 8.23456 15.5457 8.15196C15.1155 7.72195 14.532 7.48012 13.9238 7.48009C13.3156 7.48012 12.7321 7.72186 12.3019 8.15196C11.9703 8.48355 11.7508 8.90627 11.6676 9.36134C11.6461 9.47869 11.5527 9.56973 11.4348 9.5879C11.0993 9.63961 10.7753 9.75347 10.4808 9.9254C10.0662 10.1676 9.72293 10.5157 9.4871 10.934C9.25127 11.3524 9.13116 11.8265 9.13866 12.3066L9.15038 12.5231C9.17134 12.7385 9.21906 12.9508 9.29022 13.1551C9.33851 13.2943 9.27048 13.4476 9.13475 13.5051C8.73523 13.674 8.3792 13.9374 8.0996 14.2762C7.69904 14.7616 7.47933 15.3712 7.47928 16.0004C7.47935 16.6296 7.699 17.2392 8.0996 17.7246C8.37906 18.0632 8.73515 18.3268 9.13475 18.4957C9.27044 18.5533 9.3387 18.7065 9.29022 18.8457C9.19547 19.1179 9.14313 19.4043 9.13866 19.6942C9.13132 20.1741 9.25202 20.6477 9.48788 21.066C9.72377 21.4843 10.067 21.8324 10.4816 22.0746L10.5933 22.1363C10.8567 22.2735 11.1411 22.3652 11.4348 22.4106C11.5526 22.4287 11.6461 22.5198 11.6676 22.6371C11.7507 23.0929 11.9701 23.5164 12.3019 23.8481C12.7321 24.278 13.3161 24.5193 13.9246 24.5192C14.5329 24.5189 15.1165 24.2773 15.5465 23.8473C15.6284 23.7653 15.7037 23.6762 15.773 23.5817L15.8183 23.5332C15.8683 23.491 15.932 23.4668 15.9988 23.4668C16.088 23.4668 16.1719 23.5097 16.2246 23.5817C16.2932 23.6753 16.3699 23.7644 16.4535 23.8481C16.8836 24.2779 17.4672 24.5198 18.0754 24.5199C18.6837 24.5198 19.268 24.278 19.698 23.8481C20.0294 23.5166 20.2485 23.0933 20.3316 22.6379L20.3426 22.5949C20.3764 22.4987 20.4613 22.4273 20.5644 22.4113C20.9001 22.3595 21.2243 22.2463 21.5183 22.0746L21.6699 21.9785C22.0165 21.7439 22.305 21.4319 22.5113 21.066C22.7471 20.6479 22.8679 20.1742 22.8605 19.6942C22.8561 19.4045 22.8038 19.1182 22.709 18.8457C22.6604 18.7063 22.7285 18.5532 22.8644 18.4957C23.2644 18.3267 23.621 18.0632 23.9004 17.7246C24.3007 17.2394 24.5198 16.6296 24.5199 16.0004ZM19.373 9.77306C19.373 9.60264 19.3395 9.43394 19.2746 9.27696C19.2095 9.1198 19.1138 8.97642 18.9933 8.85587C18.9032 8.76569 18.8001 8.68936 18.6879 8.62931L18.5723 8.57462C18.415 8.50947 18.2457 8.47624 18.0754 8.47618C17.7314 8.47623 17.4014 8.61283 17.1582 8.85587C16.915 9.09905 16.7778 9.429 16.7777 9.77306C16.7777 9.82891 16.7714 9.88193 16.7613 9.93087L16.7285 10.0426C16.7193 10.0675 16.7056 10.1036 16.6855 10.141L16.6848 10.1402C16.5542 10.3839 16.2973 10.5519 15.9996 10.552C15.597 10.5518 15.2654 10.2456 15.2254 9.85352L15.2215 9.77384C15.2215 9.42985 15.0848 9.09982 14.8418 8.85665C14.5985 8.61336 14.2679 8.47621 13.9238 8.47618C13.5798 8.47622 13.25 8.61335 13.0066 8.85665C12.7633 9.09999 12.6262 9.42985 12.6262 9.77384L12.6223 9.8504C12.6046 10.0286 12.5258 10.1961 12.398 10.3238C12.2706 10.4512 12.1034 10.5303 11.9254 10.5481L11.848 10.552C11.5444 10.5519 11.2462 10.6325 10.984 10.7856C10.7215 10.9388 10.5041 11.1587 10.3551 11.4231C10.206 11.6875 10.13 11.9873 10.1348 12.291C10.1395 12.5945 10.2251 12.8914 10.3824 13.1512C10.5142 13.3689 10.5309 13.6375 10.4277 13.8699C10.3244 14.1024 10.1141 14.2701 9.86444 14.3184C9.47365 14.3939 9.12088 14.6029 8.86757 14.9098C8.61439 15.2166 8.4762 15.6025 8.47616 16.0004C8.47622 16.3983 8.61434 16.7842 8.86757 17.091C9.12088 17.3979 9.47366 17.6069 9.86444 17.6824C10.1141 17.7307 10.3244 17.8983 10.4277 18.1309L10.4613 18.2199C10.5252 18.4299 10.4974 18.6586 10.3824 18.8488C10.2253 19.1085 10.1402 19.4062 10.1355 19.7098C10.131 20.0127 10.2062 20.3119 10.3551 20.5762C10.5042 20.8406 10.7218 21.0613 10.984 21.2145C11.2463 21.3677 11.5447 21.4481 11.848 21.4481C12.2774 21.448 12.6257 21.7959 12.6262 22.2254C12.6263 22.5693 12.7634 22.9003 13.0066 23.1434C13.2499 23.3864 13.5798 23.5231 13.9238 23.5231C14.268 23.523 14.5985 23.3859 14.8418 23.1426C15.0848 22.8993 15.2215 22.5693 15.2215 22.2254C15.2215 21.7956 15.5701 21.4474 15.9996 21.4473C16.27 21.4473 16.5082 21.5856 16.6473 21.7942L16.691 21.8692C16.7035 21.8939 16.714 21.9181 16.723 21.941C16.7265 21.9498 16.7363 21.9745 16.7441 22.0004L16.7691 22.1098C16.7749 22.1474 16.7777 22.1863 16.7777 22.2262C16.7778 22.57 16.9149 22.9 17.1582 23.1434C17.4015 23.3865 17.7315 23.523 18.0754 23.5231C18.4194 23.523 18.7501 23.3866 18.9933 23.1434C19.2364 22.9002 19.373 22.5701 19.373 22.2262C19.3731 22.0201 19.4551 21.8214 19.6012 21.6754L19.6582 21.6238C19.7969 21.5104 19.9713 21.4481 20.1512 21.4481C20.4544 21.448 20.7531 21.3675 21.0152 21.2145C21.2773 21.0613 21.4943 20.8404 21.6433 20.5762C21.7922 20.3121 21.8682 20.0131 21.8637 19.7098C21.859 19.4062 21.7739 19.1085 21.6168 18.8488C21.4853 18.6314 21.4681 18.3627 21.5715 18.1301C21.675 17.8975 21.8857 17.7306 22.1348 17.6824C22.5255 17.6069 22.8783 17.3978 23.1316 17.091C23.3848 16.7842 23.523 16.3983 23.523 16.0004C23.523 15.6025 23.3848 15.2166 23.1316 14.9098C22.8783 14.6029 22.5255 14.3939 22.1348 14.3184C21.8852 14.2701 21.6748 14.1024 21.5715 13.8699C21.4684 13.6375 21.485 13.3689 21.6168 13.1512L21.6723 13.052C21.7941 12.8169 21.8603 12.5559 21.8644 12.2902C21.8691 11.9868 21.7931 11.6873 21.6441 11.4231C21.4951 11.1588 21.2781 10.9387 21.016 10.7856C20.754 10.6326 20.4555 10.552 20.1519 10.552C19.9456 10.552 19.7471 10.4697 19.6012 10.3238C19.4551 10.1778 19.373 9.97933 19.373 9.77306ZM25.0793 16.0004C25.0792 16.7594 24.8155 17.4952 24.3324 18.0809C24.0494 18.4237 23.7002 18.701 23.3113 18.902C23.3788 19.1563 23.4158 19.4194 23.4199 19.6856C23.4288 20.2648 23.2841 20.8363 22.9996 21.341C22.715 21.8457 22.3007 22.2659 21.8004 22.5582C21.5003 22.7334 21.1754 22.8565 20.8394 22.9285C20.7142 23.4218 20.4596 23.8779 20.0933 24.2442C19.5582 24.7791 18.8319 25.0792 18.0754 25.0793C17.3662 25.0792 16.684 24.8154 16.1605 24.3418L16.0574 24.2442C16.0371 24.2238 16.0185 24.2018 15.9988 24.1809C15.9797 24.2012 15.9624 24.2235 15.9426 24.2434C15.4075 24.7786 14.6813 25.0791 13.9246 25.0793C13.1679 25.0795 12.4413 24.7793 11.9058 24.2442C11.5392 23.8777 11.2842 23.4214 11.159 22.9277C10.8237 22.8558 10.4994 22.7332 10.1996 22.5582C9.69916 22.2659 9.28499 21.8457 9.00038 21.341C8.71584 20.8364 8.57042 20.265 8.57928 19.6856C8.58338 19.4196 8.62053 19.1565 8.68788 18.902C8.29904 18.7009 7.95043 18.4243 7.66756 18.0817C7.18434 17.4961 6.91998 16.7597 6.91991 16.0004C6.91995 15.241 7.18417 14.5048 7.66756 13.9191C7.95035 13.5766 8.29819 13.2985 8.6871 13.0973C8.61986 12.8434 8.58267 12.5808 8.5785 12.3152C8.56948 11.7358 8.71506 11.1638 8.9996 10.659C9.28423 10.1542 9.69834 9.73409 10.1988 9.44181C10.4986 9.26672 10.823 9.14212 11.159 9.06993C11.2845 8.57695 11.5399 8.12174 11.9058 7.75587C12.441 7.22082 13.1669 6.91997 13.9238 6.91993C14.6806 6.91997 15.4067 7.2209 15.9418 7.75587C15.9616 7.77566 15.9797 7.7973 15.9988 7.81759C16.0184 7.79682 16.0372 7.77528 16.0574 7.75509C16.5927 7.22027 17.3194 6.91981 18.0762 6.91993C18.4507 6.92006 18.8223 6.99373 19.1683 7.13712C19.5142 7.28053 19.8286 7.49108 20.0933 7.75587C20.3582 8.02078 20.5687 8.33545 20.7121 8.68165C20.7645 8.80827 20.8069 8.93823 20.8402 9.06993C21.1762 9.14213 21.5006 9.26677 21.8004 9.44181C22.3008 9.73408 22.715 10.1542 22.9996 10.659C23.2841 11.1638 23.4297 11.7358 23.4207 12.3152C23.4165 12.5808 23.3793 12.8433 23.3121 13.0973C23.7009 13.2984 24.0488 13.5766 24.3316 13.9191C24.8149 14.5048 25.0792 15.2412 25.0793 16.0004ZM19.9332 9.77306C19.9332 9.83107 19.9564 9.88694 19.9973 9.92774C20.0381 9.96844 20.0935 9.99172 20.1512 9.99181C20.5537 9.99184 20.9503 10.0989 21.298 10.302C21.6456 10.5051 21.9338 10.7973 22.1316 11.1481C22.3295 11.4991 22.4308 11.8969 22.4246 12.2996C22.4183 12.7024 22.3043 13.0965 22.0957 13.441C22.0588 13.5019 22.0542 13.5773 22.0832 13.6426L22.1098 13.6879C22.1418 13.7292 22.1885 13.7582 22.241 13.7684C22.7594 13.8686 23.2275 14.1463 23.5637 14.5535C23.8996 14.9607 24.0831 15.4726 24.0832 16.0004C24.0831 16.5281 23.8996 17.0401 23.5637 17.4473C23.2276 17.8544 22.7593 18.1322 22.241 18.2324C22.1708 18.2461 22.112 18.293 22.0832 18.3574C22.0544 18.4223 22.0588 18.4979 22.0957 18.559C22.3042 18.9037 22.4176 19.2984 22.4238 19.7012C22.4299 20.1037 22.3294 20.5011 22.1316 20.852C21.9338 21.2027 21.6455 21.4942 21.298 21.6973C20.9938 21.8749 20.6524 21.9801 20.3019 22.0035L20.1512 22.0082C20.093 22.0082 20.0377 22.0313 19.9973 22.0715C19.9565 22.1122 19.9332 22.1682 19.9332 22.2262C19.9331 22.7185 19.7375 23.1912 19.3894 23.5395C19.0413 23.8876 18.5685 24.083 18.0762 24.0832C17.5836 24.0831 17.1103 23.8875 16.7621 23.5395C16.4139 23.1913 16.2184 22.7188 16.2183 22.2262C16.2183 22.2054 16.2147 22.1843 16.2082 22.1629L16.2074 22.1606C16.2074 22.1606 16.206 22.1574 16.2051 22.1551L16.2019 22.1465L16.1816 22.1051C16.1422 22.0458 16.0752 22.0075 15.9996 22.0074C15.879 22.0075 15.7809 22.1052 15.7808 22.2254L15.7723 22.409C15.7301 22.834 15.5425 23.2339 15.2379 23.5387C14.8895 23.8871 14.4164 24.0831 13.9238 24.0832C13.4314 24.0832 12.9589 23.8876 12.6105 23.5395C12.2622 23.1913 12.0662 22.7186 12.066 22.2262C12.0659 22.1059 11.9686 22.0082 11.848 22.0082C11.445 22.0082 11.0495 21.901 10.7019 21.6981C10.3541 21.4949 10.0662 21.2028 9.86835 20.852C9.67062 20.5013 9.56926 20.104 9.57538 19.7012C9.58157 19.2984 9.69492 18.9037 9.9035 18.559C9.94027 18.498 9.94476 18.4232 9.916 18.3582C9.88711 18.2932 9.82823 18.246 9.75819 18.2324C9.23976 18.1322 8.77167 17.8545 8.43553 17.4473C8.09952 17.0401 7.91608 16.5282 7.916 16.0004C7.91605 15.4726 8.09953 14.9608 8.43553 14.5535C8.77168 14.1463 9.23976 13.8686 9.75819 13.7684C9.82825 13.7548 9.88711 13.7076 9.916 13.6426L9.93163 13.5926C9.94086 13.5409 9.93123 13.4868 9.9035 13.441C9.69488 13.0965 9.58094 12.7025 9.5746 12.2996C9.56835 11.8969 9.66965 11.4991 9.86757 11.1481C10.0656 10.7969 10.3534 10.505 10.7012 10.302C11.0492 10.0987 11.4451 9.99171 11.848 9.99181C11.9057 9.99181 11.9617 9.96876 12.0027 9.92774C12.0433 9.88699 12.0659 9.83155 12.066 9.77384C12.066 9.2812 12.2623 8.80882 12.6105 8.46056C12.9588 8.11231 13.4312 7.91606 13.9238 7.91602C14.4164 7.91607 14.8888 8.11237 15.2371 8.46056C15.5853 8.80892 15.7808 9.28157 15.7808 9.77384C15.781 9.89413 15.8792 9.99176 15.9996 9.99181C16.0821 9.99171 16.1545 9.94503 16.1918 9.8754C16.1932 9.87267 16.1969 9.86597 16.2035 9.84806C16.21 9.83047 16.212 9.82192 16.2129 9.81759L16.2183 9.77306C16.2184 9.28065 16.4138 8.80804 16.7621 8.45977C17.1104 8.1118 17.5831 7.91607 18.0754 7.91602C18.3189 7.91615 18.5612 7.96419 18.7863 8.05743C19.0114 8.15075 19.217 8.28729 19.3894 8.45977C19.5617 8.63211 19.6984 8.83751 19.7918 9.0629C19.885 9.28827 19.9332 9.52969 19.9332 9.77306Z" />
+                  <path d="M19.9996 15.9996C19.9996 16.1404 19.9503 16.2768 19.8603 16.3851C19.7704 16.4934 19.6453 16.5668 19.5069 16.5927C19.2213 16.6467 18.6935 16.7665 18.2081 16.8798C17.5484 17.0338 17.0339 17.5484 16.8799 18.2081C16.7667 18.6936 16.6469 19.2215 16.5929 19.5071C16.567 19.6454 16.4934 19.7704 16.3851 19.8604C16.2768 19.9503 16.1404 19.9996 15.9996 19.9996C15.8587 19.9996 15.7222 19.9503 15.6139 19.8604C15.5056 19.7704 15.4322 19.6454 15.4063 19.5071C15.3523 19.2216 15.2325 18.6938 15.1193 18.2083C14.9653 17.5485 14.4507 17.0339 13.7909 16.8799C13.3054 16.7667 12.7775 16.6469 12.4919 16.5929C12.3536 16.567 12.2287 16.4934 12.1389 16.3851C12.0489 16.2768 11.9996 16.1404 11.9996 15.9996C11.9996 15.8588 12.0489 15.7222 12.1389 15.6139C12.2287 15.5057 12.3536 15.4323 12.4919 15.4063C12.7774 15.3523 13.3053 15.2325 13.7908 15.1193C14.4507 14.9654 14.9653 14.4507 15.1193 13.7908C15.2325 13.3053 15.3523 12.7774 15.4063 12.4919C15.4322 12.3536 15.5056 12.2288 15.6139 12.1389C15.7222 12.0489 15.8587 11.9996 15.9996 11.9996C16.1404 11.9996 16.2768 12.0489 16.3851 12.1389C16.4934 12.2288 16.567 12.3536 16.5929 12.4919C16.6469 12.7775 16.7667 13.3054 16.8799 13.7909C17.0338 14.4507 17.5485 14.9654 18.2083 15.1193C18.6937 15.2325 19.2216 15.3523 19.5071 15.4063C19.6455 15.4322 19.7704 15.5056 19.8603 15.6139C19.9503 15.7222 19.9996 15.8588 19.9996 15.9996Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9996 15.9996C19.9996 16.1404 19.9503 16.2768 19.8603 16.3851C19.7704 16.4934 19.6453 16.5668 19.5069 16.5927C19.2213 16.6467 18.6935 16.7665 18.2081 16.8798C17.5484 17.0338 17.0339 17.5484 16.8799 18.2081C16.7667 18.6936 16.6469 19.2215 16.5929 19.5071C16.567 19.6454 16.4934 19.7704 16.3851 19.8604C16.2768 19.9503 16.1404 19.9996 15.9996 19.9996C15.8587 19.9996 15.7222 19.9503 15.6139 19.8604C15.5056 19.7704 15.4322 19.6454 15.4063 19.5071C15.3523 19.2216 15.2325 18.6938 15.1193 18.2083C14.9653 17.5485 14.4507 17.0339 13.7909 16.8799C13.3054 16.7667 12.7775 16.6469 12.4919 16.5929C12.3536 16.567 12.2287 16.4934 12.1389 16.3851C12.0489 16.2768 11.9996 16.1404 11.9996 15.9996C11.9996 15.8588 12.0489 15.7222 12.1389 15.6139C12.2287 15.5057 12.3536 15.4323 12.4919 15.4063C12.7774 15.3523 13.3053 15.2325 13.7908 15.1193C14.4507 14.9654 14.9653 14.4507 15.1193 13.7908C15.2325 13.3053 15.3523 12.7774 15.4063 12.4919C15.4322 12.3536 15.5056 12.2288 15.6139 12.1389C15.7222 12.0489 15.8587 11.9996 15.9996 11.9996C16.1404 11.9996 16.2768 12.0489 16.3851 12.1389C16.4934 12.2288 16.567 12.3536 16.5929 12.4919C16.6469 12.7775 16.7667 13.3054 16.8799 13.7909C17.0338 14.4507 17.5485 14.9654 18.2083 15.1193C18.6937 15.2325 19.2216 15.3523 19.5071 15.4063C19.6455 15.4322 19.7704 15.5056 19.8603 15.6139C19.9503 15.7222 19.9996 15.8588 19.9996 15.9996Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8603 16.3851C19.9503 16.2768 19.9996 16.1404 19.9996 15.9996C19.9996 15.8588 19.9503 15.7222 19.8603 15.6139C19.7704 15.5056 19.6455 15.4322 19.5071 15.4063C19.2216 15.3523 18.6937 15.2325 18.2083 15.1193C17.5485 14.9654 17.0338 14.4507 16.8799 13.7909C16.7667 13.3054 16.6469 12.7775 16.5929 12.4919C16.567 12.3536 16.4934 12.2288 16.3851 12.1389C16.2768 12.0489 16.1404 11.9996 15.9996 11.9996C15.8587 11.9996 15.7222 12.0489 15.6139 12.1389C15.5056 12.2288 15.4322 12.3536 15.4063 12.4919C15.3523 12.7774 15.2325 13.3053 15.1193 13.7908C14.9653 14.4507 14.4507 14.9654 13.7908 15.1193C13.3053 15.2325 12.7774 15.3523 12.4919 15.4063C12.3536 15.4323 12.2287 15.5057 12.1389 15.6139C12.0489 15.7222 11.9996 15.8588 11.9996 15.9996C11.9996 16.1404 12.0489 16.2768 12.1389 16.3851C12.2287 16.4934 12.3536 16.567 12.4919 16.5929C12.7775 16.6469 13.3054 16.7667 13.7909 16.8799C14.4507 17.0339 14.9653 17.5485 15.1193 18.2083C15.2325 18.6938 15.3523 19.2216 15.4063 19.5071C15.4322 19.6454 15.5056 19.7704 15.6139 19.8604C15.7222 19.9503 15.8587 19.9996 15.9996 19.9996C16.1404 19.9996 16.2768 19.9503 16.3851 19.8604C16.4934 19.7704 16.567 19.6454 16.5929 19.5071C16.6469 19.2215 16.7667 18.6936 16.8799 18.2081C17.0339 17.5484 17.5484 17.0338 18.2081 16.8798C18.6935 16.7665 19.2213 16.6467 19.5069 16.5927C19.6453 16.5668 19.7704 16.4934 19.8603 16.3851Z" />
+                  <path d="M21.5248 29.3439C18.2874 30.6844 14.6731 30.802 11.3553 29.6753C8.03741 28.5487 5.24189 26.2544 3.49027 23.2198C1.73875 20.1851 1.15065 16.6173 1.83458 13.1809C2.51856 9.74433 4.42794 6.67315 7.20804 4.54041C7.55859 4.27153 8.06098 4.33838 8.32989 4.68892C8.59858 5.03946 8.53257 5.54161 8.1821 5.81047C5.71006 7.70693 4.01115 10.4371 3.40295 13.4929C2.79475 16.5487 3.3189 19.7215 4.87648 22.42C6.43405 25.1185 8.91945 27.1591 11.8697 28.161C14.8199 29.1627 18.034 29.0576 20.9126 27.8656C21.3208 27.6967 21.7888 27.8905 21.9578 28.2987C22.1268 28.7068 21.9329 29.1748 21.5248 29.3439Z" />
+                  <path d="M6.89674 9.65411V5.1752C6.89674 4.73338 7.25491 4.3752 7.69674 4.3752C8.13857 4.3752 8.49674 4.73338 8.49674 5.1752V9.65411C8.49658 10.0958 8.13847 10.4541 7.69674 10.4541C7.25501 10.4541 6.8969 10.0958 6.89674 9.65411Z" />
+                  <path d="M3.21783 4.3752L7.69674 4.3752C8.13857 4.3752 8.49674 4.73338 8.49674 5.1752C8.49674 5.61703 8.13857 5.9752 7.69674 5.9752H3.21783C2.77614 5.97505 2.41783 5.61693 2.41783 5.1752C2.41783 4.73347 2.77614 4.37536 3.21783 4.3752Z" />
+                  <path d="M10.4733 2.65596C13.7106 1.31544 17.3249 1.19783 20.6428 2.32449C23.9606 3.45117 26.7561 5.74537 28.5077 8.78007C30.2593 11.8147 30.8474 15.3825 30.1634 18.819C29.4795 22.2555 27.5701 25.3267 24.79 27.4594C24.4394 27.7283 23.937 27.6614 23.6681 27.3109C23.3994 26.9604 23.4654 26.4582 23.8159 26.1894C26.288 24.2929 27.9869 21.5627 28.5951 18.507C29.2033 15.4511 28.6791 12.2783 27.1215 9.57984C25.564 6.88137 23.0786 4.84071 20.1283 3.83886C17.1781 2.83709 13.964 2.94225 11.0854 4.13424C10.6772 4.30313 10.2092 4.10931 10.0402 3.70116C9.87117 3.29301 10.0652 2.82506 10.4733 2.65596Z" />
+                  <path d="M25.1013 22.3457V26.8246C25.1013 27.2664 24.7431 27.6246 24.3013 27.6246C23.8595 27.6246 23.5013 27.2664 23.5013 26.8246V22.3457C23.5014 21.904 23.8595 21.5457 24.3013 21.5457C24.743 21.5457 25.1011 21.904 25.1013 22.3457Z" />
+                  <path d="M28.7802 27.6246H24.3013C23.8595 27.6246 23.5013 27.2664 23.5013 26.8246C23.5013 26.3828 23.8595 26.0246 24.3013 26.0246H28.7802C29.2219 26.0248 29.5802 26.3829 29.5802 26.8246C29.5802 27.2663 29.2219 27.6245 28.7802 27.6246Z" />
+                </svg>
+                <span>AI & Generative AI Enablement</span>
+              </li>
+              <li class="dflex d-flex-align-center" data="4">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill">
+                  <path d="M8.558 2.97675C8.11618 2.97675 7.758 3.33492 7.758 3.77675C7.758 4.21857 8.11618 4.57675 8.558 4.57675C9.17858 4.57675 9.79307 4.69898 10.3664 4.93646C10.9397 5.17394 11.4607 5.52203 11.8995 5.96084C12.3383 6.39965 12.6864 6.92059 12.9239 7.49393C13.1614 8.06726 13.2836 8.68175 13.2836 9.30233C13.2836 9.74416 13.6418 10.1023 14.0836 10.1023C14.5254 10.1023 14.8836 9.74416 14.8836 9.30233C14.8836 8.47164 14.72 7.64909 14.4021 6.88163C14.0842 6.11418 13.6183 5.41685 13.0309 4.82947C12.4435 4.24208 11.7462 3.77614 10.9787 3.45825C10.2112 3.14036 9.38869 2.97675 8.558 2.97675Z" />
+                  <path d="M6.19521 5.20985C6.57785 4.98894 6.70895 4.49967 6.48803 4.11703C6.26712 3.7344 5.77785 3.6033 5.39521 3.82421C4.55494 4.30935 3.83753 4.98128 3.29848 5.78802C2.75942 6.59477 2.41318 7.51471 2.28654 8.47667C2.15989 9.43864 2.25624 10.4168 2.56812 11.3356C2.88 12.2544 3.39906 13.0891 4.08514 13.7752C4.77122 14.4613 5.60594 14.9803 6.52471 15.2922C7.44349 15.6041 8.42169 15.7004 9.38366 15.5738C10.3456 15.4471 11.2656 15.1009 12.0723 14.5619C12.8791 14.0228 13.551 13.3054 14.0361 12.4651C14.257 12.0825 14.1259 11.5932 13.7433 11.3723C13.3607 11.1514 12.8714 11.2825 12.6505 11.6651C12.2881 12.2929 11.7861 12.8288 11.1834 13.2315C10.5807 13.6342 9.89346 13.8929 9.17482 13.9875C8.45617 14.0821 7.72539 14.0101 7.03902 13.7771C6.35264 13.5441 5.72906 13.1564 5.21651 12.6438C4.70397 12.1313 4.3162 11.5077 4.08321 10.8213C3.85021 10.1349 3.77824 9.40416 3.87285 8.68551C3.96746 7.96687 4.22612 7.27962 4.62883 6.67693C5.03153 6.07425 5.56748 5.57228 6.19521 5.20985Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8604 27.6465C16.9767 27.6465 16.2604 26.9302 16.2604 26.0465V13.0233C16.2604 12.1396 16.9767 11.4233 17.8604 11.4233H20.341C20.4297 11.4233 20.5167 11.4305 20.6014 11.4444V7.44188C20.6014 6.55823 21.3178 5.84188 22.2014 5.84188H24.6821C25.5657 5.84188 26.2821 6.55823 26.2821 7.44188V17.0258C26.3668 17.0119 26.4538 17.0047 26.5425 17.0047H29.0231C29.9068 17.0047 30.6231 17.721 30.6231 18.6047V26.0465C30.6231 26.9302 29.9068 27.6465 29.0231 27.6465H26.5425C26.1956 27.6465 25.8744 27.5361 25.6123 27.3485C25.3502 27.5361 25.029 27.6465 24.6821 27.6465H22.2014C21.8545 27.6465 21.5333 27.5361 21.2712 27.3485C21.0091 27.5361 20.6879 27.6465 20.341 27.6465H17.8604ZM17.8604 26.0465H20.341V13.0233H17.8604V26.0465ZM22.2014 26.0465H24.6821V7.44188H22.2014V26.0465ZM26.5425 26.0465H29.0231V18.6047H26.5425V26.0465Z" />
+                  <path d="M3.77656 19.9813C3.33474 19.9813 2.97656 20.3395 2.97656 20.7813C2.97656 21.2232 3.33474 21.5813 3.77656 21.5813H13.3394C13.7812 21.5813 14.1394 21.2232 14.1394 20.7813C14.1394 20.3395 13.7812 19.9813 13.3394 19.9813H3.77656Z" />
+                  <path d="M2.97656 23.7581C2.97656 23.3163 3.33474 22.9581 3.77656 22.9581H7.38587C7.82769 22.9581 8.18587 23.3163 8.18587 23.7581C8.18587 24.1999 7.82769 24.5581 7.38587 24.5581H3.77656C3.33474 24.5581 2.97656 24.1999 2.97656 23.7581Z" />
+                  <path d="M3.77656 25.9349C3.33474 25.9349 2.97656 26.293 2.97656 26.7349C2.97656 27.1767 3.33474 27.5349 3.77656 27.5349H11.1068C11.5486 27.5349 11.9068 27.1767 11.9068 26.7349C11.9068 26.293 11.5486 25.9349 11.1068 25.9349H3.77656Z" />
+                </svg>
+                <span>FinOps & Cost Visibility</span>
+              </li>
+              <li class="dflex d-flex-align-center" data="5">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill">
+                  <path d="M14.1031 5.51912L14.0905 5.47694C13.9635 5.05374 13.5175 4.81359 13.0943 4.94054C12.6711 5.0675 12.431 5.51348 12.5579 5.93668L13.1226 7.81903C13.2465 8.23205 13.6755 8.47256 14.0925 8.36282L15.8807 7.89223C16.308 7.77979 16.5632 7.34226 16.4508 6.91498C16.3384 6.4877 15.9008 6.23247 15.4736 6.34491C16.7673 4.15204 19.1538 2.68235 21.8821 2.68235C25.9885 2.68235 29.3174 6.01125 29.3174 10.1176C29.3174 14.224 25.9885 17.5529 21.8821 17.5529C20.0112 17.5529 18.3034 16.863 16.9963 15.7225C16.9189 15.6549 16.8429 15.5858 16.7683 15.5152L16.7659 15.5178C15.1298 13.8693 12.8599 12.8471 10.3527 12.8471C5.36262 12.8471 1.31738 16.8923 1.31738 21.8823C1.31738 26.8724 5.36262 30.9176 10.3527 30.9176C13.5197 30.9176 16.3049 29.2882 17.9177 26.8243C18.0471 27.2436 18.4908 27.4808 18.9119 27.3545C19.3351 27.2275 19.5753 26.7816 19.4483 26.3584L18.8837 24.476C18.7598 24.063 18.3308 23.8225 17.9138 23.9322L16.1255 24.4028C15.6983 24.5152 15.443 24.9528 15.5555 25.3801C15.6679 25.8073 16.1054 26.0626 16.5327 25.9501L16.5871 25.9358C15.2599 27.9728 12.9627 29.3176 10.3527 29.3176C6.24628 29.3176 2.91738 25.9887 2.91738 21.8823C2.91738 17.776 6.24628 14.4471 10.3527 14.4471C12.4333 14.4471 14.3132 15.3006 15.6636 16.6788L15.6902 16.6527L15.6677 16.6765C15.7582 16.7622 15.8504 16.8461 15.9444 16.9281C17.5318 18.3131 19.6099 19.1529 21.8821 19.1529C26.8721 19.1529 30.9174 15.1077 30.9174 10.1176C30.9174 5.12759 26.8721 1.08235 21.8821 1.08235C18.5703 1.08235 15.676 2.86398 14.1031 5.51912Z" />
+                </svg>
+                <span>DevOps & Automation</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="carousel-pillars-content">
+            <div class="fadeOut owl-carousel owl-theme owl-fade owl-drag">
+
+              <div class="item">
+                <h3>Cloud-Native Architecture</h3>
+                <div class="text-pillars">
+                  <p>Designing scalable environments optimized for modern applications, containers, and microservices.</p>
+                  <img src="../../../assets/images/gcp-partnership/cloud-native-architecture-image.svg" alt="Cloud-Native Architecture">
+                </div>
+              </div>
+
+              <div class="item">
+                <h3>Kubernetes & Platform Engineering</h3>
+                <div class="text-pillars">
+                  <p>Building and managing Kubernetes platforms that improve reliability, developer productivity, and operational efficiency.</p>
+                  <img src="../../../assets/images/gcp-partnership/kubernetes-platform-engineering-image.svg" alt="Cloud-Native Architecture">
+                </div>
+              </div>
+
+              <div class="item">
+                <h3>AI & Generative AI Enablement</h3>
+                <div class="text-pillars">
+                  <p>Helping organizations create the infrastructure required to support AI initiatives, large language models, agent-based systems, and data-intensive workloads.</p>
+                  <img src="../../../assets/images/gcp-partnership/ai-generative-ai-enablement-image.svg" alt="Cloud-Native Architecture">
+                </div>
+              </div>
+
+              <div class="item">
+                <h3>FinOps & Cost Visibility</h3>
+                <div class="text-pillars">
+                  <p>Ensuring cloud growth remains predictable through governance, optimization, and continuous cost management.</p>
+                  <img src="../../../assets/images/gcp-partnership/finops-cost-visibility-image.svg" alt="Cloud-Native Architecture">
+                </div>
+              </div>
+
+              <div class="item">
+                <h3>DevOps & Automation</h3>
+                <div class="text-pillars">
+                  <p>Implementing CI/CD pipelines, Infrastructure as Code, observability, and operational best practices.</p>
+                  <img src="../../../assets/images/gcp-partnership/devops-automation-image.svg" alt="Cloud-Native Architecture">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark expertise">
+  <div class="wrapper-expertise">
+    <h2 data-aos="fade-up" data-aos-delay="100">Our Google Cloud Expertise</h2>
+    <div class="items-expertise">
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-cloud-migration-modernization.svg" alt="Cloud Migration & Modernization">
+        <p class="title">Cloud Migration & Modernization</p>
+        <p class="description">Helping organizations migrate workloads and modernize applications on Google Cloud while minimizing risk and downtime.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-kubernetes-cloud-native-platforms.svg" alt="Kubernetes & Cloud-Native Platforms">
+        <p class="title">Kubernetes & Cloud-Native Platforms</p>
+        <p class="description">Designing, deploying, and operating scalable containerized environments that support growth and innovation.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-genai-infrastructure-enablement.svg" alt="GenAI Infrastructure & Enablement">
+        <p class="title">GenAI Infrastructure & Enablement</p>
+        <p class="description">Designing, deploying, and operating scalable containerized environments that support growth and innovation.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-team-covers-every-layer.svg" alt="A Team That Covers Every Layer">
+        <p class="title">A Team That Covers Every Layer</p>
+        <p class="description">Our team helps customers design secure, cost-efficient, and production-ready environments that enable AI innovation without compromising governance, reliability, or operational control.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-devops-automation.svg" alt="DevOps & Automation">
+        <p class="title">DevOps & Automation</p>
+        <p class="description">Implementing automation, CI/CD, Infrastructure as Code, and operational best practices to accelerate software delivery.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-finops-cost-optimization.svg" alt="FinOps & Cost Optimization">
+        <p class="title">FinOps & Cost Optimization</p>
+        <p class="description">Providing visibility, governance, and optimization strategies to help organizations maximize the value of their cloud investments.</p>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <img src="../../../assets/images/gcp-partnership/icon-managed-cloud-operations.svg" alt="Managed Cloud Operations">
+        <p class="title">Managed Cloud Operations</p>
+        <p class="description">Supporting cloud environments through monitoring, reliability engineering, incident response, and ongoing optimization.</p>
+      </div>
+    </div>
+    <div class="lines-expertise">
+      <svg width="1440" height="213" viewBox="0 0 1440 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-2.49976 17.5182C502.5 -86.9825 389.5 345.517 1462 168.517" stroke="#BECBD4" stroke-width="2" />
+      </svg>
+      <svg width="1440" height="101" viewBox="0 0 1440 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-43.1984 99.5728C877.5 -161.093 935 274.405 1520.5 0.906043" stroke="#FED40B" stroke-width="2" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section why-work">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="100">Why Work with FlexTweak?</h2>
+
+    <div class="items-why-work">
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>Cloud Expertise Backed by Real-World Experience</p>
+          <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-cloud-expertise-backed-real-world-experience.svg" alt="Cloud Expertise Backed by Real-World Experience">
+        </div>
+        <div class="description">
+          <p>For over a decade, FlexTweak has helped organizations design, operate, and optimize cloud environments across multiple cloud providers.</p>
+        </div>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>DevOps, FinOps, and AI Under One Roof</p>
+          <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-devops-finops-and-ai-under-one-roof.svg" alt="DevOps, FinOps, and AI Under One Roof">
+        </div>
+        <div class="description">
+          <p>Our teams combine technical expertise with operational excellence to help organizations scale efficiently and sustainably.</p>
+        </div>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="title">
+          <p>Focus on Outcomes</p>
+          <img width="56" height="56" src="../../../assets/images/gcp-partnership/icon-focus-outcomes.svg" alt="Focus on Outcomes">
+        </div>
+        <div class="description">
+          <p>We don't just deploy infrastructure – we help organizations improve performance, accelerate delivery, reduce waste, and prepare for future growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-white">
+  <h2 data-aos="fade-up" data-aos-delay="200">Ready to Unlock the Full <br>Potential of Google Cloud?</h2>
+  <p data-aos="fade-up" data-aos-delay="250">Whether you're modernizing applications, building AI-powered products, or scaling your infrastructure, FlexTweak can help you move faster with confidence.</p>
+
+  <div class="btn-lets-get-started" data-aos="fade-up" data-aos-delay="200">
+    <div data-aos="fade-up" data-aos-delay="250">
+      <a href="#modalForm" class="btn-theme btn-blue link-modal" data-aos="fade-up" data-aos-delay="300">Discuss your project</a>
+    </div>
+  </div>
+
+  <div class="lines-cta-white" data-aos="fade-up" data-aos-delay="400" id="ctaWave"></div>
+</section>
+
+<div class="section bg-dark-footer border-round-top our-cases">
+  <div class="container">
+    <h2 class="white" data-aos="fade-up" data-aos-delay="200">Our Case Studies</h2>
+
+    <div class="dflex wrapper-cases">
+
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2026/02/Stage5.ai-logo-white.png" alt="Client 1 Stage5 Redefines Business Automation with a Conversational AI Platform Built on Amazon Bedrock">
+          <img src="https://www.profisea.com/wp-content/uploads/2024/11/aws-white.svg" alt="Client 2 Stage5 Redefines Business Automation with a Conversational AI Platform Built on Amazon Bedrock">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/stage5-redefines-business-automation-with-a-conversational-ai-platform-built-on-amazon-bedrock/">Stage5 Redefines Business Automation with a Conversational AI Platform Built on Amazon Bedrock</a></h3>
+        <p>Architecting a secure, production-grade Generative AI platform on AWS to power autonomous business operations.</p>
+        <a href="https://www.profisea.com/case-studies/stage5-redefines-business-automation-with-a-conversational-ai-platform-built-on-amazon-bedrock/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2026/02/Cyn.AI-logo-white.png" alt="Client 1 Cyn.ai Reinvents Predictive Cybersecurity with a Generative AI–Driven Brand Protection Agent Built on AWS">
+          <img src="https://www.profisea.com/wp-content/uploads/2024/11/aws-white.svg" alt="Client 2 Cyn.ai Reinvents Predictive Cybersecurity with a Generative AI–Driven Brand Protection Agent Built on AWS">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/cyn-ai-reinvents-predictive-cybersecurity-with-a-generative-ai-driven-brand-protection-agent-built-on-aws/">Cyn.ai Reinvents Predictive Cybersecurity with a Generative AI–Driven Brand Protection Agent Built on AWS</a></h3>
+        <p>Architecting a scalable, enterprise-grade Generative AI infrastructure to power proactive, intelligence-led digital defense on AWS.</p>
+        <a href="https://www.profisea.com/case-studies/cyn-ai-reinvents-predictive-cybersecurity-with-a-generative-ai-driven-brand-protection-agent-built-on-aws/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+      <div class="item" data-aos="fade-up" data-aos-delay="200">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2025/08/dreemz-logo-white.png" alt="Client 1 Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-white-case-studies.png" alt="Client 2 Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise">
+        </div>
+        <h3><a href="https://www.profisea.com/case-studies/dreemz-scaling-dreams-with-aws-profiseas-devops-expertise/">Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise</a></h3>
+        <p>Dreemz is an innovative Israeli startup that developed a unique social platform designed to help people turn their dreams into reality.</p>
+        <a href="https://www.profisea.com/case-studies/dreemz-scaling-dreams-with-aws-profiseas-devops-expertise/" class="btn-theme btn-blue">Read Case Study</a>
+      </div>
+    </div>
+  </div>
+</div>
