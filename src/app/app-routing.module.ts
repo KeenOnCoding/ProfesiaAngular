@@ -20,6 +20,9 @@ import { AiGenaiServicesComponent } from './components/pages/ai-genai-services/a
 import { OracleCloudPartnershipComponent } from './components/pages/oracle-cloud-partnership/oracle-cloud-partnership.component';
 import { AzurePartnershipComponent } from './components/pages/azure-partnership/azure-partnership.component';
 import { GcpPartnershipComponent } from './components/pages/gcp-partnership/gcp-partnership.component';
+import { Stage5Component } from './components/pages/case-studies/stage5/stage5.component';
+import { CynComponent } from './components/pages/case-studies/cyn/cyn.component';
+import { DreemzComponent } from './components/pages/case-studies/dreemz/dreemz.component';
 
 const routes: Routes = [
   {
@@ -52,8 +55,16 @@ const routes: Routes = [
     component: CaseStudiesComponent
   },
   {
-    path: 'blog',
-    component: BlogComponent
+    path: 'stage5-redefines-business-automation-with-a-conversational-ai-platform-built-on-amazon-bedrock',
+    component: Stage5Component
+  },
+  {
+    path: 'cyn-ai-reinvents-predictive-cybersecurity-with-a-generative-ai-driven-brand-protection-agent-built-on-aws',
+    component: CynComponent
+  },
+  {
+    path: 'dreemz-scaling-dreams-with-aws-profiseas-devops-expertise',
+    component: DreemzComponent
   },
   {
     path: 'about',

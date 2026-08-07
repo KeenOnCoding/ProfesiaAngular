@@ -27,6 +27,9 @@ import { AiGenaiServicesComponent } from './components/pages/ai-genai-services/a
 import { OracleCloudPartnershipComponent } from './components/pages/oracle-cloud-partnership/oracle-cloud-partnership.component';
 import { AzurePartnershipComponent } from './components/pages/azure-partnership/azure-partnership.component';
 import { GcpPartnershipComponent } from './components/pages/gcp-partnership/gcp-partnership.component';
+import { Stage5Component } from './components/pages/case-studies/stage5/stage5.component';
+import { CynComponent } from './components/pages/case-studies/cyn/cyn.component';
+import { DreemzComponent } from './components/pages/case-studies/dreemz/dreemz.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { GcpPartnershipComponent } from './components/pages/gcp-partnership/gcp-
     AiGenaiServicesComponent,
     OracleCloudPartnershipComponent,
     AzurePartnershipComponent,
-    GcpPartnershipComponent
+    GcpPartnershipComponent,
+    Stage5Component,
+    CynComponent,
+    DreemzComponent
   ],
   exports: [
     HeaderComponent,

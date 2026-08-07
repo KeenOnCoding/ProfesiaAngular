@@ -1,0 +1,592 @@
+<style>
+  img:is([sizes="auto" i], [sizes^="auto," i]) {
+    contain-intrinsic-size: 3000px 1500px
+  }
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+  /*! This file is auto-generated */
+  .wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em
+  }
+
+  .wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none
+  }
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+  :root {
+    --wp--preset--aspect-ratio--square: 1;
+    --wp--preset--aspect-ratio--4-3: 4/3;
+    --wp--preset--aspect-ratio--3-4: 3/4;
+    --wp--preset--aspect-ratio--3-2: 3/2;
+    --wp--preset--aspect-ratio--2-3: 2/3;
+    --wp--preset--aspect-ratio--16-9: 16/9;
+    --wp--preset--aspect-ratio--9-16: 9/16;
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+  }
+
+  :where(.is-layout-flex) {
+    gap: 0.5em;
+  }
+
+  :where(.is-layout-grid) {
+    gap: 0.5em;
+  }
+
+  body .is-layout-flex {
+    display: flex;
+  }
+
+  .is-layout-flex {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+    .is-layout-flex > :is(*, div) {
+      margin: 0;
+    }
+
+  body .is-layout-grid {
+    display: grid;
+  }
+
+  .is-layout-grid > :is(*, div) {
+    margin: 0;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  .has-black-color {
+    color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-color {
+    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-color {
+    color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-color {
+    color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-color {
+    color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-color {
+    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-color {
+    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-color {
+    color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-color {
+    color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-color {
+    color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-color {
+    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-color {
+    color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-background-color {
+    background-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-background-color {
+    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-background-color {
+    background-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-background-color {
+    background-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-background-color {
+    background-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-background-color {
+    background-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-background-color {
+    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-background-color {
+    background-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-black-border-color {
+    border-color: var(--wp--preset--color--black) !important;
+  }
+
+  .has-cyan-bluish-gray-border-color {
+    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+  }
+
+  .has-white-border-color {
+    border-color: var(--wp--preset--color--white) !important;
+  }
+
+  .has-pale-pink-border-color {
+    border-color: var(--wp--preset--color--pale-pink) !important;
+  }
+
+  .has-vivid-red-border-color {
+    border-color: var(--wp--preset--color--vivid-red) !important;
+  }
+
+  .has-luminous-vivid-orange-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-amber-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+  }
+
+  .has-light-green-cyan-border-color {
+    border-color: var(--wp--preset--color--light-green-cyan) !important;
+  }
+
+  .has-vivid-green-cyan-border-color {
+    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+  }
+
+  .has-pale-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+  }
+
+  .has-vivid-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+  }
+
+  .has-vivid-purple-border-color {
+    border-color: var(--wp--preset--color--vivid-purple) !important;
+  }
+
+  .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+    background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+  }
+
+  .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+    background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+  }
+
+  .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+  }
+
+  .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+  }
+
+  .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+    background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+  }
+
+  .has-cool-to-warm-spectrum-gradient-background {
+    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+  }
+
+  .has-blush-light-purple-gradient-background {
+    background: var(--wp--preset--gradient--blush-light-purple) !important;
+  }
+
+  .has-blush-bordeaux-gradient-background {
+    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+  }
+
+  .has-luminous-dusk-gradient-background {
+    background: var(--wp--preset--gradient--luminous-dusk) !important;
+  }
+
+  .has-pale-ocean-gradient-background {
+    background: var(--wp--preset--gradient--pale-ocean) !important;
+  }
+
+  .has-electric-grass-gradient-background {
+    background: var(--wp--preset--gradient--electric-grass) !important;
+  }
+
+  .has-midnight-gradient-background {
+    background: var(--wp--preset--gradient--midnight) !important;
+  }
+
+  .has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+  }
+
+  .has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+  }
+
+  .has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
+
+  .has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+  }
+
+  :where(.wp-block-post-template.is-layout-flex) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-post-template.is-layout-grid) {
+    gap: 1.25em;
+  }
+
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 2em;
+  }
+
+  :where(.wp-block-columns.is-layout-grid) {
+    gap: 2em;
+  }
+
+  :root :where(.wp-block-pullquote) {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.profisea.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.6' type='text/css' media='all' />
+<style id="cky-style-inline">
+  [data-cky-tag] {
+    visibility: hidden;
+  }
+</style>			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.6-->
+
+<style type="text/css" id="wp-custom-css">
+  .grecaptcha-badge {
+    display: none !important
+  }
+</style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/global.css?ver=1785915529">
+
+<link rel="stylesheet" href="https://www.profisea.com/wp-content/themes/profisea-theme/css/single-case-studies.css?ver=1785915529">
+<style>
+  .title-page .container .right .logos img {
+    max-width: 256px;
+    height: 48px;
+    max-height: 48px;
+  }
+
+    .title-page .container .right .logos img:last-child {
+      height: 42px;
+      max-height: 42px;
+    }
+
+  @media screen and (max-width: 767px) {
+    .mobile-client .logos img {
+      max-width: calc((100% - -25px) / 2);
+      max-height: 70px;
+    }
+  }
+</style>
+
+
+
+
+
+<section class="overflow-hidden">
+  <div class="title-page">
+    <div class="container">
+      <div class="left">
+        <div class="breadcreambs" data-aos="fade-up" data-aos-delay="100">
+          <a href="/case-studies"><span>&lt;</span> Back to the Case Studies page</a>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="100">Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise</h1>
+      </div>
+      <div class="right">
+        <div class="logos">
+          <img src="https://www.profisea.com/wp-content/uploads/2025/08/dreemz-logo-color.png" alt="Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise Client 1">
+          <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-color-case-studies.png" alt="Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise Client 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mobile-client">
+  <div class="logos">
+    <img src="https://www.profisea.com/wp-content/uploads/2025/08/dreemz-logo-color.png" alt="Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise Client 1">
+    <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-color-case-studies.png" alt="Dreemz: Scaling Dreams with AWS &#038; FlexTweak’s DevOps Expertise Client 2">
+  </div>
+</section>
+
+<section class="section content-page">
+  <div class="container">
+    <div class="content">
+      <div class="text">
+
+        <style>
+          .single-blog .article {
+            padding: 24px 24px 40px;
+          }
+
+          .banner {
+            display: flex;
+            gap: 24px;
+            padding: 12px 24px;
+            align-items: center;
+            border-radius: 24px;
+            border: 1px solid #25ACFF;
+            margin-bottom: 24px;
+          }
+
+            .banner img {
+              max-width: 100px;
+              margin: 0 !important;
+            }
+
+            .banner p {
+              color: #292D3F;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.5;
+              margin-bottom: 0 !important;
+              width: 100%;
+            }
+
+              .banner p span {
+                color: #25ACFF;
+                font-weight: 600;
+              }
+
+            .banner a {
+              font-size: 16px;
+              min-width: 150px;
+              padding: 0 25px;
+              text-align: center;
+              line-height: 38px;
+              color: #fff !important;
+              text-decoration: none !important;
+            }
+
+          @media screen and (max-width: 991px) {
+            .banner {
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-bottom: 16px;
+            }
+
+              .banner a {
+                line-height: 54px;
+                width: 100%;
+              }
+          }
+        </style>
+   
+
+        <h2>About the Customer</h2>
+        <p><strong>Dreemz</strong> is an innovative Israeli startup that developed a unique social platform designed to help people turn their dreams into reality. The app allows users to share aspirations — personal, professional, or creative — and connect with a supportive community that provides guidance, encouragement, and even resources to achieve those goals.</p>
+        <p>Dreemz has rapidly gained traction in Israel, ranking among the country’s emerging social apps, and continues to expand its reach. With AI-driven recommendations, gamified goal-setting, and a TikTok-like video experience, Dreemz is creating a global movement where personal growth becomes a shared journey.</p>
+        <h2>The Challenge</h2>
+        <p>As its user base grew and demand for AI-powered features increased, Dreemz needed a cloud infrastructure that could scale globally, remain secure, and support rapid innovation.</p>
+        <p>The existing setup relied on AWS EC2, PostgreSQL, and S3, managed manually without automated processes. This limited scalability, slowed release cycles, and introduced security risks.</p>
+        <p>Key challenges included:</p>
+        <ul>
+          <li>Migrating from EC2 to a modern, Kubernetes-based architecture.</li>
+          <li>Automating deployments with CI/CD pipelines.</li>
+          <li>Strengthening security with WAF, IAM best practices, and account segmentation.</li>
+          <li>Integrating advanced AI capabilities (Claude AI, AWS Personalize).</li>
+          <li>Designing a cost-optimized scaling strategy to support 1M+ users.</li>
+        </ul>
+        <h2>The Solution – Powered by FlexTweak</h2>
+        <p>FlexTweak partnered with Dreemz to deliver a comprehensive <strong>DevOps as a Service</strong> engagement, addressing scalability, automation, and security through AWS best practices.</p>
+        <h2>Networking &#038; Security</h2>
+        <ul>
+          <li>Hardened EC2 instances with restricted SSH access.</li>
+          <li>Implemented AWS WAF for enhanced protection.</li>
+          <li>Segregated AWS accounts into Dev, Stage, and Prod environments.</li>
+        </ul>
+        <h2>Kubernetes Migration</h2>
+        <ul>
+          <li>Migrated infrastructure to Amazon EKS for scalability and efficiency.</li>
+          <li>Configured autoscaling for dynamic resource optimization.</li>
+          <li>Deployed monitoring and logging for full observability.</li>
+        </ul>
+        <h2>CI/CD Automation</h2>
+        <ul>
+          <li>Automated mobile app deployments.</li>
+          <li>Implemented CI/CD pipelines for backend services using GitHub Actions, Docker, and ECR.</li>
+        </ul>
+        <h2>AI &#038; Data Enhancements</h2>
+        <ul>
+          <li>Integrated <strong>AWS Personalize</strong> for intelligent recommendations.</li>
+          <li>Deployed <strong>AWS Bedrock (Claude AI)</strong> to power AI-enhanced services.</li>
+          <li>Enabled semantic search with <strong>AWS OpenSearch</strong>.</li>
+        </ul>
+        <h2>Scalability &#038; FinOps</h2>
+        <ul>
+          <li>Developed a scaling strategy to support 1M+ users.</li>
+          <li>Implemented AWS cost optimization for efficient resource utilization.</li>
+        </ul>
+        <h2>The Results</h2>
+        <ul>
+          <li><strong>Enhanced user experience</strong> with AI-driven personalization.</li>
+          <li><strong>Accelerated release cycles</strong> enabled by full CI/CD automation.</li>
+          <li><strong>Strengthened security</strong> through WAF, IAM segmentation, and AWS best practices.</li>
+          <li><strong>Future-proof scalability</strong> supporting millions of users worldwide.</li>
+          <li><strong>Optimized cloud costs</strong> with FinOps methodologies and AWS resource efficiency.</li>
+        </ul>
+        <p>With FlexTweak’s expertise, Dreemz now operates on a robust, flexible cloud foundation that enables continuous growth, rapid innovation, and global expansion.</p>
+        <h2>Why Dreemz + FlexTweak?</h2>
+        <p>At FlexTweak, we are proud to partner with Dreemz in transforming a bold vision into reality. By combining a groundbreaking platform with world-class cloud architecture, Dreemz is positioned not just to grow, but to lead the market with a scalable, secure, and inspiring digital experience.</p>
+      </div>
+    </div>
+    <div class="aside">
+      <div class="fixed" id="aside1">
+        <h2>More successful cases:</h2>
+
+        <div class="wrapper-successful-cases">
+
+
+          <div class="item-case">
+            <div class="logos">
+              <img src="https://www.profisea.com/wp-content/uploads/2025/08/algo21.png" alt="Client 1 Algo21: Strategic Cloud Migration to GCP for Enhanced Scalability, Security &#038; Automation">
+              <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-dark-case-studies.png" alt="Client 2 Algo21: Strategic Cloud Migration to GCP for Enhanced Scalability, Security &#038; Automation">
+            </div>
+            <h3><a href="https://www.profisea.com/case-studiesalgo21-strategic-cloud-migration-to-gcp-for-enhanced-scalability-security-automation/">Algo21: Strategic Cloud Migration to GCP for Enhanced Scalability, Security &#038; Automation</a></h3>
+            <a class="btn-theme btn-blue">Read Case Study</a>
+          </div>
+
+
+          <div class="item-case item-case-hidden-desctop">
+            <div class="logos">
+              <img src="https://www.profisea.com/wp-content/uploads/2025/07/kolleno-logo-black.svg" alt="Client 1 From Beanstalk to ECS: How FlexTweak Elevated Kolleno’s AWS Architecture for Peak Efficiency">
+              <img src="https://www.profisea.com/wp-content/uploads/2020/11/aws-logo-dark-case-studies.png" alt="Client 2 From Beanstalk to ECS: How FlexTweak Elevated Kolleno’s AWS Architecture for Peak Efficiency">
+            </div>
+            <h3><a href="https://www.profisea.com/case-studiesfrom-beanstalk-to-ecs-how-profisea-elevated-kollenos-aws-architecture-for-peak-efficiency/">From Beanstalk to ECS: How FlexTweak Elevated Kolleno’s AWS Architecture for Peak Efficiency</a></h3>
+            <a href="https://www.profisea.com/case-studiesfrom-beanstalk-to-ecs-how-profisea-elevated-kollenos-aws-architecture-for-peak-efficiency/" class="btn-theme btn-blue">Read Case Study</a>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-white">
+  <h2 data-aos="fade-up" data-aos-delay="200">Let's Get Started</h2>
+  <p data-aos="fade-up" data-aos-delay="250">If you’re ready to succeed, we are ready to help!</p>
+
+  <div class="btn-lets-get-started" data-aos="fade-up" data-aos-delay="200">
+    <div data-aos="fade-up" data-aos-delay="250">
+      <a href="#modalForm" class="btn-theme btn-blue link-modal" data-aos="fade-up" data-aos-delay="300">Discuss your project</a>
+    </div>
+  </div>
+
+  <div class="lines-cta-white" data-aos="fade-up" data-aos-delay="400" id="ctaWave"></div>
+</section>
+
+
+
+
+
+
+
